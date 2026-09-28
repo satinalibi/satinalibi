@@ -50,14 +50,15 @@ body{font-family:"ISans",sans-serif;-webkit-font-smoothing:antialiased}
 .board .title .disp i{color:#9E1B25}
 .board .note{position:absolute;right:70px;bottom:410px;transform:rotate(-6deg);z-index:7}
 
-/* COVER: magazine cover */
-.cover .ph{position:absolute;inset:0}
-.cover .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,9,8,.55) 0%,rgba(12,9,8,0) 30%,rgba(12,9,8,0) 55%,rgba(12,9,8,.78) 100%)}
-.cover .inner{position:absolute;inset:0;padding:56px 60px 60px;display:flex;flex-direction:column;justify-content:space-between;color:#F7F1E8}
-.cover .mast{font-size:var(--size,250px);line-height:.8;text-align:center;text-shadow:0 2px 30px rgba(0,0,0,.25)}
-.cover .mast i{display:block;font-size:.62em;margin-top:.08em}
-.cover .lines{display:flex;flex-direction:column;gap:6px}
-
+/* COVER: magazine cover. Title sits in its own band so it never covers a face */
+.cover{background:#F2ECE3;color:#16110F;display:flex;flex-direction:column}
+.cover .top{padding:52px 60px 0}
+.cover .top .row{font-size:20px;color:#6E5A4B;border-bottom:2px solid #D9CBB9;padding-bottom:16px}
+.cover .mast{font-size:calc(var(--size,250px) * .62);line-height:.86;text-align:center;margin:30px 0 30px}
+.cover .mast i{display:block;color:#9E1B25}
+.cover .ph{flex:1}
+.cover .foot{padding:24px 60px 34px;font-size:20px;color:#6E5A4B;gap:30px}
+.cover .foot span:first-child{font-size:17px;letter-spacing:.1em}
 /* EDIT: shoppable grid */
 .edit{background:#F2ECE3;color:#16110F;padding:64px 60px 58px;display:flex;flex-direction:column;justify-content:space-between}
 .edit .head .disp{font-size:var(--size,136px);margin-top:18px}
@@ -113,19 +114,13 @@ body{font-family:"ISans",sans-serif;-webkit-font-smoothing:antialiased}
 </div>
 {% elif style == 'cover' %}
 <div class="pin cover"{{ sv|safe }}>
-  <div class="ph{{ bw }}" style="background-image:url('{{ pin.photo | photo(1000, 1500) }}')"></div>
-  <div class="scrim"></div>
-  <div class="inner">
-    <div>
-      <div class="row mono" style="font-size:20px;margin-bottom:18px"><span>Satin Alibi</span><span>{{ pin.kicker or post.section_info.name }}</span></div>
-      <p class="disp mast">{{ pin.line1 }}{% if pin.line2 %}<i>{{ pin.line2 }}</i>{% endif %}</p>
-    </div>
-    <div class="row" style="align-items:flex-end">
-      <div class="lines mono">{% for l in pin.lines or [] %}<span>{{ l }}</span>{% endfor %}</div>
-      <span class="mono" style="font-size:20px">satinalibi.com</span>
-    </div>
+  <div class="top">
+    <div class="row mono"><span>Satin Alibi</span><span>{{ pin.kicker or post.section_info.name }}</span></div>
+    <p class="disp mast">{{ pin.line1 }}{% if pin.line2 %}<i>{{ pin.line2 }}</i>{% endif %}</p>
   </div>
-  <div class="grain"></div>
+  <div class="ph{{ bw }}" style="background-image:url('{{ pin.photo | photo(1000, 1050) }}')"></div>
+  <div class="foot row mono"><span>{{ (pin.lines or []) | join(' · ') }}</span><span>satinalibi.com</span></div>
+  <div class="grain" style="opacity:.1"></div>
 </div>
 {% else %}
 <div class="pin edit"{{ sv|safe }}>
