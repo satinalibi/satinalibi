@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% from "_card.html" import card %}
+{% block title %}{{ post.seo_title or post.title | striptags }} | {{ site.name }}{% endblock %}
+{% block description %}{{ post.dek }}{% endblock %}
+{% block meta %}<meta property="og:type" content="article">
+<meta property="og:title" content="{{ post.seo_title or post.title | striptags }}">
+<meta property="og:description" content="{{ post.dek }}">
+<meta property="og:url" content="{{ post.abs_url }}">
+{% if post.pins %}<meta property="og:image" content="{{ post.pins[0].abs_image }}">{% elif post.hero %}<meta property="og:image" content="{{ post.hero | photo(1200) }}">{% endif %}
+<meta property="article:published_time" content="{{ post.date.isoformat() }}">
+<meta property="article:section" content="{{ post.section_info.name }}">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ (post.seo_title or post.title) | striptags | tojson }},"description":{{ (post.dek or '') | tojson }},"datePublished":"{{ post.date.isoformat() }}","author":{"@type":"Organization","name":"Satin Alibi"},"publisher":{"@type":"Organization","name":"Satin Alibi"},"mainEntityOfPage":"{{ post.abs_url }}"}</script>{% endblock %}
+{% block main %}
+<article>
+  <header class="post-head">
+    <span class="kicker"><a href="/{{ post.section }}/">{{ post.section_info.name }}</a></span>
+    <h1>{{ post.title | md_inline }}</h1>
+    {% if post.dek %}<p class="dek">{{ post.dek }}</p>{% endif %}
+  </header>
+  {% if post.hero %}
+  <figure class="post-hero" style="margin:0 auto">
+    <img src="{{ post.hero | photo(1600, 1067) }}" alt="{{ post.hero_alt or '' }}" width="1600" height="1067" fetchpriority="high">
+  </figure>
+  {% if post.hero_credit %}<p class="credit">Photo: {{ post.hero_credit }}</p>{% endif %}
+  {% endif %}
+  {% if post.affiliate %}<aside class="disclosure"><p>{{ site.disclosure_short }} <a href="/disclosure/">More on how we work</a>.</p></aside>{% endif %}
+
+  <div class="prose">{{ post.intro_html | safe }}</div>
+
+  {% if post.products %}
+  <section class="picks" aria-label="The picks">
+  {% for item in post.products %}
+    <div class="pick">
+      <div class="pick-num">{{ loop.index }}</div>
+      <span class="pick-brand">{{ item.brand }}</span>
+      <h3>{{ item.name }}</h3>
+      {% if item.note %}<p class="pick-note">{{ item.note | md_inline | safe }}</p>{% endif %}
+      <div class="pick-row">
+        {% if item.price %}<span class="pick-price">{{ item.price }}</span>{% endif %}
+        <a class="btn" href="{{ item.url }}" target="_blank" rel="sponsored nofollow noopener">Shop{% if item.retailer %} at {{ item.retailer }}{% endif %} &rarr;</a>
+      </div>
+    </div>
+  {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if post.outro_html %}<div class="prose">{{ post.outro_html | safe }}</div>{% endif %}
+
+  {% if post.pins %}
+  <aside class="save">
+    <img src="{{ post.pins[0].image }}" alt="{{ post.pins[0].pin_title or post.title | striptags }}" width="440" height="660" loading="lazy" data-pin-description="{{ post.pins[0].pin_description or post.dek }}">
+    <div>
+      <h2>Save it for <em>later</em></h2>
+      <p>Pin this so it's there when you need a reason to be seen. We're on Pinterest at <a href="{{ site.pinterest_url }}">@satinalibi</a>.</p>
+    </div>
+  </aside>
+  {% endif %}
+</article>
+
+{% if more %}
+<section class="more">
+  <div class="block-head"><h2>More <em>{{ post.section_info.name }}</em></h2><a href="/{{ post.section }}/">All &rarr;</a></div>
+  <div class="grid">{% for p in more %}{{ card(p) }}{% endfor %}</div>
+</section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{{ site.name }}</title>
+  <link>{{ site.url }}/</link>
+  <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>{{ site.description }}</description>
+  <language>en</language>
+  <lastBuildDate>{{ build_date }}</lastBuildDate>
+{% for p in posts %}  <item>
+    <title>{{ p.title | striptags }}</title>
+    <link>{{ p.abs_url }}</link>
+    <guid isPermaLink="true">{{ p.abs_url }}</guid>
+    <pubDate>{{ p.rfc_date }}</pubDate>
+    <category>{{ p.section_info.name }}</category>
+    <description>{{ p.dek }}</description>
+{% if p.pins %}    <media:content url="{{ p.pins[0].abs_image }}" medium="image" type="image/jpeg" width="1000" height="1500"/>
+    <enclosure url="{{ p.pins[0].abs_image }}" type="image/jpeg" length="0"/>
+{% endif %}  </item>
+{% endfor %}</channel>
+</rss>

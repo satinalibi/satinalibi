@@ -1,0 +1,4 @@
+pyyaml
+markdown
+jinja2
+playwright

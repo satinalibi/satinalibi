@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% from "_card.html" import card %}
+{% block main %}
+<section class="hero">
+  <div class="hero-copy">
+    <span class="kicker" style="color:var(--blush)">Satin Alibi</span>
+    <h1>Dress like you don't need an <em>alibi.</em></h1>
+    <p>For women who say it first, say it loud, and take up space. Bronzed glow, lace and pearls, after-dark edge, and no apologies for any of it.</p>
+  </div>
+  <div class="hero-photo" role="img" aria-label="{{ site.hero_alt or 'Satin and gold, styled to be noticed' }}"{% if site.hero %} style="background-image:url('{{ site.hero | photo(1400) }}')"{% endif %}></div>
+</section>
+
+<nav class="tiles" aria-label="Sections">
+{% for s in sections %}
+  <a class="tile t-{{ s.slug }}" href="/{{ s.slug }}/">
+    <h2>{{ s.name }}</h2>
+    <p>{{ s.line }}</p>
+    <span class="arrow">Enter &rarr;</span>
+  </a>
+{% endfor %}
+</nav>
+
+<section class="block wrap">
+  <div class="block-head"><h2>The latest <em>edit</em></h2></div>
+  {% if posts %}<div class="grid">{% for p in posts %}{{ card(p) }}{% endfor %}</div>
+  {% else %}<p class="empty">The first edits land soon.</p>{% endif %}
+</section>
+
+<section class="band">
+  <blockquote>Too much? <span>Good.</span></blockquote>
+  <p>Take Up Space is our corner for the women who were told to lower their voice, and didn't.</p>
+  <a href="/take-up-space/">Read Take Up Space</a>
+</section>
+
+{% if space_posts %}
+<section class="block wrap">
+  <div class="block-head"><h2>Take up <em>space</em></h2><a href="/take-up-space/">All of it &rarr;</a></div>
+  <div class="grid">{% for p in space_posts %}{{ card(p) }}{% endfor %}</div>
+</section>
+{% endif %}
+{% endblock %}

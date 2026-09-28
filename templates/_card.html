@@ -1,0 +1,9 @@
+{% macro card(p) -%}
+<a class="card" href="{{ p.url }}">
+  {% if p.hero %}<div class="card-img"><img src="{{ p.hero | photo(700, 875) }}" alt="{{ p.hero_alt or '' }}" loading="lazy" width="700" height="875"></div>
+  {% else %}<div class="card-quote">{{ p.card_line or p.title }}</div>{% endif %}
+  <span class="kicker">{{ p.section_info.name }}</span>
+  <h3>{{ p.title | md_inline }}</h3>
+  {% if p.dek %}<p>{{ p.dek }}</p>{% endif %}
+</a>
+{%- endmacro %}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{{ site.name }}: {{ section.name }}</title>
+  <link>{{ site.url }}/{{ section.slug }}/</link>
+  <atom:link href="{{ site.url }}/feeds/{{ section.slug }}.xml" rel="self" type="application/rss+xml"/>
+  <description>{{ section.about }}</description>
+  <language>en</language>
+  <lastBuildDate>{{ build_date }}</lastBuildDate>
+{% for m in items %}  <item>
+    <title>{{ m.title }}</title>
+    <link>{{ m.link }}</link>
+    <guid isPermaLink="false">satinalibi-pin-{{ m.id }}</guid>
+    <pubDate>{{ m.rfc_date }}</pubDate>
+    <description>{{ m.description }}</description>
+    <media:content url="{{ m.image }}" medium="image" type="image/jpeg" width="1000" height="1500"/>
+    <enclosure url="{{ m.image }}" type="image/jpeg" length="0"/>
+  </item>
+{% endfor %}</channel>
+</rss>

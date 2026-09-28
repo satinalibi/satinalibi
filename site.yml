@@ -1,0 +1,34 @@
+name: Satin Alibi
+tagline: Dress like you don't need an alibi.
+description: Fashion and beauty for women who say it first, say it loud, and take up space. Golden hour glow, lace and pearls, and after-dark edge.
+url: https://satinalibi.com
+email: hello@satinalibi.com
+pinterest_url: https://www.pinterest.com/satinalibi/
+# Paste the code from Pinterest's "claim website" step here (just the content value).
+pinterest_verify: ""
+hero: https://images.unsplash.com/photo-1765229279773-b10038a84425
+hero_alt: Woman in a flowing red satin dress
+footer_line: For women who say it first, say it loud, and take up space.
+disclosure_short: Some links on this page are affiliate links. If you buy through them, Satin Alibi may earn a small commission at no extra cost to you. We only pick what we'd actually wear.
+
+sections:
+  - slug: golden-hour
+    name: Golden Hour
+    board: Golden Hour
+    line: Bronzed, glowing, impossible to miss.
+    about: Body oils, bronze, gold on skin, and everything that makes you glow loud.
+  - slug: lace-and-pearls
+    name: Lace & Pearls
+    board: Lace & Pearls
+    line: Soft fabrics, sharp intentions.
+    about: Lace worn out, satin slips, pearls, feathers, and tulle, dressed up with nerve.
+  - slug: after-dark
+    name: After Dark
+    board: After Dark
+    line: Black lace. Red lip. No apologies.
+    about: Cherry lips, black lace, blazers over bare shoulders, and the looks you wear to be remembered.
+  - slug: take-up-space
+    name: Take Up Space
+    board: Take Up Space
+    line: For the women who were told they're too much.
+    about: No products here. Just the reminder that loud looks good on you.

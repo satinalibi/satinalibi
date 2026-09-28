@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<title>{{ pin.id }}</title>
+<style>
+@font-face{font-family:"CG";src:url(/fonts/CormorantGaramond.woff) format("woff");font-weight:300 700;font-style:normal}
+@font-face{font-family:"CG";src:url(/fonts/CormorantGaramond-Italic.woff) format("woff");font-weight:300 700;font-style:italic}
+@font-face{font-family:"IN";src:url(/fonts/Inter.woff) format("woff");font-weight:100 900}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1000px;height:1500px;overflow:hidden}
+body{font-family:"IN",sans-serif;-webkit-font-smoothing:antialiased}
+.pin{width:1000px;height:1500px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.serif{font-family:"CG",serif;font-weight:500;letter-spacing:-.01em}
+.mark{font-family:"CG",serif;font-style:italic;font-weight:500;font-size:46px;line-height:1}
+.cap{font-weight:500;font-size:24px;letter-spacing:.18em;text-transform:uppercase;line-height:1.3}
+.url{font-weight:500;font-size:22px;letter-spacing:.14em;text-transform:uppercase}
+.photo{background:#2E2322 center/cover no-repeat}
+.row{display:flex;justify-content:space-between;align-items:center}
+h1{font-family:"CG",serif;font-weight:500;letter-spacing:-.015em}
+h1 .l2{font-style:italic;display:block}
+h1 .l1i{font-style:italic}
+
+/* quote */
+.quote{padding:84px 80px 76px;justify-content:space-between}
+.quote h1{font-size:{{ pin.size or 176 }}px;line-height:.88}
+.quote h1 .l1{font-style:italic;display:block}
+.quote h1 .l2{font-style:normal}
+.tone-cherry{background:#8E1622;color:#F3ECE3}.tone-cherry .l2,.tone-cherry .soft{color:#EBC8C0}
+.tone-ink{background:#141012;color:#F3ECE3}.tone-ink .l2{color:#C4242F}.tone-ink .soft{color:#E8D3B0}
+.tone-ivory{background:#F3ECE3;color:#141012}.tone-ivory .l2{color:#8E1622}.tone-ivory .soft{color:#6E5A4B}
+.tone-bronze{background:#A8703F;color:#F3ECE3}.tone-bronze .l2{color:#141012}.tone-bronze .soft{color:#F3ECE3}
+.quote .foot{display:flex;flex-direction:column;gap:22px}
+
+/* photo on top, panel below */
+.split .photo{flex:0 0 {{ pin.photo_height or 820 }}px}
+.split .panel{flex:1;padding:56px 72px 60px;display:flex;flex-direction:column;justify-content:space-between}
+.split h1{font-size:{{ pin.size or 150 }}px;line-height:.9}
+.split.tone-ink .panel{background:#141012}.split.tone-ivory .panel{background:#F3ECE3}
+.split .tag{position:absolute;left:64px;top:60px;color:#F3ECE3;text-shadow:0 1px 18px rgba(0,0,0,.35)}
+
+/* full bleed */
+.bleed .photo{position:absolute;inset:0}
+.bleed .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,18,.38) 0%,rgba(20,16,18,0) 22%,rgba(20,16,18,0) 42%,rgba(20,16,18,.82) 100%)}
+.bleed .inner{position:relative;flex:1;padding:70px 72px 72px;display:flex;flex-direction:column;justify-content:space-between;color:#F3ECE3}
+.bleed h1{font-size:{{ pin.size or 200 }}px;line-height:.86}
+.bleed h1 .l2{color:#E8D3B0}
+.bleed .foot{display:flex;flex-direction:column;gap:26px}
+
+/* product strip */
+.product{background:#F3ECE3;color:#141012;padding:76px 72px 70px;justify-content:space-between}
+.product .top{border-bottom:1.5px solid #CDBBA5;padding-bottom:22px}
+.product h1{font-size:{{ pin.size or 170 }}px;line-height:.9}
+.product h1 .l2{color:#8E1622}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;height:560px}
+.strip div{background:#E8D3B0 center/cover no-repeat}
+.strip div:nth-child(2){background-color:#EBC8C0}.strip div:nth-child(3){background-color:#141012}
+</style></head>
+<body>
+{% set style = pin.style or 'quote' %}
+{% if style == 'quote' %}
+<div class="pin quote tone-{{ pin.tone or 'cherry' }}">
+  <div class="row"><span class="mark">Satin Alibi</span><span class="cap soft">{{ pin.kicker or post.section_info.name }}</span></div>
+  <div class="foot">
+    <h1><span class="l1">{{ pin.line1 }}</span>{% if pin.line2 %}<span class="l2">{{ pin.line2 }}</span>{% endif %}</h1>
+    <div class="row"><span class="cap soft">{{ pin.caption or '' }}</span><span class="url soft">satinalibi.com</span></div>
+  </div>
+</div>
+{% elif style == 'split' %}
+<div class="pin split tone-{{ pin.tone or 'ink' }}">
+  <div class="photo" style="background-image:url('{{ pin.photo | photo(1000, pin.photo_height or 820) }}')"></div>
+  <span class="mark tag">Satin Alibi</span>
+  <div class="panel" style="color:{{ '#141012' if pin.tone == 'ivory' else '#F3ECE3' }}">
+    <h1>{{ pin.line1 }}{% if pin.line2 %}<span class="l2" style="color:{{ '#8E1622' if pin.tone == 'ivory' else '#E0484F' }}">{{ pin.line2 }}</span>{% endif %}</h1>
+    <div class="row"><span class="cap" style="color:{{ '#6E5A4B' if pin.tone == 'ivory' else '#E8D3B0' }}">{{ pin.caption or '' }}</span><span class="url" style="color:{{ '#6E5A4B' if pin.tone == 'ivory' else '#E8D3B0' }}">satinalibi.com</span></div>
+  </div>
+</div>
+{% elif style == 'bleed' %}
+<div class="pin bleed">
+  <div class="photo" style="background-image:url('{{ pin.photo | photo(1000, 1500) }}')"></div>
+  <div class="scrim"></div>
+  <div class="inner">
+    <div class="row"><span class="mark">Satin Alibi</span><span class="cap">{{ pin.kicker or post.section_info.name }}</span></div>
+    <div class="foot">
+      <h1>{{ pin.line1 }}{% if pin.line2 %}<span class="l2">{{ pin.line2 }}</span>{% endif %}</h1>
+      <div class="row"><span class="cap">{{ pin.caption or '' }}</span><span class="url">satinalibi.com</span></div>
+    </div>
+  </div>
+</div>
+{% else %}
+<div class="pin product">
+  <div class="row top"><span class="mark">Satin Alibi</span><span class="cap" style="color:#6E5A4B">{{ pin.kicker or post.section_info.name }}</span></div>
+  <h1>{{ pin.line1 }}{% if pin.line2 %}<span class="l2">{{ pin.line2 }}</span>{% endif %}</h1>
+  <div class="strip">{% for ph in (pin.photos or [])[:3] %}<div style="background-image:url('{{ ph | photo(420, 700) }}')"></div>{% endfor %}{% for _ in range(3 - (pin.photos or [])[:3] | length) %}<div></div>{% endfor %}</div>
+  <div class="row"><span class="cap" style="color:#6E5A4B">{{ pin.caption or '' }}</span><span class="url" style="color:#6E5A4B">satinalibi.com</span></div>
+</div>
+{% endif %}
+</body></html>

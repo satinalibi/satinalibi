@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ site.name }}{% endblock %}
+{% block description %}{{ page.dek or site.description }}{% endblock %}
+{% block main %}
+<header class="page-head">
+  <h1>{{ page.title | md_inline }}</h1>
+  {% if page.dek %}<p>{{ page.dek }}</p>{% endif %}
+</header>
+<div class="prose">{{ body_html | safe }}</div>
+{% endblock %}

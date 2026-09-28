@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.name }}: {{ site.tagline }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
+<link rel="canonical" href="{{ canonical }}">
+{% if site.pinterest_verify %}<meta name="p:domain_verify" content="{{ site.pinterest_verify }}">
+{% endif %}<meta property="og:site_name" content="{{ site.name }}">
+{% block meta %}<meta property="og:type" content="website">
+<meta property="og:title" content="{{ site.name }}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:url" content="{{ canonical }}">{% endblock %}
+<link rel="preload" href="/fonts/CormorantGaramond.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/style.css?v={{ version }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="wordmark" href="/">Satin <em>Alibi</em></a>
+  <p class="tagline">{{ site.tagline }}</p>
+  <nav aria-label="Sections">{% for s in sections %}<a href="/{{ s.slug }}/"{% if current_section == s.slug %} aria-current="page"{% endif %}>{{ s.name }}</a>{% endfor %}</nav>
+</header>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="footer">
+  <p class="footer-mark">Satin <em>Alibi</em></p>
+  <p>{{ site.footer_line }}</p>
+  <nav aria-label="Footer"><a href="/about/">About</a><a href="/disclosure/">Affiliate disclosure</a><a href="/privacy/">Privacy</a><a href="{{ site.pinterest_url }}" rel="me">Pinterest</a></nav>
+  <p class="small">&copy; {{ year }} Satin Alibi &middot; <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</footer>
+</body>
+</html>

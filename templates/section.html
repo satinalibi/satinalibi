@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% from "_card.html" import card %}
+{% block title %}{{ section.name }} | {{ site.name }}{% endblock %}
+{% block description %}{{ section.about }}{% endblock %}
+{% block main %}
+<header class="section-head">
+  <span class="kicker">{{ section.line }}</span>
+  <h1 style="margin-top:14px">{{ section.name }}</h1>
+  <p>{{ section.about }}</p>
+</header>
+<section class="block wrap" style="padding-top:24px">
+  {% if posts %}<div class="grid">{% for p in posts %}{{ card(p) }}{% endfor %}</div>
+  {% else %}<p class="empty" style="text-align:center">First edits land soon.</p>{% endif %}
+</section>
+{% endblock %}
