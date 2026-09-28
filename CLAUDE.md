@@ -84,7 +84,7 @@ Outro in markdown: how to wear it, one strong closing line.
 
 ## Photos
 - Rabia disliked (don't reuse): the woman in the white sun hat with pearls (photo-1613315986155), the red-dress-at-window header (photo-1681308838635), the dark yellow-satin street header (photo-1571887747018, "too dark") and pearls draped across a face (photo-1585409351049, "creepy"). Also avoid avant-garde/odd faces. She likes bright, warm, bronzed, satin, 70s film colour.
-- Home header (28 Sep 2026): split layout, heading on cream at left, photo at right (stacks on phones). Photo: green satin dress, red gloves, apple (photo-1653152707179), picked by Rabia. Line under the heading: "Bite first. Explain never." She disliked the old bracketed subtitle line.
+- Home header (28 Sep 2026): split layout, heading on cream at left, photo at right (stacks on phones). Photo: green satin dress, red gloves, apple (photo-1653152707179), picked by Rabia. Line under the heading: "Satin, gold and a little trouble." (her pick). She disliked "Bite first. Explain never." and the old bracketed subtitle line.
 - Lace & Pearls must feel couture: runway gowns, corsetry, opera gloves, pearls on skin, lace in dramatic light. No doilies or tablecloth lace.
 - Home header: `hero`, `hero_alt`, `hero_sub` in site.yml. A URL can carry its own crop (`?crop=top`); `hero_flip: true` mirrors it and `hero_pos` sets the object-position (check phone width).
 
