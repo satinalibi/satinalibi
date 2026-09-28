@@ -1,0 +1,132 @@
+# Pin approvals and publish dates. Managed by schedule_pins.py.
+black-lace-after-dark-1:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-29'
+black-lace-after-dark-2:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-29'
+black-lace-after-dark-3:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-30'
+black-lace-after-dark-4:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-01'
+black-lace-after-dark-5:
+  status: rejected
+  decided: '2026-09-28'
+gold-and-pearls-1:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-29'
+gold-and-pearls-2:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-30'
+gold-and-pearls-3:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-30'
+gold-and-pearls-4:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-01'
+lace-tops-to-wear-out-1:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-29'
+lace-tops-to-wear-out-3:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-30'
+red-lipsticks-1:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-01'
+red-lipsticks-2:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-02'
+red-lipsticks-3:
+  status: rejected
+  decided: '2026-09-28'
+red-lipsticks-4:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-03'
+red-lipsticks-5:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-03'
+self-tanners-that-look-real-1:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-02'
+self-tanners-that-look-real-2:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-02'
+self-tanners-that-look-real-3:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-03'
+self-tanners-that-look-real-4:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-03'
+self-tanners-that-look-real-5:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-03'
+shimmer-body-oils-1:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-04'
+shimmer-body-oils-2:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-04'
+shimmer-body-oils-3:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-04'
+shimmer-body-oils-4:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-04'
+shimmer-body-oils-5:
+  status: rejected
+  decided: '2026-09-28'
+too-much-is-a-compliment-1:
+  status: rejected
+  decided: '2026-09-28'
+too-much-is-a-compliment-2:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-29'
+too-much-is-a-compliment-3:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-09-30'
+too-much-is-a-compliment-4:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-01'
+walk-in-like-you-were-expected-1:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-01'
+walk-in-like-you-were-expected-2:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-02'
+walk-in-like-you-were-expected-3:
+  status: rejected
+  decided: '2026-09-28'
+walk-in-like-you-were-expected-4:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-02'
