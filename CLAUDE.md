@@ -83,6 +83,7 @@ Outro in markdown: how to wear it, one strong closing line.
 ```
 
 ## Photos
+- Never put big titles over a face or body on pins. Cover pins keep the title in a cream band above the photo (changed 28 Sep 2026 after Rabia flagged covered faces); subtitles on stills stay small and low.
 - Rabia disliked (don't reuse): the woman in the white sun hat with pearls (photo-1613315986155), the red-dress-at-window header (photo-1681308838635), the dark yellow-satin street header (photo-1571887747018, "too dark") and pearls draped across a face (photo-1585409351049, "creepy"). Also avoid avant-garde/odd faces. She likes bright, warm, bronzed, satin, 70s film colour.
 - Home header (28 Sep 2026, after several rounds): magazine masthead. "No apologies. *No alibis.*" on one line in Playfair Display ExtraBold (self-hosted, her pick), photo full width below (portrait crop on phones via <picture>). Photo: green satin dress, red gloves, apple (photo-1653152707179). Small top-right line: "Satin, gold and a little trouble." (her pick). She disliked "Bite first. Explain never." and the old bracketed subtitle. She wants bold, big lettering and little empty space.
 - Lace & Pearls must feel couture: runway gowns, corsetry, opera gloves, pearls on skin, lace in dramatic light. No doilies or tablecloth lace.
