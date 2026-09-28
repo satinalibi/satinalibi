@@ -1,131 +1,131 @@
 # Pin approvals and publish dates. Managed by schedule_pins.py.
 black-lace-after-dark-1:
   decided: '2026-09-28'
-  publish: '2026-09-29'
+  publish: '2026-09-28'
   status: approved
 black-lace-after-dark-2:
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-09-29'
   status: approved
 black-lace-after-dark-3:
   decided: '2026-09-28'
-  publish: '2026-10-02'
+  publish: '2026-10-01'
   status: approved
 black-lace-after-dark-4:
   decided: '2026-09-28'
-  publish: '2026-10-03'
+  publish: '2026-10-02'
   status: approved
 black-lace-after-dark-5:
   decided: '2026-09-28'
   status: rejected
 couture-lace-and-pearls-1:
   decided: '2026-09-28'
-  publish: '2026-09-29'
+  publish: '2026-09-28'
   status: approved
 couture-lace-and-pearls-3:
   decided: '2026-09-28'
   status: rejected
 couture-lace-and-pearls-4:
   decided: '2026-09-28'
-  publish: '2026-10-02'
+  publish: '2026-10-01'
   status: approved
 couture-lace-and-pearls-5:
   decided: '2026-09-28'
   status: rejected
 gold-and-pearls-1:
   decided: '2026-09-28'
-  publish: '2026-09-29'
+  publish: '2026-09-28'
   status: approved
 gold-and-pearls-2:
   decided: '2026-09-28'
-  publish: '2026-10-01'
+  publish: '2026-09-30'
   status: approved
 gold-and-pearls-3:
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-10-03'
   status: approved
 gold-and-pearls-4:
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-10-04'
   status: approved
 gold-and-pearls-5:
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-10-04'
   status: approved
 lace-tops-to-wear-out-1:
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-09-29'
   status: approved
 lace-tops-to-wear-out-2:
   decided: '2026-09-28'
-  publish: '2026-10-01'
+  publish: '2026-09-30'
   status: approved
 lace-tops-to-wear-out-3:
   decided: '2026-09-28'
-  publish: '2026-10-03'
+  publish: '2026-10-02'
   status: approved
 lace-tops-to-wear-out-4:
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-10-03'
   status: approved
 lace-tops-to-wear-out-5:
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-10-03'
   status: approved
 red-lipsticks-1:
   decided: '2026-09-28'
-  publish: '2026-09-29'
+  publish: '2026-09-28'
   status: approved
 red-lipsticks-2:
   decided: '2026-09-28'
-  publish: '2026-10-01'
+  publish: '2026-09-30'
   status: approved
 red-lipsticks-3:
   decided: '2026-09-28'
   status: rejected
 red-lipsticks-4:
   decided: '2026-09-28'
-  publish: '2026-10-03'
+  publish: '2026-10-02'
   status: approved
 red-lipsticks-5:
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-10-03'
   status: approved
 self-tanners-that-look-real-1:
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-09-29'
   status: approved
 self-tanners-that-look-real-2:
   decided: '2026-09-28'
-  publish: '2026-10-02'
+  publish: '2026-10-01'
   status: approved
 self-tanners-that-look-real-3:
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-10-03'
   status: approved
 self-tanners-that-look-real-4:
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-10-04'
   status: approved
 self-tanners-that-look-real-5:
   decided: '2026-09-28'
-  publish: '2026-10-06'
+  publish: '2026-10-05'
   status: approved
 shimmer-body-oils-1:
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-09-29'
   status: approved
 shimmer-body-oils-2:
   decided: '2026-09-28'
-  publish: '2026-10-03'
+  publish: '2026-10-02'
   status: approved
 shimmer-body-oils-3:
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-10-04'
   status: approved
 shimmer-body-oils-4:
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-10-04'
   status: approved
 shimmer-body-oils-5:
   decided: '2026-09-28'
@@ -135,28 +135,28 @@ too-much-is-a-compliment-1:
   status: rejected
 too-much-is-a-compliment-2:
   decided: '2026-09-28'
-  publish: '2026-09-29'
+  publish: '2026-09-28'
   status: approved
 too-much-is-a-compliment-3:
   decided: '2026-09-28'
-  publish: '2026-10-01'
+  publish: '2026-09-30'
   status: approved
 too-much-is-a-compliment-4:
   decided: '2026-09-28'
-  publish: '2026-10-02'
+  publish: '2026-10-01'
   status: approved
 walk-in-like-you-were-expected-1:
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-09-29'
   status: approved
 walk-in-like-you-were-expected-2:
   decided: '2026-09-28'
-  publish: '2026-10-02'
+  publish: '2026-10-01'
   status: approved
 walk-in-like-you-were-expected-3:
   decided: '2026-09-28'
   status: rejected
 walk-in-like-you-were-expected-4:
   decided: '2026-09-28'
-  publish: '2026-10-03'
+  publish: '2026-10-02'
   status: approved
