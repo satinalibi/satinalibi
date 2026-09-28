@@ -82,6 +82,11 @@ Intro in markdown.
 Outro in markdown: how to wear it, one strong closing line.
 ```
 
+## Photos
+- Rabia disliked: the woman in the white sun hat with pearls (photo-1613315986155) and the red-dress-at-window header (photo-1681308838635). Don't reuse them.
+- Lace & Pearls must feel couture: runway gowns, corsetry, opera gloves, pearls on skin, lace in dramatic light. No doilies or tablecloth lace.
+- Home header: `hero` in site.yml. A URL can carry its own crop (`?crop=top` for full-length shots); `hero_flip: true` mirrors it and `hero_pos` sets the object-position (check phone width).
+
 ## Build
 `python build.py` builds `dist/`; `python build.py --pins` also renders every pin to `dist/pins/<slug>-<n>.jpg` (1000×1500);
 `--all` includes drafts and future posts for previews. `dist/pins/manifest.json` lists every pin with its title, description, board and link.
@@ -106,4 +111,8 @@ Every pin needs Rabia's approval before it's scheduled (Pinterest requires the a
 Review page (Claude artifact): https://claude.ai/artifact/329Lfq6xP8SXf1TFza4wxW
 Her taps are saved in the page's database, collection `decisions`, one document per pin id: `{status: "approved"|"skipped", at}`.
 To sync: read that collection (ArtifactData list), run `schedule_pins.py approve` / `reject` for her choices, then `plan`, commit and push.
-To add a new batch: regenerate the page with `tools/review_page.py` (pins from `git archive origin/site pins` into scratch/live) (after the site branch has the new pin JPGs) and republish to the same URL.
+To add a new batch: after the site branch has the new pin JPGs, pull them with `git archive origin/site pins | tar -x -C scratch/live`,
+run `python tools/review_page.py scratch/review.html --pending --batch "Third batch"` (only pins with no decision yet in pin-schedule.yml),
+and republish to the same URL. If a pin she already approved gets new photos, don't approve it: leave it out of pin-schedule.yml,
+delete its old doc from `decisions`, and put it in the next batch.
+Batch 2 (28 Sep 2026): the new couture Lace & Pearls post plus 4 re-photographed pins (lace-tops-to-wear-out-2/4/5, gold-and-pearls-5).
