@@ -67,7 +67,10 @@ def photo(url, w, h=None, q=80):
 
 
 env.filters.update(md=md, md_inline=md_inline, photo=photo)
-env.globals.update(site=SITE, sections=SITE["sections"], year=TODAY.year, version=TODAY.strftime("%Y%m%d"))
+import hashlib
+# Stylesheet version = hash of the CSS, so browsers fetch new styles as soon as they change
+CSS_VERSION = hashlib.sha1((ROOT / "static" / "style.css").read_bytes()).hexdigest()[:10] if (ROOT / "static" / "style.css").exists() else TODAY.strftime("%Y%m%d")
+env.globals.update(site=SITE, sections=SITE["sections"], year=TODAY.year, version=CSS_VERSION)
 
 
 def read_front_matter(path):
