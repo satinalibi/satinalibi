@@ -18,6 +18,24 @@ black-lace-after-dark-4:
 black-lace-after-dark-5:
   status: rejected
   decided: '2026-09-28'
+couture-lace-and-pearls-1:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-05'
+couture-lace-and-pearls-2:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-05'
+couture-lace-and-pearls-3:
+  status: rejected
+  decided: '2026-09-28'
+couture-lace-and-pearls-4:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-05'
+couture-lace-and-pearls-5:
+  status: rejected
+  decided: '2026-09-28'
 gold-and-pearls-1:
   status: approved
   decided: '2026-09-28'
@@ -34,14 +52,30 @@ gold-and-pearls-4:
   status: approved
   decided: '2026-09-28'
   publish: '2026-10-01'
+gold-and-pearls-5:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-04'
 lace-tops-to-wear-out-1:
   status: approved
   decided: '2026-09-28'
   publish: '2026-09-29'
+lace-tops-to-wear-out-2:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-05'
 lace-tops-to-wear-out-3:
   status: approved
   decided: '2026-09-28'
   publish: '2026-09-30'
+lace-tops-to-wear-out-4:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-05'
+lace-tops-to-wear-out-5:
+  status: approved
+  decided: '2026-09-28'
+  publish: '2026-10-06'
 red-lipsticks-1:
   status: approved
   decided: '2026-09-28'
