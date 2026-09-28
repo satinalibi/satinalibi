@@ -1,41 +1,71 @@
 {% extends "base.html" %}
-{% from "_card.html" import card %}
+{% from "_card.html" import card, collage, img %}
 {% block main %}
 <section class="hero">
-  <div class="hero-copy">
-    <span class="kicker" style="color:var(--blush)">Satin Alibi</span>
-    <h1>Dress like you don't need an <em>alibi.</em></h1>
-    <p>For women who say it first, say it loud, and take up space. Bronzed glow, lace and pearls, after-dark edge, and no apologies for any of it.</p>
+  <div class="photo">{{ img(site.hero, 1920, 1080, site.hero_alt, 'tone', False) }}</div>
+  <div class="hero-meta mono"><span>Satin Alibi &middot; Vol. 01</span><span>Est. {{ year }}</span></div>
+  <h1>Dress like you don't need an <em>alibi.</em></h1>
+  <p class="sub">{{ site.hero_sub }}</p>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <h2>Pick your <em>mood</em></h2>
+    <p class="hand">four ways to be the loudest woman in the room</p>
   </div>
-  <div class="hero-photo" role="img" aria-label="{{ site.hero_alt or 'Satin and gold, styled to be noticed' }}"{% if site.hero %} style="background-image:url('{{ site.hero | photo(1400) }}')"{% endif %}></div>
+  <div class="moods">
+  {% for s in sections %}
+    <a class="mood" href="/{{ s.slug }}/">
+      {{ collage(s.collage, s.name, s.slug == 'take-up-space') }}
+      <h3>{{ s.display | md_inline }}</h3>
+      <p>{{ s.line }}</p>
+      <span class="hand">{{ s.note }}</span>
+    </a>
+  {% endfor %}
+  </div>
 </section>
 
-<nav class="tiles" aria-label="Sections">
-{% for s in sections %}
-  <a class="tile t-{{ s.slug }}" href="/{{ s.slug }}/">
-    <h2>{{ s.name }}</h2>
-    <p>{{ s.line }}</p>
-    <span class="arrow">Enter &rarr;</span>
+{% if posts %}
+<section class="sec" style="padding-top:0">
+  <div class="sec-head"><h2>The latest <em>edits</em></h2><span class="mono">{{ posts|length }} edits &middot; updated weekly</span></div>
+  {% set f = posts[0] %}
+  <a class="feature" href="{{ f.url }}">
+    <div class="photo">{{ img(f.hero, 1200, 960, f.hero_alt or '') }}</div>
+    <div>
+      <span class="mono">{{ f.section_info.name }}{% if f.products %} &middot; {{ f.products|length }} picks{% endif %}</span>
+      <h3>{{ f.title | md_inline }}</h3>
+      <p>{{ f.dek }}</p>
+      <span class="cta">Read the edit &rarr;</span>
+    </div>
   </a>
-{% endfor %}
-</nav>
-
-<section class="block wrap">
-  <div class="block-head"><h2>The latest <em>edit</em></h2></div>
-  {% if posts %}<div class="grid">{% for p in posts %}{{ card(p) }}{% endfor %}</div>
-  {% else %}<p class="empty">The first edits land soon.</p>{% endif %}
-</section>
-
-<section class="band">
-  <blockquote>Too much? <span>Good.</span></blockquote>
-  <p>Take Up Space is our corner for the women who were told to lower their voice, and didn't.</p>
-  <a href="/take-up-space/">Read Take Up Space</a>
-</section>
-
-{% if space_posts %}
-<section class="block wrap">
-  <div class="block-head"><h2>Take up <em>space</em></h2><a href="/take-up-space/">All of it &rarr;</a></div>
-  <div class="grid">{% for p in space_posts %}{{ card(p) }}{% endfor %}</div>
+  <div class="stagger">{% for p in posts[1:] %}{{ card(p) }}{% endfor %}</div>
 </section>
 {% endif %}
+
+<section class="reel-wrap">
+  <div class="sec-head">
+    <h2>Take up <em>space</em></h2>
+    <a class="mono" href="/take-up-space/">For the women told they're too much &rarr;</a>
+  </div>
+  <div class="reel">
+  {% for s in site.stills %}
+    <a class="still" href="{{ s.link }}">
+      <div class="photo">{{ img(s.photo, 1240, 698, s.alt or '', 'bw') }}<p class="sub">{{ s.sub }}</p></div>
+      <span class="mono">Take Up Space &middot; {{ '%02d' % loop.index }}</span>
+    </a>
+  {% endfor %}
+  </div>
+</section>
+
+<section class="sec">
+  <div class="pinband">
+    <div>
+      <span class="mono">On Pinterest</span>
+      <h2 style="margin:14px 0 18px">Save the <em>mood.</em></h2>
+      <p>Every edit, every still, every loud little reminder, pinned daily. Follow along and build your board.</p>
+      <a class="btn" href="{{ site.pinterest_url }}">Follow @satinalibi &rarr;</a>
+    </div>
+    <div class="strip">{% for u in site.pinstrip %}<div class="photo">{{ img(u, 360, 540, '', 'tone') }}</div>{% endfor %}</div>
+  </div>
+</section>
 {% endblock %}

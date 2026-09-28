@@ -12,26 +12,30 @@
 <meta property="og:title" content="{{ site.name }}">
 <meta property="og:description" content="{{ site.description }}">
 <meta property="og:url" content="{{ canonical }}">{% endblock %}
-<link rel="preload" href="/fonts/CormorantGaramond.woff" as="font" type="font/woff" crossorigin>
+<meta name="theme-color" content="#F3EDE4">
+<link rel="preload" href="/fonts/InstrumentSerif.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/fonts/InstrumentSerif-Italic.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="/style.css?v={{ version }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="masthead">
-  <a class="wordmark" href="/">Satin <em>Alibi</em></a>
-  <p class="tagline">{{ site.tagline }}</p>
-  <nav aria-label="Sections">{% for s in sections %}<a href="/{{ s.slug }}/"{% if current_section == s.slug %} aria-current="page"{% endif %}>{{ s.name }}</a>{% endfor %}</nav>
+<header class="top">
+  <a class="logo" href="/">Satin <span>Alibi</span></a>
+  <nav class="tabs" aria-label="Sections">{% for s in sections %}<a href="/{{ s.slug }}/"{% if current_section == s.slug %} aria-current="page"{% endif %}>{{ s.name }}</a>{% endfor %}</nav>
+  <div class="top-r"><a class="mono" href="{{ site.pinterest_url }}" rel="me">Pinterest ↗</a></div>
 </header>
 <main id="main">
 {% block main %}{% endblock %}
 </main>
 <footer class="footer">
-  <p class="footer-mark">Satin <em>Alibi</em></p>
-  <p>{{ site.footer_line }}</p>
-  <nav aria-label="Footer"><a href="/about/">About</a><a href="/disclosure/">Affiliate disclosure</a><a href="/privacy/">Privacy</a><a href="{{ site.pinterest_url }}" rel="me">Pinterest</a></nav>
-  <p class="small">&copy; {{ year }} Satin Alibi &middot; <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p class="big">Satin <span>Alibi</span></p>
+  <p class="hand" style="margin:18px 0 0">{{ site.tagline }}</p>
+  <div class="cols">
+    <nav aria-label="Footer" class="mono">{% for s in sections %}<a href="/{{ s.slug }}/">{{ s.name }}</a>{% endfor %}<a href="/about/">About</a><a href="/disclosure/">Disclosure</a><a href="/privacy/">Privacy</a></nav>
+    <span class="mono">&copy; {{ year }} &middot; <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+  </div>
 </footer>
 </body>
 </html>

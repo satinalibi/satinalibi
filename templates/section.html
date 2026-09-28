@@ -1,15 +1,19 @@
 {% extends "base.html" %}
-{% from "_card.html" import card %}
+{% from "_card.html" import card, collage %}
 {% block title %}{{ section.name }} | {{ site.name }}{% endblock %}
 {% block description %}{{ section.about }}{% endblock %}
 {% block main %}
-<header class="section-head">
-  <span class="kicker">{{ section.line }}</span>
-  <h1 style="margin-top:14px">{{ section.name }}</h1>
-  <p>{{ section.about }}</p>
+<header class="sec-hero">
+  <div>
+    <span class="mono">{{ section.line }}</span>
+    <h1 style="margin-top:16px">{{ section.display | md_inline }}</h1>
+    <p>{{ section.about }}</p>
+    <span class="hand" style="display:inline-block;transform:rotate(-3deg)">{{ section.note }}</span>
+  </div>
+  {{ collage(section.collage, section.name, section.slug == 'take-up-space') }}
 </header>
-<section class="block wrap" style="padding-top:24px">
-  {% if posts %}<div class="grid">{% for p in posts %}{{ card(p) }}{% endfor %}</div>
-  {% else %}<p class="empty" style="text-align:center">First edits land soon.</p>{% endif %}
+<section class="sec" style="padding-top:clamp(24px,4vw,48px)">
+  {% if posts %}<div class="stagger">{% for p in posts %}{{ card(p) }}{% endfor %}</div>
+  {% else %}<p class="hand" style="text-align:center;font-size:22px">first edits land soon</p>{% endif %}
 </section>
 {% endblock %}

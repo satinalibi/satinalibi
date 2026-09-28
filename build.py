@@ -55,7 +55,7 @@ def photo(url, w, h=None, q=80):
         return ""
     base = url.split("?")[0]
     if "images.unsplash.com" in base:
-        out = f"{base}?auto=format&fit=crop&w={w}&q={q}"
+        out = f"{base}?auto=format&fit=crop&crop=faces,entropy&w={w}&q={q}"
         return out + (f"&h={h}" if h else "")
     if "images.pexels.com" in base:
         out = f"{base}?auto=compress&cs=tinysrgb&fit=crop&w={w}"
@@ -110,6 +110,10 @@ def load_posts():
             pin.setdefault("post_title", meta["title"])
             pins.append(pin)
         meta["pins"] = pins
+        pin_photos = [x for pin in pins for x in ([pin.get("photo")] + list(pin.get("photos") or [])) if x]
+        meta["collage"] = meta.get("collage") or [u for u in [meta.get("hero")] + pin_photos if u][:3]
+        still = next((pin for pin in pins if pin.get("style") == "still" and pin.get("sub")), None)
+        meta["interlude"] = meta.get("interlude") or (dict(photo=still["photo"], sub=still["sub"]) if still else None)
         posts.append(meta)
     posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
     return posts

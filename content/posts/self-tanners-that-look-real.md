@@ -6,7 +6,6 @@ section: golden-hour
 date: 2026-09-28
 status: published
 dek: Six ways to go golden without the sun, the streaks or the orange.
-card_line: Bronze on your own schedule.
 hero_brief: A self-tan mousse bottle, a velvet tanning mitt and an amber dropper bottle on warm travertine in soft afternoon light, gold hoops and a folded linen shirt beside them, bronze and ivory tones.
 products:
 - brand: Isle of Paradise
@@ -46,59 +45,71 @@ products:
   url: "https://www.ulta.com/p/instant-glow-face-body-bronzer-makeup-pimprod2031120?sku=2592029"
   note: For tonight, not next week. This is wash-off body makeup that gives you colour the moment it goes on, dries fast, and is made to resist transfer and water until you rinse it off with soap. It comes in Light/Medium and Medium/Dark.
 pins:
-- style: split
-  tone: ink
-  kicker: Golden Hour
+- style: cover
+  photo: "https://images.unsplash.com/photo-1590156951072-48c284d67a0d"
   line1: Bronze,
   line2: not burnt.
-  caption: self-tanners that look real
-  photo_brief: "Top two-thirds: a tanning mitt and self-tan mousse on sun-warmed stone beside gold hoops and sunglasses, long afternoon shadows, bronze and ink tones. Product and texture, no body shots."
+  kicker: The tan issue
+  lines:
+  - 6 self-tanners
+  - no sun required
+  - no orange
   pin_title: "Best Self Tanner for a Natural-Looking Tan: Drops, Mousse and Gradual"
   pin_description: The best self-tanners for a natural-looking golden tan. Self-tan drops you mix into moisturizer, a classic bronzing mousse, a gradual tanning body cream, a self-tanning face mist and wash-off instant glow for tonight. Golden, even and on your schedule. Read the full guide on Satin Alibi.
-  photo: "https://images.unsplash.com/photo-1613544013390-a73dee8d786e"
-- style: bleed
-  kicker: Golden Hour
+- style: moodboard
+  photos:
+  - "https://images.unsplash.com/photo-1698181212724-4ff2e47b4093"
+  - "https://images.unsplash.com/photo-1571784093447-5864403b498c"
+  - "https://images.unsplash.com/photo-1619043599439-9b750b7b2623"
+  - "https://images.unsplash.com/photo-1643387774154-4ec59518f9a5"
   line1: Golden
   line2: on demand.
-  caption: no sun required
-  size: 180
-  photo_brief: "Full-bleed vertical: warm golden light across a rumpled ivory linen sheet with a bronzing mousse bottle and a straw hat, sun-bleached and hazy, space for text at the bottom."
+  note: no sun needed
+  caption: self-tanners that look real
   pin_title: "How to Get a Natural Self Tan: 6 Self Tanners That Look Real"
   pin_description: "Want a tan that looks real, not painted on? These six self-tanners cover every format: face drops, mousse, gradual cream, face mist and a wash-off body bronzer for instant colour. Plus prep and application tips for an even, golden finish. Tap through to read the post."
-  photo: "https://images.unsplash.com/photo-1691592844823-fda85b741a91"
-- style: product
-  kicker: The Edit
-  line1: No sun.
-  line2: All glow.
-  caption: 6 self-tanners that look real
-  photo_brief: "Three clean product-style shots on plain warm backgrounds: a self-tan dropper bottle, a bronzing mousse can, a gradual tanning cream tube. Brand product images from affiliate programs."
+- style: still
+  photo: "https://images.unsplash.com/photo-1631695117568-c56a4e039ac4"
+  sub: No, I haven't been anywhere. I just glow like this.
+  sub_size: 42
+  line1: Self-tan that
+  line2: looks real
+  caption: golden hour
   pin_title: Best Self Tanning Drops, Mousse and Instant Tan for a Golden Glow
   pin_description: No sun, all glow. Our picks for the best self-tanning drops, bronzing mousse, gradual tan lotion and instant wash-off tan, from Isle of Paradise, St. Tropez, Bondi Sands, Lux Unfiltered and Dolce Glow. Shades from light to ultra dark. Read the post to find your format.
+- style: edit
   photos:
-  - "https://images.unsplash.com/photo-1608571899712-2109dac47629"
-  - "https://images.unsplash.com/photo-1608571899793-a1c0c27a7555"
   - "https://images.unsplash.com/photo-1608571424237-381e6b43a2a7"
-- style: quote
-  tone: ink
-  kicker: Golden Hour
-  line1: Bronze is
-  line2: a choice.
-  caption: make it loudly
+  - "https://images.unsplash.com/photo-1638295916768-459f6cf440bc"
+  - "https://images.unsplash.com/photo-1619043599439-9b750b7b2623"
+  - "https://images.unsplash.com/photo-1758605456668-2f05d729c99e"
+  labels:
+  - 01 · the drops
+  - 02 · the mousse
+  - 03 · the gradual
+  - 04 · the instant
+  line1: No sun.
+  line2: All glow.
+  kicker: Golden hour
   pin_title: "Bronze Is a Choice: Confident Beauty Quote and Natural Self Tan Picks"
   pin_description: "Bronze is a choice. Make it loudly. Save this for the days you need a push, then read our guide to self-tanners that look real: drops, mousse, gradual cream and instant glow for a golden tan without the sun."
-- style: split
-  tone: ivory
-  kicker: Golden Hour
-  line1: No orange.
-  line2: Just gold.
-  caption: drops, mousse, gradual, instant
-  photo_brief: "Top two-thirds: flat lay of self-tan bottles, a tanning mitt, a gold body chain and a cream silk scarf on ivory linen, soft diffused morning light."
+- style: frames
+  photos:
+  - "https://images.unsplash.com/photo-1698181212724-4ff2e47b4093"
+  - "https://images.unsplash.com/photo-1625303058423-3f8104c91e21"
+  subs:
+  - Is that a real tan?
+  - Does it matter?
+  caption: golden hour
   pin_title: "Self Tanner That Doesn't Look Orange: Face Tan Drops and Gradual Tan"
   pin_description: Scared of orange? Start here. A classic mousse that adapts to your skin tone, face tan drops you control drop by drop, a gradual tanning body cream and a no-rinse face mist, plus how to prep for an even, golden finish. Read the full list on Satin Alibi before your next tan.
-  photo: "https://images.unsplash.com/photo-1594556754132-d05bd5a8c36a"
 hero: "https://images.unsplash.com/photo-1551184451-76b762941ad6"
-hero_alt: Woman's face lit by a stripe of warm sunlight
+hero_alt: A face lit by a stripe of warm sunlight
 hero_credit: Kamila Maciejewska on Unsplash
+collage:
+- "https://images.unsplash.com/photo-1551184451-76b762941ad6"
+- "https://images.unsplash.com/photo-1590156951072-48c284d67a0d"
+- "https://images.unsplash.com/photo-1571784093447-5864403b498c"
 ---
 A real-looking tan isn't about going darker. It's about going golden on your terms, on your schedule, with no sun required.
 

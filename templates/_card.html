@@ -1,8 +1,22 @@
+{% macro img(url, w, h, alt='', cls='tone', lazy=True) -%}
+<img src="{{ url | photo(w, h) }}" alt="{{ alt }}" width="{{ w }}" height="{{ h }}" class="{{ cls }}"{% if lazy %} loading="lazy"{% endif %}>
+{%- endmacro %}
+
+{% macro collage(urls, alt='', bw=False) -%}
+{% set cls = 'bw' if bw else 'tone' %}
+<div class="collage">
+  <div class="photo c1">{{ img(urls[0], 760, 950, alt, cls) }}</div>
+  {% if urls|length > 1 %}<div class="photo c2">{{ img(urls[1], 440, 400, '', cls) }}</div>{% endif %}
+  {% if urls|length > 2 %}<div class="photo c3">{{ img(urls[2], 380, 300, '', cls) }}</div>{% endif %}
+  <span class="tape" style="right:12%;top:27%;transform:rotate(12deg)"></span>
+  <span class="tape" style="left:20%;bottom:27%;transform:rotate(-9deg)"></span>
+</div>
+{%- endmacro %}
+
 {% macro card(p) -%}
 <a class="card" href="{{ p.url }}">
-  {% if p.hero %}<div class="card-img"><img src="{{ p.hero | photo(700, 875) }}" alt="{{ p.hero_alt or '' }}" loading="lazy" width="700" height="875"></div>
-  {% else %}<div class="card-quote">{{ p.card_line or p.title }}</div>{% endif %}
-  <span class="kicker">{{ p.section_info.name }}</span>
+  <div class="photo">{{ img(p.hero, 720, 960, p.hero_alt or '', 'bw' if p.section == 'take-up-space' else 'tone') }}</div>
+  <span class="mono">{{ p.section_info.name }}{% if p.products %} &middot; {{ p.products|length }} picks{% endif %}</span>
   <h3>{{ p.title | md_inline }}</h3>
   {% if p.dek %}<p>{{ p.dek }}</p>{% endif %}
 </a>

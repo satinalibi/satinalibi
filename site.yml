@@ -6,29 +6,85 @@ email: hello@satinalibi.com
 pinterest_url: https://www.pinterest.com/satinalibi/
 # Paste the code from Pinterest's "claim website" step here (just the content value).
 pinterest_verify: ""
-hero: https://images.unsplash.com/photo-1765229279773-b10038a84425
-hero_alt: Woman in a flowing red satin dress
 footer_line: For women who say it first, say it loud, and take up space.
 disclosure_short: Some links on this page are affiliate links. If you buy through them, Satin Alibi may earn a small commission at no extra cost to you. We only pick what we'd actually wear.
 
+hero: https://images.unsplash.com/photo-1681308838635-271a60b54c9e
+hero_alt: "Woman in a red dress looking out of a window at night"
+hero_sub: "[she walks in like she was expected]"
+
 sections:
-  - slug: golden-hour
-    name: Golden Hour
-    board: Golden Hour
-    line: Bronzed, glowing, impossible to miss.
-    about: Body oils, bronze, gold on skin, and everything that makes you glow loud.
-  - slug: lace-and-pearls
-    name: Lace & Pearls
-    board: Lace & Pearls
-    line: Soft fabrics, sharp intentions.
-    about: Lace worn out, satin slips, pearls, feathers, and tulle, dressed up with nerve.
-  - slug: after-dark
-    name: After Dark
-    board: After Dark
-    line: Black lace. Red lip. No apologies.
-    about: Cherry lips, black lace, blazers over bare shoulders, and the looks you wear to be remembered.
-  - slug: take-up-space
-    name: Take Up Space
-    board: Take Up Space
-    line: For the women who were told they're too much.
-    about: No products here. Just the reminder that loud looks good on you.
+- slug: golden-hour
+  name: Golden Hour
+  board: Golden Hour
+  line: Bronzed, glowing, impossible to miss.
+  about: Body oils, bronze, gold on skin, and everything that makes you glow loud.
+  display: Golden *hour*
+  note: glow loud
+  collage:
+  - https://images.unsplash.com/photo-1783542032392-b1b19406c4d3
+  - https://images.unsplash.com/photo-1646770267004-c1f630da05b7
+  - https://images.unsplash.com/photo-1676558363362-a304de8bbf14
+- slug: lace-and-pearls
+  name: Lace & Pearls
+  board: Lace & Pearls
+  line: Soft fabrics, sharp intentions.
+  about: Lace worn out, satin slips, pearls, feathers, and tulle, dressed up with nerve.
+  display: Lace & *pearls*
+  note: soft, never shy
+  collage:
+  - https://images.unsplash.com/photo-1777566131330-43fd5946c8f8
+  - https://images.unsplash.com/photo-1613315986155-820432757035
+  - https://images.unsplash.com/photo-1615560094221-ee0b118f0a65
+- slug: after-dark
+  name: After Dark
+  board: After Dark
+  line: Black lace. Red lip. No apologies.
+  about: Cherry lips, black lace, blazers over bare shoulders, and the looks you wear to be remembered.
+  display: After *dark*
+  note: after 10pm
+  collage:
+  - https://images.unsplash.com/photo-1790167860486-47eb3a16c2c5
+  - https://images.unsplash.com/photo-1645566372784-7d017ad7643b
+  - https://images.unsplash.com/photo-1728414452665-e3f5c286426f
+- slug: take-up-space
+  name: Take Up Space
+  board: Take Up Space
+  line: For the women who were told they're too much.
+  about: No products here. Just the reminder that loud looks good on you.
+  display: Take up *space*
+  note: too much? good.
+  collage:
+  - https://images.unsplash.com/photo-1620122303020-87ec826cf70d
+  - https://images.unsplash.com/photo-1548207775-a7676e36f20a
+  - https://images.unsplash.com/photo-1591961310354-91ca99664c65
+stills:
+- photo: https://images.unsplash.com/photo-1548207775-a7676e36f20a
+  alt: Black-and-white portrait of a woman
+  sub: They said I was too much. So I became more.
+  link: /take-up-space/too-much-is-a-compliment/
+- photo: https://images.unsplash.com/photo-1783530614914-06638a4937eb
+  alt: Woman in a veiled hat and long black gloves
+  sub: Walk in like you were expected.
+  link: /take-up-space/walk-in-like-you-were-expected/
+- photo: https://images.unsplash.com/photo-1591961310354-91ca99664c65
+  alt: Black-and-white portrait of a woman
+  sub: Never lower your voice. Or your standards.
+  link: /take-up-space/too-much-is-a-compliment/
+- photo: https://images.unsplash.com/photo-1633355130553-2d90ad3507d3
+  alt: Black-and-white portrait of a woman
+  sub: You didn't enter the room. You arrived.
+  link: /take-up-space/walk-in-like-you-were-expected/
+- photo: https://images.unsplash.com/photo-1611952534382-324c609940da
+  alt: Black-and-white photo of a woman smiling
+  sub: Say it first. Say it loud.
+  link: /take-up-space/too-much-is-a-compliment/
+- photo: https://images.unsplash.com/photo-1591727884968-cc11135a19b3
+  alt: Black-and-white photo of a woman smiling
+  sub: Nothing to prove. Plenty to say.
+  link: /take-up-space/walk-in-like-you-were-expected/
+pinstrip:
+- https://images.unsplash.com/photo-1646770267004-c1f630da05b7
+- https://images.unsplash.com/photo-1779153996913-fc2565ed7e14
+- https://images.unsplash.com/photo-1772987108814-fd61a84868d1
+- https://images.unsplash.com/photo-1782178394888-3dac9c20624e

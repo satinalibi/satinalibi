@@ -6,7 +6,6 @@ section: golden-hour
 date: 2026-09-28
 status: published
 dek: Seven shimmer oils for skin that catches the light and keeps it.
-card_line: Glow like it's on purpose.
 hero_brief: Amber and gold shimmer oil bottles on ivory satin in low golden-hour sun, a hand with stacked gold rings reaching for one, warm bronze and champagne tones, no faces.
 products:
 - brand: Vaseline
@@ -52,59 +51,70 @@ products:
   url: "https://www.sephora.com/product/instant-golden-glow-with-almond-shimmering-body-oil-P516738"
   note: "The splurge, and a generous one: a full 100 mL of lightweight almond shimmer oil that absorbs quickly. Marie Claire's beauty team calls it an old-school staple for a reason. Save it for nights when the outfit is simple on purpose and your skin is the statement."
 pins:
-- style: split
-  tone: ink
-  kicker: Golden Hour
+- style: cover
+  photo: "https://images.unsplash.com/photo-1646770267004-c1f630da05b7"
   line1: Glow
   line2: loud.
-  caption: 7 shimmer body oils
-  photo_brief: "Top two-thirds: a shimmer body oil bottle tipped on warm travertine, golden light streaking across a gold cuff and a champagne satin scarf. Detail and texture, no body shots."
+  kicker: The glow issue
+  lines:
+  - 7 shimmer body oils
+  - from $14
+  - one splurge
   pin_title: "Best Shimmer Body Oil for Bronzed, Glowing Skin: 7 Picks Mostly Under $50"
   pin_description: The best shimmer body oils for a bronzed glow, from a $14 drugstore gel oil to a luxe almond shimmer oil. Golden shimmer, not glitter, with scents like vanilla cocoa, coconut and warm sand, and formulas for face and body. Made for golden hour, date night and anything with bare shoulders. Read the full edit on Satin Alibi.
-  photo: "https://images.unsplash.com/photo-1722933375700-e297a7996265"
-- style: bleed
-  kicker: Golden Hour
-  line1: Catch the
-  line2: light.
-  caption: shimmer oils worth it
-  photo_brief: "Full-bleed vertical: sunlight through linen curtains onto a gold-draped vanity with a dropper of shimmer oil catching the light, warm bronze haze, room for text at the bottom."
-  pin_title: "Shimmer Body Oils for a Golden Hour Glow: Drugstore to Luxury"
-  pin_description: Want skin that catches the light? These shimmer body oils give a warm, golden, lit-up glow, with finishes from sheer gold to bronze. Picks from Sol de Janeiro, NUXE, PHLUR, Range Beauty, Anastasia Beverly Hills and more, with the scent and finish of each. Tap through to read the post and find your glow.
-  photo: "https://images.unsplash.com/photo-1618593422919-6652eb784310"
-- style: product
-  kicker: The Edit
+- style: moodboard
+  photos:
+  - "https://images.unsplash.com/photo-1783542032392-b1b19406c4d3"
+  - "https://images.unsplash.com/photo-1733660227163-01bc46e0d7d7"
+  - "https://images.unsplash.com/photo-1676558363362-a304de8bbf14"
+  - "https://images.unsplash.com/photo-1671644730555-916aa8d8157f"
   line1: Liquid
   line2: gold.
-  caption: shimmer oils from $14
-  photo_brief: "Three clean product-style shots on plain warm backgrounds: an amber shimmer oil bottle, a gold-capped dry oil bottle, a bronze gel oil bottle. Brand product images from affiliate programs."
+  note: catch the light
+  caption: shimmer oils, mostly under $50
+  pin_title: "Shimmer Body Oils for a Golden Hour Glow: Drugstore to Luxury"
+  pin_description: Want skin that catches the light? These shimmer body oils give a warm, golden, lit-up glow, with finishes from sheer gold to bronze. Picks from Sol de Janeiro, NUXE, PHLUR, Range Beauty, Anastasia Beverly Hills and more, with the scent and finish of each. Tap through to read the post and find your glow.
+- style: still
+  photo: "https://images.unsplash.com/photo-1782178394888-3dac9c20624e"
+  sub: Glow like it's on purpose.
+  line1: Body oils that
+  line2: glow loud
+  caption: golden hour
   pin_title: "Affordable Shimmer Body Oils That Look Expensive: Drugstore and Sephora"
   pin_description: Shimmer body oils that look expensive, starting at $14. A drugstore gel oil with golden bronze shimmer, a French dry oil with golden pearlizers, a face and body glow oil for $25, and one worthy splurge. Everything you need for a bronzed glow this season. Read the post for all seven picks.
+- style: edit
   photos:
-  - "https://images.unsplash.com/photo-1608571899778-6f022cdb7828"
-  - "https://images.unsplash.com/photo-1733660227083-12b78ad0073d"
-  - "https://images.unsplash.com/photo-1608571424237-381e6b43a2a7"
-- style: quote
-  tone: cherry
-  kicker: Golden Hour
-  line1: Glow like it's
-  line2: on purpose.
-  caption: shimmer oils inside
-  size: 160
-  pin_title: "Glow Like It's On Purpose: Confident Beauty Quote and Shimmer Oil Picks"
-  pin_description: "Glow like it's on purpose. A reminder for every woman who was told to tone it down: turn it up instead. Save this for your confidence board, then read our edit of the best shimmer body oils for a bronzed, golden glow."
-- style: split
-  tone: ivory
-  kicker: Golden Hour
+  - "https://images.unsplash.com/photo-1733660227163-01bc46e0d7d7"
+  - "https://images.unsplash.com/photo-1638295916768-459f6cf440bc"
+  - "https://images.unsplash.com/photo-1758605456822-24b5311e100c"
+  - "https://images.unsplash.com/photo-1618437542145-38e9015cf8f1"
+  labels:
+  - 01 · the dry oil
+  - 02 · the gel oil
+  - 03 · the shimmer
+  - 04 · the splurge
   line1: Shimmer
   line2: under $50.
-  caption: plus one splurge
-  photo_brief: "Top two-thirds: flat lay of shimmer oil bottles with gold hoops, a straw bag and a champagne silk slip dress folded beside them, soft afternoon sun on ivory linen."
+  kicker: Golden hour
+  pin_title: "Glow Like It's On Purpose: Confident Beauty Quote and Shimmer Oil Picks"
+  pin_description: "Glow like it's on purpose. A reminder for every woman who was told to tone it down: turn it up instead. Save this for your confidence board, then read our edit of the best shimmer body oils for a bronzed, golden glow."
+- style: frames
+  photos:
+  - "https://images.unsplash.com/photo-1690711020581-0010f4d11c20"
+  - "https://images.unsplash.com/photo-1625303058423-3f8104c91e21"
+  subs:
+  - Where are you going?
+  - Somewhere they'll see me.
+  caption: golden hour
   pin_title: Best Body Oils With Shimmer Under $50 for a Sun-Kissed Glow
   pin_description: Six shimmer body oils under $50 and one splurge that earns it. Golden bronze shimmer, sheer golden glow, buildable bronze tint and dry-touch oil. Perfect for vacation, weddings, date night and golden hour everything. Read the full list on Satin Alibi before you shop.
-  photo: "https://images.unsplash.com/photo-1789972181238-624c83e47cd4"
-hero: "https://images.unsplash.com/photo-1588192069224-b7c4ee7ed5af"
-hero_alt: Woman with gold leaf and floral detail painted across her face
-hero_credit: Alireza Dolati on Unsplash
+hero: "https://images.unsplash.com/photo-1783542032392-b1b19406c4d3"
+hero_alt: Palm shadows on shimmering skin
+hero_credit: Paul Lora on Unsplash
+collage:
+- "https://images.unsplash.com/photo-1783542032392-b1b19406c4d3"
+- "https://images.unsplash.com/photo-1646770267004-c1f630da05b7"
+- "https://images.unsplash.com/photo-1733660227163-01bc46e0d7d7"
 ---
 There's glowing, and there's glowing loud. This list is the second one.
 

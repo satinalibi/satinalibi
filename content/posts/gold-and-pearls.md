@@ -6,7 +6,6 @@ section: golden-hour
 date: 2026-09-28
 status: published
 dek: Chunky hoops, pearls with an edge, and a cuff above the elbow, mostly under $100.
-card_line: Gold first. Questions later.
 hero_brief: Golden-hour close crop of layered gold chains and pearls over a black knit collar, a chunky gold hoop just in frame, warm low sun, jewelry in focus, no face.
 products:
 - brand: Ana Luisa
@@ -52,59 +51,71 @@ products:
   url: "https://www.analuisa.com/products/statement-ring-remi"
   note: Ana Luisa calls it “the gold & bold accessory ready to shake things up.” Plated in 14k gold, tarnish-free, in sizes 5 to 10. Wear it on your pointer finger, the one you use to make a point.
 pins:
-- style: bleed
-  kicker: Golden Hour
+- style: cover
+  photo: "https://images.unsplash.com/photo-1779763320794-e5c2483bae28"
   line1: Gold,
   line2: loudly.
-  caption: gold and pearls that get noticed
-  photo_brief: Golden-hour close crop of a collarbone and shoulder with layered gold chains and pearls over a black tank strap, warm low sun, no face.
+  kicker: The gold issue
+  lines:
+  - 7 pieces
+  - mostly under $100
+  - hoops, pearls, a cuff
   pin_title: "Gold Jewelry Outfit Ideas: Chunky Hoops, Pearls and Layered Chains"
   pin_description: "Gold jewelry outfit ideas for women who like to be seen: chunky gold hoops, pearl drop earrings, a layered pearl necklace, a gold collar, a body chain over a slip dress and a gold arm cuff. Gold jewelry stack inspiration, mostly under $100. Read the full edit and how to wear it on Satin Alibi."
-  photo: "https://images.unsplash.com/photo-1728647771865-636b715674f4"
-- style: split
-  tone: ink
-  kicker: Golden Hour
-  line1: Pearls,
-  line2: with edge.
-  caption: pearls that aren't polite
-  photo_brief: Tight crop of a layered gold chain and pearl necklace on black knit, warm side light, dark background.
-  pin_title: "Pearl Necklace Outfit Ideas: Layered Pearls and Gold Chains"
-  pin_description: "Pearl necklace outfit ideas with an edge: a layered pearl and gold chain necklace over a black knit, pearl drop earrings with a red lip, a gold collar stacked over pearls. Modern pearl jewelry for women who don't do polite. See the full gold and pearls edit on Satin Alibi."
-  photo: "https://images.unsplash.com/photo-1622584940190-0cedd29ebaa8"
-- style: product
-  kicker: The Edit
-  line1: Seven
-  line2: gold pieces.
-  caption: mostly under $100
-  photo_brief: "Three product shots on ivory linen: chunky gold hoops, glass pearl drop earrings, a high-polish gold statement ring."
-  pin_title: "Affordable Gold Jewelry Under $100: Hoops, Pearl Earrings, Statement Ring"
-  pin_description: "Affordable gold jewelry under $100 that looks anything but: chunky 14k gold plated hoops, pearl drop earrings, a layered pearl necklace, a crystal body chain and a gold statement ring, plus two splurges worth it. Tarnish-free picks for everyday stacking. Get every pick with prices on Satin Alibi."
+- style: moodboard
   photos:
-  - "https://images.unsplash.com/photo-1631982681280-8ca46226a5c9"
-  - "https://images.unsplash.com/photo-1704957205590-eeb0aa3be94e"
-  - "https://images.unsplash.com/photo-1682823544362-b751e260e33c"
-- style: quote
-  tone: cherry
-  kicker: Golden Hour
-  size: 150
+  - "https://images.unsplash.com/photo-1736097046452-1ad5c9119d4e"
+  - "https://images.unsplash.com/photo-1718072633087-47b595e99612"
+  - "https://images.unsplash.com/photo-1651160670627-2896ddf7822f"
+  - "https://images.unsplash.com/photo-1680576555400-473443028bc2"
   line1: Wear the gold.
   line2: All of it.
+  size: 140
+  note: more is more
+  caption: gold and pearls that get noticed
+  pin_title: "Pearl Necklace Outfit Ideas: Layered Pearls and Gold Chains"
+  pin_description: "Pearl necklace outfit ideas with an edge: a layered pearl and gold chain necklace over a black knit, pearl drop earrings with a red lip, a gold collar stacked over pearls. Modern pearl jewelry for women who don't do polite. See the full gold and pearls edit on Satin Alibi."
+- style: still
+  photo: "https://images.unsplash.com/photo-1742890160438-cfedd6137319"
+  sub: More gold. Less explaining.
+  line1: Gold and pearls that
+  line2: get noticed
   caption: golden hour
+  pin_title: "Affordable Gold Jewelry Under $100: Hoops, Pearl Earrings, Statement Ring"
+  pin_description: "Affordable gold jewelry under $100 that looks anything but: chunky 14k gold plated hoops, pearl drop earrings, a layered pearl necklace, a crystal body chain and a gold statement ring, plus two splurges worth it. Tarnish-free picks for everyday stacking. Get every pick with prices on Satin Alibi."
+- style: edit
+  photos:
+  - "https://images.unsplash.com/photo-1708220040824-b273dd0a17cc"
+  - "https://images.unsplash.com/photo-1727990864588-757416bf8062"
+  - "https://images.unsplash.com/photo-1708220040828-9ab1673681d3"
+  - "https://images.unsplash.com/photo-1682629846138-7db022565bd5"
+  labels:
+  - 01 · the hoops
+  - 02 · the drops
+  - 03 · the statement
+  - 04 · the pearl
+  line1: Gold and
+  line2: pearls.
+  kicker: Golden hour
   pin_title: "Confidence Quotes for Women: Wear the Gold. All of It."
   pin_description: Wear the gold. All of it. For the women who stack it high, never take one thing off before leaving the house, and walk in catching the light. Confidence quotes and fashion quotes for loud women. Then shop the gold and pearls edit on Satin Alibi.
-- style: split
-  tone: ivory
-  kicker: Golden Hour
-  line1: Arm cuff
-  line2: season.
-  caption: gold above the elbow
-  photo_brief: Upper arm in late sun with a curvy high-polish gold cuff above the elbow, sleeveless black top, cropped at the shoulder, no face.
+- style: frames
+  photos:
+  - "https://images.unsplash.com/photo-1613315986155-820432757035"
+  - "https://images.unsplash.com/photo-1671644730555-916aa8d8157f"
+  subs:
+  - Is that too much gold?
+  - There's no such thing.
+  caption: golden hour
   pin_title: "How to Wear an Arm Cuff: Gold Upper Arm Cuff Outfit Ideas"
   pin_description: "How to wear an arm cuff: slide a gold upper arm cuff above the elbow with a black tank, a sleeveless dress or an off-the-shoulder top, then add chunky gold hoops. Arm cuff outfit ideas and gold jewelry styling tips for fall. Read the post for the full gold and pearls edit."
-  photo: "https://images.unsplash.com/photo-1671644730555-916aa8d8157f"
 hero: "https://images.unsplash.com/photo-1763628212781-7d52844cf358"
 hero_alt: Sculptural pearl and gold earring
 hero_credit: Giustina Barison on Unsplash
+collage:
+- "https://images.unsplash.com/photo-1763628212781-7d52844cf358"
+- "https://images.unsplash.com/photo-1680576555400-473443028bc2"
+- "https://images.unsplash.com/photo-1708220040824-b273dd0a17cc"
 ---
 Gold is not a whisper. It catches light across a room and tells everyone where to look.
 

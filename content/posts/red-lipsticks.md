@@ -6,7 +6,6 @@ section: after-dark
 date: 2026-09-28
 status: published
 dek: Blue-red, orange-red, brick and cherry, from the drugstore to Dior.
-card_line: Say it in red.
 hero_brief: Seven uncapped red lipsticks lined up on black lacquer beside a champagne coupe and pearl drop earrings, moody low light with one warm spotlight, ink and cherry tones.
 products:
 - brand: Revlon
@@ -52,59 +51,70 @@ products:
   url: "https://www.ulta.com/p/rouge-dior-lipstick-pimprod2043044?sku=2619652"
   note: "The icon: Dior calls 999 the iconic red, and it's hard to argue. The satin version pairs rich colour with a hydrating floral lip-care formula, in a refillable case you'll want to take out at the table on purpose."
 pins:
-- style: split
-  tone: ink
-  kicker: After Dark
-  line1: Say it
-  line2: in red.
-  caption: 7 reds for every undertone
-  photo_brief: "Top two-thirds: a single red lipstick bullet, uncapped, on black satin beside a pearl earring and a lipstick-marked champagne glass, low warm light, deep shadows."
+- style: cover
+  photo: "https://images.unsplash.com/photo-1524141740201-e30e9f1ad2ac"
+  line1: Red
+  line2: lip edit.
+  kicker: The red issue
+  lines:
+  - 7 reds
+  - blue-red to brick
+  - drugstore to Dior
   pin_title: "Best Red Lipstick for Every Undertone: 7 Classic Reds From MAC to Dior"
   pin_description: "The best red lipsticks for every undertone and finish: a vivid blue-red matte, a vivid orange-red satin, a warm brick red, a drugstore cherry, a long-wear liquid matte, a waterproof lip stain and Dior 999. Tips on choosing your red for cool or warm undertones inside. Read the red lip edit on Satin Alibi."
-  photo: "https://images.unsplash.com/photo-1626895872564-b691b6877b83"
-- style: bleed
-  kicker: After Dark
-  line1: Red lip.
-  line2: No apologies.
+- style: moodboard
+  photos:
+  - "https://images.unsplash.com/photo-1728414452665-e3f5c286426f"
+  - "https://images.unsplash.com/photo-1645566372784-7d017ad7643b"
+  - "https://images.unsplash.com/photo-1626895872564-b691b6877b83"
+  - "https://images.unsplash.com/photo-1582262107025-f18c68254ff9"
+  line1: Say it
+  line2: in red.
+  note: cherry coded
   caption: the red lip edit
-  size: 170
-  photo_brief: "Full-bleed vertical: a black lace sleeve and a hand holding an open gold lipstick tube under a warm spotlight, dark ink background, cherry highlights, space for text at the bottom."
   pin_title: "Red Lipstick Looks for Date Night: Blue Red, Orange Red and Brick Red"
   pin_description: Red lip, no apologies. Whether you want a cool blue-red, a warm orange-red, a brick red for autumn or a cherry stain that lasts all night, these are the red lipsticks worth owning. Drugstore to luxury, matte to satin. Tap through to read the post and find your red.
-  photo: "https://images.unsplash.com/photo-1524141740201-e30e9f1ad2ac"
-- style: product
-  kicker: The Edit
-  line1: The red
-  line2: lip edit.
-  caption: drugstore to Dior
-  photo_brief: "Three clean product-style shots on plain backgrounds: a black-cased matte red lipstick, a gold-cased satin red lipstick, a red liquid lipstick wand. Brand product images from affiliate programs."
+- style: still
+  photo: "https://images.unsplash.com/photo-1772987108814-fd61a84868d1"
+  sub: Red isn't a risk. It's a statement.
+  line1: Seven reds that
+  line2: start conversations
+  caption: after dark
   pin_title: "Best Red Lipsticks From Drugstore to Luxury: Ruby Woo, Dior 999 and More"
   pin_description: From a $12 drugstore classic to Dior's iconic 999, these are the best red lipsticks right now. MAC Ruby Woo, MAC Chili, NARS Incendiary, Revlon Cherries in the Snow, Maybelline Pioneer and Benefit Benetint, with the undertone and finish of each. Read the post for all seven reds.
+- style: edit
   photos:
   - "https://images.unsplash.com/photo-1586495777744-4413f21062fa"
   - "https://images.unsplash.com/photo-1600852306752-085ca3285361"
   - "https://images.unsplash.com/photo-1645961359170-c01fa306aa6b"
-- style: quote
-  tone: cherry
-  kicker: After Dark
-  line1: Red isn't
-  line2: a risk.
-  caption: it's a statement
-  pin_title: "Red Isn't a Risk: Red Lipstick Quote for Confident, Outspoken Women"
-  pin_description: Red isn't a risk. It's a statement. Save this for the next time someone tells you it's too much, then read our edit of seven red lipsticks that start conversations, from blue-red to brick to cherry.
-- style: split
-  tone: ivory
-  kicker: After Dark
+  - "https://images.unsplash.com/photo-1631214499500-2e34edcaccfe"
+  labels:
+  - 01 · blue-red
+  - 02 · orange-red
+  - 03 · brick
+  - 04 · the stain
   line1: Find your
   line2: red.
-  caption: blue-red, brick or cherry
-  photo_brief: "Top two-thirds: red lipstick swatches painted in bold strokes across ivory paper beside uncapped lipsticks and a gold compact, clean editorial overhead light."
+  kicker: After dark
+  pin_title: "Red Isn't a Risk: Red Lipstick Quote for Confident, Outspoken Women"
+  pin_description: Red isn't a risk. It's a statement. Save this for the next time someone tells you it's too much, then read our edit of seven red lipsticks that start conversations, from blue-red to brick to cherry.
+- style: frames
+  photos:
+  - "https://images.unsplash.com/photo-1571249132059-fa00b3d3e65f"
+  - "https://images.unsplash.com/photo-1593070322157-15d58e74c2d2"
+  subs:
+  - What are you wearing tonight?
+  - Red. Obviously.
+  caption: after dark
   pin_title: How to Find Your Perfect Red Lipstick Shade for Your Undertone
   pin_description: Cool undertones, try a blue-red. Warm undertones, go orange-red or brick. Want something softer? A cherry stain builds as bold as you like. Our guide to choosing and wearing red lipstick, plus seven reds from the drugstore to Dior. Read the full post on Satin Alibi.
-  photo: "https://images.unsplash.com/photo-1610166970010-c2e6c3da7164"
 hero: "https://images.unsplash.com/photo-1645961359159-c57c39d461b2"
 hero_alt: Red lipstick on a dark table
 hero_credit: Mehmet Ali Turan on Unsplash
+collage:
+- "https://images.unsplash.com/photo-1645961359159-c57c39d461b2"
+- "https://images.unsplash.com/photo-1524141740201-e30e9f1ad2ac"
+- "https://images.unsplash.com/photo-1728414452665-e3f5c286426f"
 ---
 A red lip walks in before you do. That's the point.
 

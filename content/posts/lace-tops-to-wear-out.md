@@ -6,7 +6,6 @@ section: lace-and-pearls
 date: 2026-09-28
 status: published
 dek: Lace belongs in daylight, under a blazer, in the room where the decisions get made.
-card_line: Lace at nine. Nerve all day.
 hero_brief: Editorial close crop of an ivory lace top under the open lapel of a charcoal blazer, soft office window light, fabric and detail in focus, no face.
 products:
 - brand: Free People
@@ -52,57 +51,71 @@ products:
   url: "https://www.caminyc.com/products/the-racer-charmeuse-black"
   note: Silk sandwash charmeuse, a racerback, and French lace trim along the V-neck. Unlined, and made for layering or wearing on its own. Under a suit at 10 a.m., on its own at 10 p.m.
 pins:
-- style: split
-  tone: ink
-  kicker: Lace & Pearls
+- style: cover
+  photo: "https://images.unsplash.com/photo-1779153996913-fc2565ed7e14"
   line1: Lace,
   line2: on the clock.
-  caption: lace tops you can wear to work
-  photo_brief: Close crop of a black lace cami edge under the lapel of a charcoal blazer, office window light, fabric texture in focus, no face.
+  kicker: The lace issue
+  size: 210
+  lines:
+  - 7 lace tops
+  - worn out, not under
+  - $48 to $195
   pin_title: "Lace Top Outfit Ideas for Work: 7 Lace Tops You Can Wear Out"
   pin_description: "Lace top outfit ideas for work that actually work. Seven lace tops made to be worn out, not hidden: lace trim camis under a blazer, a lace corset top, a cotton lace button-down and a long sleeve lace bodysuit, from $48 to $195. Office outfit ideas with lace, tailored trousers and a sharp blazer. Read the full edit on Satin Alibi."
-  photo: "https://images.unsplash.com/photo-1786053309697-2880bff331ed"
-- style: bleed
-  kicker: Lace & Pearls
+- style: moodboard
+  photos:
+  - "https://images.unsplash.com/photo-1777566131330-43fd5946c8f8"
+  - "https://images.unsplash.com/photo-1613315986155-820432757035"
+  - "https://images.unsplash.com/photo-1615560094221-ee0b118f0a65"
+  - "https://images.unsplash.com/photo-1617055407123-3d7130c1f940"
   line1: Wear it
   line2: out.
-  caption: lace tops, not lingerie
-  photo_brief: "Editorial street shot cropped at the shoulders: ivory lace blouse tucked into black wide-leg trousers, blazer over one arm, city sidewalk in morning light, no face."
+  note: soft, never shy
+  caption: lace tops you can wear to work
   pin_title: "How to Wear a Lace Top Out: Lace Blouse and Blazer Outfit Ideas"
   pin_description: How to wear a lace top out of the house and into the office. Pair a lace cami or lace blouse with wide-leg trousers, a pencil skirt or a boxy blazer, and let the lace be the soft part of a sharp outfit. Lace blouse outfits, lace cami outfits and lace bodysuit outfits for fall. Get all seven picks and the styling tips on Satin Alibi.
-  photo: "https://images.unsplash.com/photo-1763347119956-12c43dde9a58"
-- style: product
-  kicker: The Edit
-  line1: Seven
-  line2: lace tops.
-  caption: from $48 to $195
-  photo_brief: "Three product shots on ivory: a black scalloped lace cami, an ivory cotton lace button-down, a black silk cami with lace at the neckline."
+- style: still
+  photo: "https://images.unsplash.com/photo-1781888683045-d8912c04671b"
+  sub: Yes, it's lace. Yes, it's a Tuesday.
+  line1: Lace tops for
+  line2: the meeting
+  caption: lace & pearls
   pin_title: "Best Lace Tops to Wear Out: Lace Cami, Lace Bodysuit, Lace Corset Top"
   pin_description: "The best lace tops to wear out right now: a lace cami in more than a dozen colours, a lace trim satin cami, a silk cami with French lace trim, a lace corset top, a Chantilly lace bodysuit and a cotton lace button-down. Lace tops for work, for dinner, for every day of the week. See every pick with prices on Satin Alibi."
+- style: edit
   photos:
-  - "https://images.unsplash.com/photo-1620900128850-b12749d73093"
-  - "https://images.unsplash.com/photo-1601242951834-045641706c77"
-  - "https://images.unsplash.com/photo-1769006370577-d0eca8c11741"
-- style: quote
-  tone: cherry
-  line1: Lace to work?
-  line2: Obviously.
-  caption: wear the lace
-  pin_title: "Bold Fashion Quotes for Women: Lace to Work? Obviously."
-  pin_description: Lace to work? Obviously. For the women who wear what they want to the meeting and never wait for permission. Fashion quotes, confidence quotes and a reminder that soft fabric can come with sharp intentions. Then find seven lace tops you can actually wear to work on Satin Alibi.
-- style: split
-  tone: ivory
-  kicker: Lace & Pearls
+  - "https://images.unsplash.com/photo-1769006627351-719bbfb3736b"
+  - "https://images.unsplash.com/photo-1731145577071-955e5b83f27b"
+  - "https://images.unsplash.com/photo-1718072633087-47b595e99612"
+  - "https://images.unsplash.com/photo-1594734415578-00fc9540929b"
+  labels:
+  - 01 · the cami
+  - 02 · the button-down
+  - 03 · the bodysuit
+  - 04 · the bustier
   line1: "Dress code:"
   line2: lace.
-  caption: the office edit
-  photo_brief: Detail shot of an ivory corded lace sleeve and split cuff resting on a desk beside a gold pen and a coffee cup, soft daylight.
+  kicker: Lace & pearls
+  pin_title: "Bold Fashion Quotes for Women: Lace to Work? Obviously."
+  pin_description: Lace to work? Obviously. For the women who wear what they want to the meeting and never wait for permission. Fashion quotes, confidence quotes and a reminder that soft fabric can come with sharp intentions. Then find seven lace tops you can actually wear to work on Satin Alibi.
+- style: frames
+  photos:
+  - "https://images.unsplash.com/photo-1763347119956-12c43dde9a58"
+  - "https://images.unsplash.com/photo-1786309777609-d8ec828b1fe1"
+  subs:
+  - Is that appropriate for work?
+  - It is now.
+  caption: lace & pearls
   pin_title: "Lace Blouse Outfit for Work: Chic Office Outfit Ideas for Women"
   pin_description: "Chic office outfit ideas with lace: a cotton lace button-down tucked into black trousers, a Chantilly lace bodysuit with a pencil skirt, a lace trim silk cami under a suit. Work outfits for women who like to be noticed in the meeting. Read the post for all seven lace tops and exactly how to style them."
-  photo: "https://images.unsplash.com/photo-1779153996913-fc2565ed7e14"
 hero: "https://images.unsplash.com/photo-1764974012591-c27855f40beb"
 hero_alt: Hand holding a pomegranate against a white lace shirt
 hero_credit: Karina Syrotiuk on Unsplash
+collage:
+- "https://images.unsplash.com/photo-1764974012591-c27855f40beb"
+- "https://images.unsplash.com/photo-1777566131330-43fd5946c8f8"
+- "https://images.unsplash.com/photo-1613315986155-820432757035"
 ---
 Somebody decided lace belongs in a drawer. We disagree, loudly.
 

@@ -1,51 +1,61 @@
 ---
-title: "Walk in like you were *expected*"
-seo_title: "How to Walk Into a Room With Confidence (Like You Were Expected)"
+title: Walk in like you were *expected*
+seo_title: How to Walk Into a Room With Confidence (Like You Were Expected)
 slug: walk-in-like-you-were-expected
 section: take-up-space
 date: 2026-09-28
 status: published
-dek: "Every room you enter, you enter as the guest of honour. Here's how to act like it."
-card_line: "Walk in like you were expected."
+dek: Every room you enter, you enter as the guest of honour. Here's how to act like it.
 pins:
-  - style: quote
-    tone: ink
-    kicker: Take Up Space
-    line1: "Walk in like"
-    line2: "you were expected."
-    caption: "entrances, not apologies"
-    size: 132
-    pin_title: "Walk in like you were expected: how to walk into a room with confidence"
-    pin_description: "Confidence tips for women who want to own every room: how to walk in, where to stand, what to say first, and why you never need to apologise for arriving. Read the full guide on Satin Alibi and save it for your next big entrance."
-  - style: quote
-    tone: cherry
-    kicker: Take Up Space
-    line1: "Arrive."
-    line2: "Don't enter."
-    caption: "a confidence lesson"
-    size: 170
-    pin_title: "Arrive, don't enter: confidence quotes for bold women"
-    pin_description: "There's a difference between entering a room and arriving in it. Confidence quotes and practical tips for women who want to be seen and heard. Read more on Satin Alibi."
-  - style: quote
-    tone: bronze
-    kicker: Take Up Space
-    line1: "Nothing"
-    line2: "to prove."
-    caption: "plenty to say"
-    size: 180
-    pin_title: "Nothing to prove, plenty to say: self-confidence quotes for women"
-    pin_description: "Self-confidence isn't about proving anything. It's about knowing what you want to say and saying it. Empowering quotes and a short guide to owning the room, on Satin Alibi."
-  - style: quote
-    tone: ivory
-    kicker: Take Up Space
-    line1: "Sit at the"
-    line2: "front of the room."
-    caption: "and speak first"
-    size: 132
-    pin_title: "Sit at the front of the room: confidence habits for women at work"
-    pin_description: "Small confidence habits that change how a room treats you: sit at the front, speak in the first ten minutes, drop the apology. Practical, loud, and a little wicked. Read the full list on Satin Alibi."
+- style: still
+  bw: true
+  photo: "https://images.unsplash.com/photo-1783530614914-06638a4937eb"
+  sub: Walk in like you were expected.
+  line1: Walk in like
+  line2: you were expected.
+  size: 80
+  caption: take up space
+  pin_title: "Walk in like you were expected: how to walk into a room with confidence"
+  pin_description: "Confidence tips for women who want to own every room: how to walk in, where to stand, what to say first, and why you never need to apologise for arriving. Read the full guide on Satin Alibi and save it for your next big entrance."
+- style: frames
+  bw: true
+  photos:
+  - "https://images.unsplash.com/photo-1633355130553-2d90ad3507d3"
+  - "https://images.unsplash.com/photo-1540172777610-b15b605dd68d"
+  subs:
+  - You didn't enter the room.
+  - You arrived.
+  caption: take up space
+  pin_title: "Arrive, don't enter: confidence quotes for bold women"
+  pin_description: There's a difference between entering a room and arriving in it. Confidence quotes and practical tips for women who want to be seen and heard. Read more on Satin Alibi.
+- style: still
+  bw: true
+  photo: "https://images.unsplash.com/photo-1591727884968-cc11135a19b3"
+  sub: Nothing to prove. Plenty to say.
+  line1: Nothing to prove.
+  line2: Plenty to say.
+  size: 80
+  caption: take up space
+  pin_title: "Nothing to prove, plenty to say: self-confidence quotes for women"
+  pin_description: Self-confidence isn't about proving anything. It's about knowing what you want to say and saying it. Empowering quotes and a short guide to owning the room, on Satin Alibi.
+- style: still
+  bw: true
+  photo: "https://images.unsplash.com/photo-1506863530036-1efeddceb993"
+  sub: Sit at the front of the room.
+  line1: Sit at the
+  line2: front of the room.
+  size: 80
+  caption: take up space
+  pin_title: "Sit at the front of the room: confidence habits for women at work"
+  pin_description: "Small confidence habits that change how a room treats you: sit at the front, speak in the first ten minutes, drop the apology. Practical, loud, and a little wicked. Read the full list on Satin Alibi."
+hero: "https://images.unsplash.com/photo-1783530614914-06638a4937eb"
+hero_alt: Woman in a veiled hat and long black gloves
+hero_credit: Sou Jest on Unsplash
+collage:
+- "https://images.unsplash.com/photo-1783530614914-06638a4937eb"
+- "https://images.unsplash.com/photo-1633355130553-2d90ad3507d3"
+- "https://images.unsplash.com/photo-1591727884968-cc11135a19b3"
 ---
-
 There are two ways to walk into a room. You can slip in, find the edge, and wait to be noticed. Or you can walk in like the room has been waiting for you, because honestly, it has. Nothing interesting was happening until you got there.
 
 The second way is a skill, not a personality. Anyone can learn it. Here's the short course.

@@ -6,7 +6,10 @@ Owner: Rabia. Claude writes the posts and pins; Rabia approves pins weekly befor
 ## Brand rules (non-negotiable)
 - **Who it's for:** loud, forward, outspoken women who take up space, and the ones getting there. Never "quiet confidence", never "soft isn't weak". Loud on purpose.
 - **Voice:** bold, direct, warm, a little wicked. Short sentences. Never apologetic. A feminism that lifts women up. Never tear other women down, never body-shame, never diet talk.
-- **Look:** mature and editorial. Palette: bronze #A8703F, champagne #E8D3B0, ivory #F3ECE3, blush #EBC8C0, cherry #8E1622, ink #141012. Cormorant Garamond headlines, italic for the loud word.
+- **Look (v2, 28 Sep 2026):** capture the *essence* of Rabia's SIREN Tumblr images: photo-first, cinematic film stills with subtitles, intimate close-ups (lips, cherries, lace, pearls, gold on skin, satin folds), warm film grain, scrapbook collages. Mature and editorial, never cartoonish, never flat blocks of colour. Red is an accent, not a background.
+  Paper #F3EDE4, ink #15100E, cherry #9E1B25 (accents only), gold #B08445, blush #E9CFC6, night #0D0A09.
+  Fonts: Instrument Serif (headlines, italic for the loud word), Instrument Sans (body, subtitles), Courier Prime (small caps labels), Homemade Apple (handwritten notes, sparingly).
+  Pinterest Predicts 2026 trends that fit: Vamp Romantic (After Dark), Glamoratti (Golden Hour).
 - **Sensual, never explicit.** Pinterest removes or limits sexually suggestive content. Ads can't show nudity, implied nudity, or overtly sexual imagery. Show fabric and detail, not bodies. No lingerie-only framing: lace is worn *out*.
 - **Honesty.** No invented first-person experiences ("I've used this for years"), no fake reviews or testimonials, no made-up product claims. Describe what a product is and why it fits the brand. Any factual claim must come from the product page or a reputable source. Prices say "at time of writing" on the site's disclosure page.
 - **Images:** only Unsplash or Pexels photos (free for business use), or brand product images supplied through affiliate programs. Never Tumblr reposts. Never AI-generated people.
@@ -32,7 +35,8 @@ dek: "One sentence under the title, in the brand voice."
 hero: https://images.unsplash.com/photo-XXXXXXXXXXXXX   # base URL, no query string
 hero_alt: "Describe the photo for screen readers"
 hero_credit: "Name on Unsplash"
-card_line: "Too much? Good."      # only for posts without a hero (shows as a cherry quote card)
+collage: [url1, url2, url3]        # optional; defaults to hero + pin photos (post header mood board)
+note: "glow loud"                  # optional handwritten note; defaults to the section note
 products:                          # omit for take-up-space
   - brand: Brand
     name: Product name
@@ -40,19 +44,36 @@ products:                          # omit for take-up-space
     retailer: Sephora
     url: https://www.sephora.com/...   # plain product URL; swapped for the affiliate link later
     note: "Two or three sentences on why it earns its place."
-pins:
-  - style: split | bleed | product | quote
-    tone: ink | ivory | cherry | bronze   # split uses ink/ivory; quote uses any
-    kicker: "Golden Hour"          # small label, optional
+pins:                              # five styles, all photo-led; 4–5 pins per post, mix styles
+  - style: cover       # magazine cover: photo, huge title, 3 mono cover lines
+    photo: URL
     line1: "Glow"
-    line2: "loud."                 # the loud italic line, optional
-    caption: "body oils that get you noticed"
-    photo: https://images.unsplash.com/photo-...        # split and bleed
-    photos: [url1, url2, url3]     # product style strip
-    size: 180                      # optional headline px override
-    pin_title: "Keyword-rich title under 100 characters"
-    pin_description: "Natural, keyword-rich description under 500 characters, ending with a nudge to read the post."
-    link: https://...              # optional: send the pin straight to a product instead of the post
+    line2: "loud."                 # italic second line
+    kicker: "The glow issue"
+    lines: ["7 shimmer body oils", "from $14", "one splurge"]
+  - style: moodboard   # scrapbook: 4 taped photos on paper, big title, handwritten note
+    photos: [URL, URL, URL, URL]
+    line1: "Liquid"
+    line2: "gold."
+    note: "catch the light"
+    caption: "shimmer oils, mostly under $50"
+  - style: still       # one film still with a subtitle, title underneath
+    photo: URL
+    sub: "Glow like it's on purpose."   # original line, never a real film quote
+    line1: "Body oils that"
+    line2: "glow loud"
+    caption: "golden hour"
+  - style: edit        # shoppable 2x2 grid with numbered labels (swap to product images once affiliate images exist)
+    photos: [URL, URL, URL, URL]
+    labels: ["01 · the dry oil", "02 · the gel oil", "03 · the shimmer", "04 · the splurge"]
+    line1: "Shimmer"
+    line2: "under $50."
+  - style: frames      # 2–3 stacked stills, the subtitle sentence carries across frames
+    photos: [URL, URL]
+    subs: ["Where are you going?", "Somewhere they'll see me."]
+    bw: true           # optional black-and-white (use for take-up-space)
+  # every pin also takes: pin_title (<100 chars, keyword-rich), pin_description (<500 chars),
+  # size (headline px override), sub_size, sub_color: yellow, link (straight to a product)
 ---
 Intro in markdown.
 
@@ -67,7 +88,7 @@ Outro in markdown: how to wear it, one strong closing line.
 GitHub Actions builds on every push and daily at 6:15am Toronto, then publishes `dist/` to the `site` branch, which Cloudflare Pages serves.
 
 ## Pin mix and pace
-About 3 in 4 pins are shopping pins; about 1 in 4 are Take Up Space quote pins. Around 5 pins a day at launch, building to 15+ a day by the end of month one.
+About 3 in 4 pins are shopping pins; about 1 in 4 are Take Up Space film-still pins (black-and-white stills or frames with subtitles). Around 5 pins a day at launch, building to 15+ a day by the end of month one.
 Every pin needs Rabia's approval before it's scheduled (Pinterest requires the account owner to choose each pin).
 
 ## Approvals and auto-posting

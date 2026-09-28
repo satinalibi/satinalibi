@@ -6,7 +6,6 @@ section: after-dark
 date: 2026-09-28
 status: published
 dek: "Seven pieces, one loud night: black lace, sharp shoulders, satin, and red shoes."
-card_line: Black lace. Red shoes. No curfew.
 hero_brief: Low-light editorial detail of a black lace sleeve and a sharp black blazer shoulder against a dark velvet banquette, one red satin heel in frame, warm tungsten glow, no face.
 products:
 - brand: CAMI NYC
@@ -52,59 +51,71 @@ products:
   url: "https://jenny-bird.com/products/florence-earrings-gold"
   note: "Jenny Bird calls these its most talked-about earrings: two chunky hoops that look stacked into one, in high-polish gold with a flat disc backing for support. Pull your hair back. They're doing the work."
 pins:
-- style: bleed
-  kicker: After Dark
-  line1: Black lace.
-  line2: Red lip.
-  caption: the after-dark edit
-  photo_brief: "Low-light editorial detail: black lace sleeve resting on a dark bar top beside a glass of red wine, warm tungsten glow, no face."
+- style: cover
+  photo: "https://images.unsplash.com/photo-1789169917572-1ef79336117b"
+  line1: After
+  line2: dark.
+  kicker: The night issue
+  lines:
+  - 7 pieces
+  - black lace
+  - red shoes
   pin_title: "Date Night Outfit Ideas: Black Lace Top, Blazer and Red Heels"
   pin_description: Date night outfit, black lace, done loud. A sheer black lace blouse, a sharp black blazer, a satin midi skirt, sheer black tights, red satin heels, a crystal mini bag and big gold earrings. Night out outfit ideas for fall and winter that make an entrance and stay late. Shop all seven pieces and the styling notes on Satin Alibi.
-  photo: "https://images.unsplash.com/photo-1765730597284-12e65abf0caa"
-- style: split
-  tone: ink
-  kicker: After Dark
-  line1: Loud
-  line2: on purpose.
-  caption: a night-out look in 7 pieces
-  photo_brief: Black blazer worn over the shoulders of a black lace blouse, cropped at the collarbone against a dark wall, single warm spotlight.
-  pin_title: "Night Out Outfit: Black Lace Blouse, Satin Midi Skirt and Blazer"
-  pin_description: "A night out outfit with nerve: black lace blouse tucked into a satin midi skirt, a fitted black blazer over the shoulders, sheer shimmer tights and red heels. Going out outfit ideas for birthdays, dinners and gallery openings when you plan to be remembered. Read the full after-dark edit on Satin Alibi."
-  photo: "https://images.unsplash.com/photo-1748290880596-2a2c80530bc0"
-- style: product
-  kicker: The Edit
-  line1: Seven
-  line2: pieces.
-  caption: lace, satin, red shoes
-  photo_brief: "Three product shots on black: red satin square-toe lace-up heels, a black crystal mini top-handle bag, high-polish gold stacked-hoop earrings."
-  pin_title: "Going Out Outfit Essentials: Red Satin Heels, Crystal Bag, Gold Earrings"
-  pin_description: "Going out outfit essentials for a loud night: red satin lace-up heels, a black crystal mini bag that holds a powder and a lipstick, statement gold earrings, sheer black tights and a sharp blazer. Evening outfit ideas that do the talking for you. See all seven picks with prices on Satin Alibi."
+- style: moodboard
   photos:
   - "https://images.unsplash.com/photo-1772087700114-dc342769e246"
-  - "https://images.unsplash.com/photo-1721807551235-4072be6913c0"
-  - "https://images.unsplash.com/photo-1645961359159-c57c39d461b2"
-- style: quote
-  tone: ink
-  kicker: After Dark
+  - "https://images.unsplash.com/photo-1518893063132-36e46dbe2428"
+  - "https://images.unsplash.com/photo-1670607231621-c00fd76d2387"
+  - "https://images.unsplash.com/photo-1783013953015-aaf234e7ac27"
+  line1: Black lace.
+  line2: Red lip.
   size: 150
-  line1: Walk in like
-  line2: the headline.
+  note: after 10pm
+  caption: the after-dark edit
+  pin_title: "Night Out Outfit: Black Lace Blouse, Satin Midi Skirt and Blazer"
+  pin_description: "A night out outfit with nerve: black lace blouse tucked into a satin midi skirt, a fitted black blazer over the shoulders, sheer shimmer tights and red heels. Going out outfit ideas for birthdays, dinners and gallery openings when you plan to be remembered. Read the full after-dark edit on Satin Alibi."
+- style: still
+  photo: "https://images.unsplash.com/photo-1788255285952-e00f95be0600"
+  sub: Walk in like the headline.
+  line1: Black lace,
+  line2: red lip
   caption: after dark
+  pin_title: "Going Out Outfit Essentials: Red Satin Heels, Crystal Bag, Gold Earrings"
+  pin_description: "Going out outfit essentials for a loud night: red satin lace-up heels, a black crystal mini bag that holds a powder and a lipstick, statement gold earrings, sheer black tights and a sharp blazer. Evening outfit ideas that do the talking for you. See all seven picks with prices on Satin Alibi."
+- style: edit
+  photos:
+  - "https://images.unsplash.com/photo-1772355325489-442a672e432c"
+  - "https://images.unsplash.com/photo-1730308242954-304f615bb73a"
+  - "https://images.unsplash.com/photo-1617238749996-ab4c0f9fba57"
+  - "https://images.unsplash.com/photo-1670607231621-c00fd76d2387"
+  labels:
+  - 01 · the lace
+  - 02 · the blazer
+  - 03 · the slip skirt
+  - 04 · the heels
+  line1: Seven
+  line2: pieces.
+  kicker: After dark
   pin_title: "Bold Quotes for Women: Walk In Like the Headline"
   pin_description: Walk in like the headline. For the women who arrive late on purpose, order the second bottle and stay until the lights come up. Bold quotes, confidence quotes and a little permission you never needed. Then build the black lace, red lip night-out look on Satin Alibi.
-- style: split
-  tone: ivory
-  kicker: After Dark
-  line1: Red shoes
-  line2: win.
-  caption: black lace, red satin
-  photo_brief: Close crop of red satin square-toe heels with lace-up ties and sheer black tights on a stone step at night, streetlight glow.
+- style: frames
+  photos:
+  - "https://images.unsplash.com/photo-1681308838635-271a60b54c9e"
+  - "https://images.unsplash.com/photo-1432847712612-926caafaa802"
+  subs:
+  - Where are we going?
+  - Somewhere I'll be remembered.
+  caption: after dark
   pin_title: "Red Heels Outfit Ideas: Black Tights, Satin Skirt and Black Lace"
   pin_description: "Red heels outfit ideas for after dark: red satin ballet heels with sheer black tights, a black satin midi skirt and a black lace blouse under a sharp blazer. One red, lots of black, a little gold. Date night outfit inspiration for fall. Get the full look and how to wear it on Satin Alibi."
-  photo: "https://images.unsplash.com/photo-1670607231621-c00fd76d2387"
 hero: "https://images.unsplash.com/photo-1772260905203-6846340aaf98"
-hero_alt: Hands in black lace fingerless gloves
+hero_alt: Hands in black lace gloves
 hero_credit: Wilhelm Gunkel on Unsplash
+collage:
+- "https://images.unsplash.com/photo-1772260905203-6846340aaf98"
+- "https://images.unsplash.com/photo-1790167860486-47eb3a16c2c5"
+- "https://images.unsplash.com/photo-1518893063132-36e46dbe2428"
 ---
 Some nights call for a quiet dinner. This is not that edit.
 

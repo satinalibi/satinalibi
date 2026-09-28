@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title }} | {{ site.name }}{% endblock %}
+{% block title %}{{ page.title | striptags }} | {{ site.name }}{% endblock %}
 {% block description %}{{ page.dek or site.description }}{% endblock %}
 {% block main %}
 <header class="page-head">
