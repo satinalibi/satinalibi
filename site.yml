@@ -9,11 +9,9 @@ pinterest_verify: "0808ba1869c5a006b2a36202a5a8414f"
 footer_line: For women who say it first, say it loud, and take up space.
 disclosure_short: Some links on this page are affiliate links. If you buy through them, Satin Alibi may earn a small commission at no extra cost to you. We only pick what we'd actually wear.
 
-hero: https://images.unsplash.com/photo-1571887747018-948297fd9126?crop=top
-hero_alt: "Woman in a flowing yellow satin gown walking through a dark street"
-hero_flip: true
-hero_pos: "30% 0%"
-hero_sub: "[she walks in like she was expected]"
+hero: https://images.unsplash.com/photo-1653152707179-125e4e184a0b
+hero_alt: "Woman in a green satin dress and red gloves holding an apple"
+hero_sub: "Bite first. Explain never."
 
 sections:
 - slug: golden-hour
