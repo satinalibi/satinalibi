@@ -33,7 +33,18 @@ jobs:
       - name: Build site and render pins
         run: python build.py --pins
 
-      - name: Publish to the site branch (Cloudflare Pages serves this branch)
+      - name: Add Cloudflare config (works for both Pages and Workers deploys)
+        run: |
+          cat > dist/wrangler.jsonc <<'EOF'
+          {
+            "name": "satinalibi",
+            "compatibility_date": "2026-09-01",
+            "assets": { "directory": ".", "not_found_handling": "404-page" }
+          }
+          EOF
+          printf "wrangler.jsonc\n.assetsignore\n.git\n" > dist/.assetsignore
+
+      - name: Publish to the site branch (Cloudflare serves this branch)
         run: |
           cd dist
           git init -q
