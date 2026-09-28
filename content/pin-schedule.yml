@@ -6,33 +6,33 @@ black-lace-after-dark-1:
 black-lace-after-dark-2:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-09-29'
+  publish: '2026-09-30'
 black-lace-after-dark-3:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-10-02'
 black-lace-after-dark-4:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-01'
+  publish: '2026-10-03'
 black-lace-after-dark-5:
   status: rejected
   decided: '2026-09-28'
 couture-lace-and-pearls-1:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-09-29'
 couture-lace-and-pearls-2:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-10-01'
 couture-lace-and-pearls-3:
   status: rejected
   decided: '2026-09-28'
 couture-lace-and-pearls-4:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-10-02'
 couture-lace-and-pearls-5:
   status: rejected
   decided: '2026-09-28'
@@ -43,47 +43,47 @@ gold-and-pearls-1:
 gold-and-pearls-2:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-10-01'
 gold-and-pearls-3:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-10-04'
 gold-and-pearls-4:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-01'
+  publish: '2026-10-05'
 gold-and-pearls-5:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-10-05'
 lace-tops-to-wear-out-1:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-09-29'
+  publish: '2026-09-30'
 lace-tops-to-wear-out-2:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-10-01'
 lace-tops-to-wear-out-3:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-10-03'
 lace-tops-to-wear-out-4:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-05'
+  publish: '2026-10-04'
 lace-tops-to-wear-out-5:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-06'
+  publish: '2026-10-04'
 red-lipsticks-1:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-01'
+  publish: '2026-09-29'
 red-lipsticks-2:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-02'
+  publish: '2026-10-01'
 red-lipsticks-3:
   status: rejected
   decided: '2026-09-28'
@@ -94,11 +94,11 @@ red-lipsticks-4:
 red-lipsticks-5:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-03'
+  publish: '2026-10-04'
 self-tanners-that-look-real-1:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-02'
+  publish: '2026-09-30'
 self-tanners-that-look-real-2:
   status: approved
   decided: '2026-09-28'
@@ -106,31 +106,31 @@ self-tanners-that-look-real-2:
 self-tanners-that-look-real-3:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-03'
+  publish: '2026-10-04'
 self-tanners-that-look-real-4:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-03'
+  publish: '2026-10-05'
 self-tanners-that-look-real-5:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-03'
+  publish: '2026-10-06'
 shimmer-body-oils-1:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-09-30'
 shimmer-body-oils-2:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-10-03'
 shimmer-body-oils-3:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-10-05'
 shimmer-body-oils-4:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-04'
+  publish: '2026-10-05'
 shimmer-body-oils-5:
   status: rejected
   decided: '2026-09-28'
@@ -144,15 +144,15 @@ too-much-is-a-compliment-2:
 too-much-is-a-compliment-3:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-09-30'
+  publish: '2026-10-01'
 too-much-is-a-compliment-4:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-01'
+  publish: '2026-10-02'
 walk-in-like-you-were-expected-1:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-01'
+  publish: '2026-09-30'
 walk-in-like-you-were-expected-2:
   status: approved
   decided: '2026-09-28'
@@ -163,4 +163,4 @@ walk-in-like-you-were-expected-3:
 walk-in-like-you-were-expected-4:
   status: approved
   decided: '2026-09-28'
-  publish: '2026-10-02'
+  publish: '2026-10-03'

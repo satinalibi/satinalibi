@@ -47,8 +47,12 @@ def per_day(day, start):
     return next(n for limit, n in RAMP if age < limit)
 
 
-def plan():
+def plan(reshuffle=False):
     data = load()
+    if reshuffle:  # re-plan every pin that hasn't gone out yet
+        for v in data.values():
+            if v.get("publish") and dt.date.fromisoformat(str(v["publish"])) > TODAY:
+                del v["publish"]
     pins = all_pins()
     dated = [dt.date.fromisoformat(str(v["publish"])) for v in data.values() if v.get("publish")]
     start = min(dated) if dated else TODAY + dt.timedelta(days=1)
@@ -56,15 +60,27 @@ def plan():
     for d in dated:
         used[d] += 1
     waiting = [pid for pid, v in data.items() if v.get("status") == "approved" and not v.get("publish") and pid in pins]
-    # Interleave by board so each day mixes sections
-    queues = defaultdict(deque)
-    for pid in sorted(waiting):
-        queues[pins[pid]["board"]].append(pid)
+    # Interleave by board so each day mixes sections, and within a board by post,
+    # so one post's pins are spread over several days instead of landing together.
+    def interleave(ids, key):
+        queues = defaultdict(deque)
+        for pid in sorted(ids):
+            queues[key(pid)].append(pid)
+        out = []
+        while any(queues.values()):
+            for k in sorted(queues):
+                if queues[k]:
+                    out.append(queues[k].popleft())
+        return out
+    per_board = defaultdict(list)
+    for pid in waiting:
+        per_board[pins[pid]["board"]].append(pid)
+    board_queues = {b: deque(interleave(ids, lambda pid: pid.rsplit("-", 1)[0])) for b, ids in per_board.items()}
     order = []
-    while any(queues.values()):
-        for board in sorted(queues):
-            if queues[board]:
-                order.append(queues[board].popleft())
+    while any(board_queues.values()):
+        for board in sorted(board_queues):
+            if board_queues[board]:
+                order.append(board_queues[board].popleft())
     day = max(TODAY + dt.timedelta(days=1), start)
     for pid in order:
         while used[day] >= per_day(day, start):
@@ -95,7 +111,7 @@ if __name__ == "__main__":
         raise SystemExit(__doc__)
     cmd, args = sys.argv[1], sys.argv[2:]
     if cmd == "plan":
-        plan()
+        plan(reshuffle="--reshuffle" in sys.argv)
     elif cmd in ("approve", "reject"):
         mark("approved" if cmd == "approve" else "rejected", args)
     else:
