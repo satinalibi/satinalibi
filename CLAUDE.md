@@ -103,6 +103,8 @@ Every pin needs Rabia's approval before it's scheduled (Pinterest requires the a
 2. Rabia approves or skips each pin on her review page. Record her decisions with
    `python schedule_pins.py approve <ids...>` / `reject <ids...>`, then `python schedule_pins.py plan`
    to give approved pins publish dates (ramp: 5/day week 1, 8 week 2, 12 week 3, 15 after; boards and posts interleaved).
+   To re-release a pin Pinterest already posted (e.g. after a redesign), add `rev: 2` to its entry in pin-schedule.yml:
+   the feed then carries it as a new item (guid `...-r2`, image `?r=2`) and Pinterest posts it again. Rabia deletes the old one.
    `plan --reshuffle` re-plans every pin that hasn't gone out yet (use it after adding a batch so posts stay spread out).
    Never approve a pin on Rabia's behalf.
 3. Decisions live in `content/pin-schedule.yml`. Commit and push.

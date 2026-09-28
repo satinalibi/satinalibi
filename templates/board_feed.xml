@@ -10,7 +10,7 @@
 {% for m in items %}  <item>
     <title>{{ m.title }}</title>
     <link>{{ m.link }}</link>
-    <guid isPermaLink="false">satinalibi-pin-{{ m.id }}</guid>
+    <guid isPermaLink="false">{{ m.guid }}</guid>
     <pubDate>{{ m.rfc_date }}</pubDate>
     <description>{{ m.description }}</description>
     <media:content url="{{ m.image }}" medium="image" type="image/jpeg" width="1000" height="1500"/>

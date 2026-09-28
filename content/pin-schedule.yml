@@ -3,6 +3,7 @@ black-lace-after-dark-1:
   decided: '2026-09-28'
   publish: '2026-09-28'
   status: approved
+  rev: 2
 black-lace-after-dark-2:
   decided: '2026-09-28'
   status: approved
@@ -22,6 +23,7 @@ couture-lace-and-pearls-1:
   decided: '2026-09-28'
   publish: '2026-09-28'
   status: approved
+  rev: 2
 couture-lace-and-pearls-2:
   status: approved
   decided: '2026-09-28'
@@ -40,6 +42,7 @@ gold-and-pearls-1:
   decided: '2026-09-28'
   publish: '2026-09-28'
   status: approved
+  rev: 2
 gold-and-pearls-2:
   decided: '2026-09-28'
   status: approved
@@ -80,6 +83,7 @@ red-lipsticks-1:
   decided: '2026-09-28'
   publish: '2026-09-28'
   status: approved
+  rev: 2
 red-lipsticks-2:
   decided: '2026-09-28'
   status: approved

@@ -170,7 +170,12 @@ def build_pages(posts):
     for p in posts:
         for pin in p["pins"]:
             s = schedule.get(pin["id"], {})
-            manifest.append(dict(id=pin["id"], image=pin["abs_image"], title=pin.get("pin_title", p["title"]),
+            # rev > 1 re-releases a pin as a brand-new Pinterest item (new guid, fresh image URL),
+            # e.g. after a redesign when Pinterest already posted the old image
+            rev = int(s.get("rev", 1))
+            manifest.append(dict(id=pin["id"], rev=rev,
+                                 guid=f"satinalibi-pin-{pin['id']}" + (f"-r{rev}" if rev > 1 else ""),
+                                 image=pin["abs_image"] + (f"?r={rev}" if rev > 1 else ""), title=pin.get("pin_title", p["title"]),
                                  description=pin.get("pin_description", p.get("dek", "")), link=pin["target"],
                                  board=pin["board"], post=p["abs_url"], date=p["date"].isoformat(),
                                  style=pin.get("style"), status=s.get("status", "pending"),
