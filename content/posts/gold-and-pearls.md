@@ -101,7 +101,7 @@ pins:
   pin_description: "Gold and pearls that get noticed: chunky gold hoops, pearl drop earrings, a statement ring and a pearl necklace with an edge, mostly under $100. Wear it all at once. See the full gold and pearls edit on Satin Alibi."
 - style: frames
   photos:
-  - "https://images.unsplash.com/photo-1613315986155-820432757035"
+  - "https://images.unsplash.com/photo-1614273977378-3b76e20e6153"
   - "https://images.unsplash.com/photo-1671644730555-916aa8d8157f"
   subs:
   - Is that too much gold?

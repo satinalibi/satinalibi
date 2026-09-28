@@ -65,13 +65,13 @@ pins:
   pin_description: "Lace top outfit ideas for work that actually work. Seven lace tops made to be worn out, not hidden: lace trim camis under a blazer, a lace corset top, a cotton lace button-down and a long sleeve lace bodysuit, from $48 to $195. Office outfit ideas with lace, tailored trousers and a sharp blazer. Read the full edit on Satin Alibi."
 - style: moodboard
   photos:
-  - "https://images.unsplash.com/photo-1777566131330-43fd5946c8f8"
-  - "https://images.unsplash.com/photo-1613315986155-820432757035"
-  - "https://images.unsplash.com/photo-1615560094221-ee0b118f0a65"
-  - "https://images.unsplash.com/photo-1617055407123-3d7130c1f940"
+  - "https://images.unsplash.com/photo-1583914143620-46298183773a"
+  - "https://images.unsplash.com/photo-1590455209730-25a477555e17"
+  - "https://images.unsplash.com/photo-1512750129023-cacd58b7be35"
+  - "https://images.unsplash.com/photo-1587658798809-c92f1adc564b"
   line1: Wear it
   line2: out.
-  note: soft, never shy
+  note: made to measure
   caption: lace tops you can wear to work
   pin_title: "How to Wear a Lace Top Out: Lace Blouse and Blazer Outfit Ideas"
   pin_description: How to wear a lace top out of the house and into the office. Pair a lace cami or lace blouse with wide-leg trousers, a pencil skirt or a boxy blazer, and let the lace be the soft part of a sharp outfit. Lace blouse outfits, lace cami outfits and lace bodysuit outfits for fall. Get all seven picks and the styling tips on Satin Alibi.
@@ -85,10 +85,10 @@ pins:
   pin_description: "The best lace tops to wear out right now: a lace cami in more than a dozen colours, a lace trim satin cami, a silk cami with French lace trim, a lace corset top, a Chantilly lace bodysuit and a cotton lace button-down. Lace tops for work, for dinner, for every day of the week. See every pick with prices on Satin Alibi."
 - style: edit
   photos:
-  - "https://images.unsplash.com/photo-1769006627351-719bbfb3736b"
-  - "https://images.unsplash.com/photo-1731145577071-955e5b83f27b"
-  - "https://images.unsplash.com/photo-1718072633087-47b595e99612"
-  - "https://images.unsplash.com/photo-1594734415578-00fc9540929b"
+  - "https://images.unsplash.com/photo-1646589391711-f083ec81bc55"
+  - "https://images.unsplash.com/photo-1603796847222-1baab324dcb0"
+  - "https://images.unsplash.com/photo-1574278047795-bf309f5a5cc0"
+  - "https://images.unsplash.com/photo-1548568974-a4f8811a4bd0"
   labels:
   - 01 · the cami
   - 02 · the button-down
@@ -101,8 +101,8 @@ pins:
   pin_description: "Dress code: lace. A lace cami under a blazer, a lace button-down for the office, a lace bodysuit and a lace bustier for after work. Seven lace tops you can actually wear out, from $48 to $195. See them all on Satin Alibi."
 - style: frames
   photos:
-  - "https://images.unsplash.com/photo-1763347119956-12c43dde9a58"
-  - "https://images.unsplash.com/photo-1786309777609-d8ec828b1fe1"
+  - "https://images.unsplash.com/photo-1612731486606-2614b4d74921"
+  - "https://images.unsplash.com/photo-1556337137-c7de215dfa78"
   subs:
   - Is that appropriate for work?
   - It is now.
@@ -114,8 +114,8 @@ hero_alt: Hand holding a pomegranate against a white lace shirt
 hero_credit: Karina Syrotiuk on Unsplash
 collage:
 - "https://images.unsplash.com/photo-1764974012591-c27855f40beb"
-- "https://images.unsplash.com/photo-1777566131330-43fd5946c8f8"
-- "https://images.unsplash.com/photo-1613315986155-820432757035"
+- "https://images.unsplash.com/photo-1583914143620-46298183773a"
+- "https://images.unsplash.com/photo-1590455209730-25a477555e17"
 ---
 Somebody decided lace belongs in a drawer. We disagree, loudly.
 

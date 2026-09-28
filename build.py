@@ -53,9 +53,12 @@ def photo(url, w, h=None, q=80):
     """Sized image URL. Works for Unsplash and Pexels; other URLs pass through."""
     if not url:
         return ""
-    base = url.split("?")[0]
+    base, _, qs = url.partition("?")
     if "images.unsplash.com" in base:
-        out = f"{base}?auto=format&fit=crop&crop=faces,entropy&w={w}&q={q}"
+        # a URL can carry its own crop, e.g. "...?crop=top" for a full-length shot
+        m = re.search(r"crop=([a-z,]+)", qs)
+        crop = m.group(1) if m else "faces,entropy"
+        out = f"{base}?auto=format&fit=crop&crop={crop}&w={w}&q={q}"
         return out + (f"&h={h}" if h else "")
     if "images.pexels.com" in base:
         out = f"{base}?auto=compress&cs=tinysrgb&fit=crop&w={w}"

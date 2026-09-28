@@ -2,7 +2,7 @@
 {% from "_card.html" import card, collage, img %}
 {% block main %}
 <section class="hero">
-  <div class="photo">{{ img(site.hero, 1920, 1080, site.hero_alt, 'tone', False) }}</div>
+  <div class="photo{% if site.hero_flip %} flip{% endif %}"{% if site.hero_pos %} style="--pos:{{ site.hero_pos }}"{% endif %}>{{ img(site.hero, 1920, 1080, site.hero_alt, 'tone', False) }}</div>
   <div class="hero-meta mono"><span>Satin Alibi &middot; Vol. 01</span><span>Est. {{ year }}</span></div>
   <h1>No apologies. <em>No alibis.</em></h1>
   <p class="sub">{{ site.hero_sub }}</p>

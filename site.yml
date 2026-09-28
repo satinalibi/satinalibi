@@ -9,8 +9,10 @@ pinterest_verify: "0808ba1869c5a006b2a36202a5a8414f"
 footer_line: For women who say it first, say it loud, and take up space.
 disclosure_short: Some links on this page are affiliate links. If you buy through them, Satin Alibi may earn a small commission at no extra cost to you. We only pick what we'd actually wear.
 
-hero: https://images.unsplash.com/photo-1681308838635-271a60b54c9e
-hero_alt: "Woman in a red dress looking out of a window at night"
+hero: https://images.unsplash.com/photo-1571887747018-948297fd9126?crop=top
+hero_alt: "Woman in a flowing yellow satin gown walking through a dark street"
+hero_flip: true
+hero_pos: "30% 0%"
 hero_sub: "[she walks in like she was expected]"
 
 sections:
@@ -28,14 +30,14 @@ sections:
 - slug: lace-and-pearls
   name: Lace & Pearls
   board: Lace & Pearls
-  line: Soft fabrics, sharp intentions.
-  about: Lace worn out, satin slips, pearls, feathers, and tulle, dressed up with nerve.
+  line: Couture manners. Terrible intentions.
+  about: Lace that looks made to measure, corsetry, opera gloves, tulle and pearls worn like an heirloom, all of it worn out, and worn loud.
   display: Lace & *pearls*
-  note: soft, never shy
+  note: made to measure
   collage:
-  - https://images.unsplash.com/photo-1777566131330-43fd5946c8f8
-  - https://images.unsplash.com/photo-1613315986155-820432757035
-  - https://images.unsplash.com/photo-1615560094221-ee0b118f0a65
+  - https://images.unsplash.com/photo-1574278047795-bf309f5a5cc0
+  - https://images.unsplash.com/photo-1590166223826-12dee1677420
+  - https://images.unsplash.com/photo-1587658798809-c92f1adc564b
 - slug: after-dark
   name: After Dark
   board: After Dark
