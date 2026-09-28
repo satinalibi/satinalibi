@@ -96,8 +96,8 @@ pins:
   line1: Find your
   line2: red.
   kicker: After dark
-  pin_title: "Red Isn't a Risk: Red Lipstick Quote for Confident, Outspoken Women"
-  pin_description: Red isn't a risk. It's a statement. Save this for the next time someone tells you it's too much, then read our edit of seven red lipsticks that start conversations, from blue-red to brick to cherry.
+  pin_title: "Find Your Red Lipstick: Blue-Red, Orange-Red, Brick and Lip Stain"
+  pin_description: "Find your red: a blue-red for cool undertones, an orange-red for warm skin, a brick red that works on almost everyone and a lip stain for red that lasts all night. Seven red lipsticks from drugstore to Dior. See the red lip edit on Satin Alibi."
 - style: frames
   photos:
   - "https://images.unsplash.com/photo-1571249132059-fa00b3d3e65f"

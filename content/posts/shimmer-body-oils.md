@@ -96,8 +96,8 @@ pins:
   line1: Shimmer
   line2: under $50.
   kicker: Golden hour
-  pin_title: "Glow Like It's On Purpose: Confident Beauty Quote and Shimmer Oil Picks"
-  pin_description: "Glow like it's on purpose. A reminder for every woman who was told to tone it down: turn it up instead. Save this for your confidence board, then read our edit of the best shimmer body oils for a bronzed, golden glow."
+  pin_title: "Shimmer Body Oils Under $50: Dry Oil, Gel Oil and Glow Oil Picks"
+  pin_description: "Shop the glow: a drugstore gel oil, a French dry oil with gold shimmer, a face-and-body glow oil and one splurge worth it. Golden shimmer, not glitter, for bare shoulders, golden hour and every night out. See all seven picks on Satin Alibi."
 - style: frames
   photos:
   - "https://images.unsplash.com/photo-1690711020581-0010f4d11c20"

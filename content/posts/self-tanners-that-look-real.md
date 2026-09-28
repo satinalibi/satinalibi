@@ -91,8 +91,8 @@ pins:
   line1: No sun.
   line2: All glow.
   kicker: Golden hour
-  pin_title: "Bronze Is a Choice: Confident Beauty Quote and Natural Self Tan Picks"
-  pin_description: "Bronze is a choice. Make it loudly. Save this for the days you need a push, then read our guide to self-tanners that look real: drops, mousse, gradual cream and instant glow for a golden tan without the sun."
+  pin_title: "Best Self Tanners by Type: Drops, Mousse, Gradual and Instant Tan"
+  pin_description: No sun, all glow. Self-tan drops for your face, a classic bronzing mousse, a gradual tan cream and a wash-off instant bronzer for tonight. How to pick the right one for a tan that looks real, not orange. See the full edit on Satin Alibi.
 - style: frames
   photos:
   - "https://images.unsplash.com/photo-1698181212724-4ff2e47b4093"

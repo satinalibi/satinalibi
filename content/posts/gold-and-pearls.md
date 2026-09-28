@@ -97,8 +97,8 @@ pins:
   line1: Gold and
   line2: pearls.
   kicker: Golden hour
-  pin_title: "Confidence Quotes for Women: Wear the Gold. All of It."
-  pin_description: Wear the gold. All of it. For the women who stack it high, never take one thing off before leaving the house, and walk in catching the light. Confidence quotes and fashion quotes for loud women. Then shop the gold and pearls edit on Satin Alibi.
+  pin_title: "Gold Jewelry Under $100: Gold Hoops, Pearl Drop Earrings, Statement Ring"
+  pin_description: "Gold and pearls that get noticed: chunky gold hoops, pearl drop earrings, a statement ring and a pearl necklace with an edge, mostly under $100. Wear it all at once. See the full gold and pearls edit on Satin Alibi."
 - style: frames
   photos:
   - "https://images.unsplash.com/photo-1613315986155-820432757035"
@@ -107,8 +107,8 @@ pins:
   - Is that too much gold?
   - There's no such thing.
   caption: golden hour
-  pin_title: "How to Wear an Arm Cuff: Gold Upper Arm Cuff Outfit Ideas"
-  pin_description: "How to wear an arm cuff: slide a gold upper arm cuff above the elbow with a black tank, a sleeveless dress or an off-the-shoulder top, then add chunky gold hoops. Arm cuff outfit ideas and gold jewelry styling tips for fall. Read the post for the full gold and pearls edit."
+  pin_title: "Chunky Gold Hoops and Pearl Earrings: How Much Gold Is Too Much?"
+  pin_description: Is that too much gold? There's no such thing. How to stack chunky gold hoops, pearl drops, a collar necklace and an upper-arm cuff without overthinking it, mostly under $100. See the gold and pearls edit on Satin Alibi.
 hero: "https://images.unsplash.com/photo-1763628212781-7d52844cf358"
 hero_alt: Sculptural pearl and gold earring
 hero_credit: Giustina Barison on Unsplash

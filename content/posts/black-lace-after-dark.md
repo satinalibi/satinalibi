@@ -97,8 +97,8 @@ pins:
   line1: Seven
   line2: pieces.
   kicker: After dark
-  pin_title: "Bold Quotes for Women: Walk In Like the Headline"
-  pin_description: Walk in like the headline. For the women who arrive late on purpose, order the second bottle and stay until the lights come up. Bold quotes, confidence quotes and a little permission you never needed. Then build the black lace, red lip night-out look on Satin Alibi.
+  pin_title: "Date Night Outfit Pieces: Black Lace Top, Blazer, Satin Skirt, Red Heels"
+  pin_description: "Seven pieces, one loud night out: a black lace blouse, a sharp blazer, a satin slip skirt, red satin heels, sheer black tights, a crystal mini bag and statement gold earrings. Shop the after-dark edit on Satin Alibi."
 - style: frames
   photos:
   - "https://images.unsplash.com/photo-1681308838635-271a60b54c9e"

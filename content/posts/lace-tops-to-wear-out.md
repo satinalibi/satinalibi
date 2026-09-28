@@ -97,8 +97,8 @@ pins:
   line1: "Dress code:"
   line2: lace.
   kicker: Lace & pearls
-  pin_title: "Bold Fashion Quotes for Women: Lace to Work? Obviously."
-  pin_description: Lace to work? Obviously. For the women who wear what they want to the meeting and never wait for permission. Fashion quotes, confidence quotes and a reminder that soft fabric can come with sharp intentions. Then find seven lace tops you can actually wear to work on Satin Alibi.
+  pin_title: "Lace Tops for Work: Lace Cami, Button-Down, Bodysuit and Bustier"
+  pin_description: "Dress code: lace. A lace cami under a blazer, a lace button-down for the office, a lace bodysuit and a lace bustier for after work. Seven lace tops you can actually wear out, from $48 to $195. See them all on Satin Alibi."
 - style: frames
   photos:
   - "https://images.unsplash.com/photo-1763347119956-12c43dde9a58"
