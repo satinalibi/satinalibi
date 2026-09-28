@@ -3,11 +3,15 @@
 {% block main %}
 <section class="hero">
   <div class="hero-text">
-    <div class="hero-meta mono"><span>Satin Alibi &middot; Vol. 01</span><span>Est. {{ year }}</span></div>
+    <div class="hero-meta mono"><span>Satin Alibi &middot; Vol. 01</span><span>{{ site.hero_sub or ('Est. ' ~ year) }}</span></div>
     <h1>No apologies. <em>No alibis.</em></h1>
-    {% if site.hero_sub %}<p class="hero-line mono">{{ site.hero_sub }}</p>{% endif %}
   </div>
-  <div class="photo{% if site.hero_flip %} flip{% endif %}"{% if site.hero_pos %} style="--pos:{{ site.hero_pos }}"{% endif %}>{{ img(site.hero, 1400, 1500, site.hero_alt, 'tone', False) }}</div>
+  <div class="photo{% if site.hero_flip %} flip{% endif %}"{% if site.hero_pos %} style="--pos:{{ site.hero_pos }}"{% endif %}>
+    <picture>
+      <source media="(max-width:760px)" srcset="{{ site.hero | photo(900, 1200) }}">
+      <img src="{{ site.hero | photo(1920, 1080) }}" alt="{{ site.hero_alt }}" width="1920" height="1080" class="tone">
+    </picture>
+  </div>
 </section>
 
 <section class="sec">

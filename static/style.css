@@ -4,6 +4,8 @@
 @font-face{font-family:"Courier Prime";src:url(/fonts/CourierPrime.woff) format("woff");font-style:normal;font-display:swap}
 @font-face{font-family:"Courier Prime";src:url(/fonts/CourierPrime-Italic.woff) format("woff");font-style:italic;font-display:swap}
 @font-face{font-family:"Homemade Apple";src:url(/fonts/HomemadeApple.woff) format("woff");font-display:swap}
+@font-face{font-family:"Playfair Display";src:url(/fonts/PlayfairDisplay-ExtraBold.woff) format("woff");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url(/fonts/PlayfairDisplay-ExtraBoldItalic.woff) format("woff");font-weight:800;font-style:italic;font-display:swap}
 
 :root{
   --paper:#F3EDE4;--paper-2:#EAE1D5;--card:#FBF8F3;--ink:#15100E;--ink-2:#3B302A;--muted:#7C6B5E;
@@ -51,16 +53,15 @@ em,i{font-style:italic}
 }
 
 /* hero: a film still */
-.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);min-height:min(86vh,860px);background:var(--paper);color:var(--ink)}
-.hero-text{display:flex;flex-direction:column;padding:22px var(--pad) clamp(40px,6vh,64px)}
+.hero{background:var(--paper);color:var(--ink)}
+.hero-text{padding:16px var(--pad) 0}
 .hero-meta{display:flex;justify-content:space-between;gap:16px}
-.hero h1{font-size:clamp(56px,7.6vw,132px);line-height:.88;margin:auto 0 0}
-.hero h1 em{display:block;color:var(--cherry)}
-.hero-line{margin-top:26px;color:#6E5A4B}
-.hero .photo{position:relative;overflow:hidden;min-height:420px}
-.hero .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 30%)}
+.hero h1{font-family:"Playfair Display","Instrument Serif",serif;font-weight:800;font-size:min(8.8vw,210px);line-height:1.02;letter-spacing:-.03em;white-space:nowrap;margin:10px 0 18px}
+.hero h1 em{font-style:italic;font-weight:800;color:var(--cherry)}
+.hero .photo{position:relative;overflow:hidden;height:max(380px,calc(100vh - 64px - 16px - 32px - min(8.8vw,210px) - 28px))}
+.hero .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 40%)}
 .hero .photo.flip img{transform:scaleX(-1)}
-@media (max-width:760px){.hero{grid-template-columns:1fr;min-height:0}.hero .photo{order:-1;height:64vh;min-height:360px}.hero h1{margin-top:28px}.hero-line{margin-top:18px}}
+@media (max-width:760px){.hero h1{white-space:normal;font-size:15.5vw;line-height:.98;margin:12px 0 18px}.hero h1 em{display:block}.hero .photo{height:72vh;min-height:360px}}
 
 /* section heads */
 .sec{padding:clamp(64px,9vw,128px) var(--pad)}
