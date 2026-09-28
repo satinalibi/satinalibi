@@ -1,0 +1,178 @@
+<title>Satin Alibi Pin Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=Courier+Prime&display=swap">
+<style>
+/* Layout: a contact sheet. Sticky tally on top, filter chips, then a grid of pins with Approve / Skip under each. */
+:root{
+  --paper:#F3EDE4; --card:#FBF8F3; --ink:#15100E; --ink-2:#4A3E36; --muted:#7C6B5E;
+  --line:rgba(21,16,14,.14); --cherry:#9E1B25; --cherry-ink:#FBF8F3; --gold:#B08445;
+  --ok:#2F6B45; --ok-bg:#E3EFE5; --skip-bg:#EDE6DD; --shadow:0 10px 26px rgba(40,25,15,.14);
+  --display:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Courier Prime","Courier New",monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#110D0C; --card:#1B1614; --ink:#F1E9DF; --ink-2:#CFC2B4; --muted:#9C8C80;
+  --line:rgba(241,233,223,.14); --cherry:#D2454E; --cherry-ink:#150F0E; --gold:#CFA064;
+  --ok:#7CC596; --ok-bg:#1D2B22; --skip-bg:#241E1B; --shadow:0 10px 26px rgba(0,0,0,.4); color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#110D0C; --card:#1B1614; --ink:#F1E9DF; --ink-2:#CFC2B4; --muted:#9C8C80;
+  --line:rgba(241,233,223,.14); --cherry:#D2454E; --cherry-ink:#150F0E; --gold:#CFA064;
+  --ok:#7CC596; --ok-bg:#1D2B22; --skip-bg:#241E1B; --shadow:0 10px 26px rgba(0,0,0,.4); color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:400 15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:clamp(16px,3.5vw,40px);padding-block:28px 64px}
+.eyebrow{font:400 12px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1{font:400 clamp(44px,7vw,76px)/.92 var(--display);letter-spacing:-.015em;margin:10px 0 12px;text-wrap:balance}
+h1 em{color:var(--cherry)}
+.lede{max-width:62ch;color:var(--ink-2);margin:0;font-size:16px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin:24px calc(clamp(16px,3.5vw,40px)*-1) 18px;padding:12px clamp(16px,3.5vw,40px)}
+.tally{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:baseline;font-variant-numeric:tabular-nums}
+.tally b{font:400 26px/1 var(--display);margin-right:5px}
+.tally .ok b{color:var(--ok)} .tally .left b{color:var(--cherry)}
+.progress{height:4px;border-radius:4px;background:var(--line);margin-top:10px;overflow:hidden;display:flex}
+.progress i{display:block;height:100%}
+.progress .p-ok{background:var(--ok)} .progress .p-skip{background:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.chip{font:500 13px/1 var(--sans);padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--cherry);outline-offset:2px}
+.note{margin:0 0 18px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink-2);font-size:14px}
+.note[data-tone="done"]{border-color:var(--ok);background:var(--ok-bg);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:26px 20px}
+@media (max-width:520px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}}
+.pin{min-width:0;display:flex;flex-direction:column;gap:8px}
+.shot{position:relative;aspect-ratio:2/3;border-radius:6px;overflow:hidden;background:var(--skip-bg);box-shadow:var(--shadow);transition:opacity .2s,transform .2s}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;top:10px;left:10px;font:500 12px/1 var(--sans);padding:7px 10px;border-radius:999px;display:none}
+.pin[data-state="approved"] .shot{outline:3px solid var(--ok);outline-offset:3px}
+.pin[data-state="approved"] .badge{display:block;background:var(--ok);color:var(--card)}
+.pin[data-state="approved"] .badge::after{content:"Approved"}
+.pin[data-state="skipped"] .shot{opacity:.38}
+.pin[data-state="skipped"] .badge{display:block;background:var(--ink);color:var(--paper)}
+.pin[data-state="skipped"] .badge::after{content:"Skipped"}
+.meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:4px}
+.board{font:500 11px/1 var(--sans);padding:5px 8px;border-radius:999px;border:1px solid var(--line)}
+.kind{font:400 11px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pin h3{font:400 20px/1.12 var(--display);margin:0;text-wrap:balance;overflow-wrap:anywhere}
+.to{margin:0;font-size:13px;color:var(--muted)}
+.to a{color:var(--ink-2);text-underline-offset:3px}
+details{font-size:13px;color:var(--ink-2)}
+summary{cursor:pointer;color:var(--muted);font-size:12.5px}
+details p{margin:6px 0 0}
+.act{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto;padding-top:4px}
+.act button{font:500 14px/1 var(--sans);padding:12px 8px;border-radius:999px;cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--ink);min-height:44px}
+.act .yes{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.act .yes[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:var(--card)}
+.act .no[aria-pressed="true"]{background:var(--skip-bg);border-color:var(--ink-2)}
+.act button:disabled{opacity:.45;cursor:not-allowed}
+.pin[hidden]{display:none!important}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;max-width:calc(100vw - 32px)}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Satin Alibi &middot; First batch &middot; %%COUNT%% pins</p>
+  <h1>Pin <em>review</em></h1>
+  <p class="lede">Pinterest asks you to choose every pin yourself. Tap <strong>Approve</strong> or <strong>Skip</strong> on each one. Approved pins post automatically, starting at 5 a day. Tap a choice again to undo it.</p>
+
+  <div class="bar" role="status" aria-live="polite">
+    <div class="tally">
+      <span class="ok"><b id="n-ok">0</b>approved</span>
+      <span><b id="n-skip">0</b>skipped</span>
+      <span class="left"><b id="n-left">%%COUNT%%</b>to decide</span>
+    </div>
+    <div class="progress" aria-hidden="true"><i class="p-ok" id="p-ok" style="width:0"></i><i class="p-skip" id="p-skip" style="width:0"></i></div>
+  </div>
+
+  <p class="note" id="note">Connecting so your choices save&hellip;</p>
+
+  <div class="chips" role="group" aria-label="Show pins">
+    <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="chip" data-filter="left" aria-pressed="false">To decide</button>
+    <button type="button" class="chip" data-filter="golden-hour" aria-pressed="false">Golden Hour</button>
+    <button type="button" class="chip" data-filter="lace-and-pearls" aria-pressed="false">Lace &amp; Pearls</button>
+    <button type="button" class="chip" data-filter="after-dark" aria-pressed="false">After Dark</button>
+    <button type="button" class="chip" data-filter="take-up-space" aria-pressed="false">Take Up Space</button>
+  </div>
+
+  <section class="grid" id="grid" aria-label="Pins">
+%%CARDS%%
+  </section>
+</div>
+<div class="toast" id="toast" role="alert"></div>
+
+<script>
+(function(){
+  const cards = Array.from(document.querySelectorAll('.pin'));
+  const byId = new Map(cards.map(c => [c.dataset.id, c]));
+  const state = {};
+  const busy = new Set();
+  let db = null, filter = 'all';
+  const $ = id => document.getElementById(id);
+
+  function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove('show'),3200); }
+
+  function paint(){
+    let ok=0, skip=0;
+    for (const c of cards){
+      const s = state[c.dataset.id] || '';
+      c.dataset.state = s;
+      c.querySelector('.yes').setAttribute('aria-pressed', String(s==='approved'));
+      c.querySelector('.no').setAttribute('aria-pressed', String(s==='skipped'));
+      if (s==='approved') ok++; else if (s==='skipped') skip++;
+      const show = filter==='all' || (filter==='left' ? !s : c.dataset.board===filter);
+      c.hidden = !show;
+    }
+    const n = cards.length, left = n-ok-skip;
+    $('n-ok').textContent=ok; $('n-skip').textContent=skip; $('n-left').textContent=left;
+    $('p-ok').style.width=(ok/n*100)+'%'; $('p-skip').style.width=(skip/n*100)+'%';
+    if (db){
+      const note=$('note');
+      if (left===0){ note.dataset.tone='done'; note.textContent = ok+' pins approved. All done. Claude will schedule them and they will start posting on their own.'; }
+      else { note.dataset.tone=''; note.textContent='Your choices save as you tap. You can close this page and come back any time.'; }
+    }
+  }
+
+  async function decide(id, act){
+    if (!db || busy.has(id)) return;
+    const prev = state[id] || '';
+    const next = prev===act ? '' : act;
+    state[id]=next; busy.add(id); paint();
+    try{
+      const ref = db.doc('decisions/'+id);
+      if (next) await ref.set({status:next, at:new Date().toISOString()});
+      else await ref.delete();
+    }catch(e){
+      state[id]=prev; paint();
+      toast(e && e.code==='invalid_argument' ? 'Only the page owner can save choices here.' : 'That choice did not save. Try again in a moment.');
+    }finally{ busy.delete(id); }
+  }
+
+  document.getElementById('grid').addEventListener('click', e=>{
+    const b = e.target.closest('button[data-act]'); if (!b) return;
+    decide(b.closest('.pin').dataset.id, b.dataset.act);
+  });
+  document.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{
+    filter = ch.dataset.filter;
+    document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed', String(x===ch)));
+    paint();
+  }));
+
+  cards.forEach(c=>c.querySelectorAll('.act button').forEach(b=>b.disabled=true));
+  paint();
+
+  (async()=>{
+    try{ db = window.claude && window.claude.use ? await window.claude.use('db') : null; }catch(_){ db=null; }
+    if (!db){ $('note').textContent='Open this page in Claude to save your choices. Here you can look, but taps will not be kept.'; return; }
+    cards.forEach(c=>c.querySelectorAll('.act button').forEach(b=>b.disabled=false));
+    paint();
+    db.collection('decisions').onSnapshot(snap=>{
+      for (const d of snap.docs){ if (byId.has(d.id) && !busy.has(d.id)){ const v=d.data(); state[d.id]=(v&&v.status)||''; } }
+      for (const ch of snap.docChanges()){ if (ch.type==='removed' && !busy.has(ch.doc.id)) state[ch.doc.id]=''; }
+      paint();
+    }, err=>{ $('note').textContent='Saving is paused right now. Reload the page to reconnect.'; });
+  })();
+})();
+</script>

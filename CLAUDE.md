@@ -101,3 +101,9 @@ Every pin needs Rabia's approval before it's scheduled (Pinterest requires the a
 4. The daily build writes one RSS feed per board at `/feeds/<section>.xml` containing approved pins whose
    publish date has arrived. Pinterest's "auto-publish from RSS" (connected once by Rabia, one feed per board)
    picks them up within 24 hours. Pins must link to satinalibi.com for this to work.
+
+## Rabia's pin review page
+Review page (Claude artifact): https://claude.ai/artifact/329Lfq6xP8SXf1TFza4wxW
+Her taps are saved in the page's database, collection `decisions`, one document per pin id: `{status: "approved"|"skipped", at}`.
+To sync: read that collection (ArtifactData list), run `schedule_pins.py approve` / `reject` for her choices, then `plan`, commit and push.
+To add a new batch: regenerate the page with `tools/review_page.py` (pins from `git archive origin/site pins` into scratch/live) (after the site branch has the new pin JPGs) and republish to the same URL.
