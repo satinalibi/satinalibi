@@ -6,12 +6,12 @@ section: lace-and-pearls
 date: 2026-09-28
 status: published
 dek: Corset lace, opera gloves and pearls at the throat, from a $55 barrette to a $438 gown.
-hero: "https://images.unsplash.com/photo-1585409351049-f0d83b76c5dc"
-hero_alt: Woman with strands of pearls draped across her face and a lace collar at her throat
-hero_credit: JJ Jordan on Unsplash
+hero: "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb"
+hero_alt: Woman in a strapless embellished tulle gown with a sweeping skirt
+hero_credit: Khaled Ghareeb on Unsplash
 note: made to measure
 collage:
-- "https://images.unsplash.com/photo-1585409351049-f0d83b76c5dc"
+- "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb"
 - "https://images.unsplash.com/photo-1551621955-fa07d4b1376b"
 - "https://images.unsplash.com/photo-1561060511-dc6d28b71f8b"
 products:
@@ -72,9 +72,9 @@ pins:
   pin_description: "Lace and pearls that look made to measure. A black lace corset midi dress, satin opera gloves handmade in England, a layered freshwater pearl choker, a satin corset top, a pearl bow barrette and an embroidered lace gown for black tie, from $55 to $438. Vintage glamour and old Hollywood outfit ideas for women who like to be noticed. See the full couture edit on Satin Alibi."
 - style: moodboard
   photos:
-  - "https://images.unsplash.com/photo-1585409351049-f0d83b76c5dc"
   - "https://images.unsplash.com/photo-1551621955-fa07d4b1376b"
-  - "https://images.unsplash.com/photo-1601597565151-70c4020dc0e1"
+  - "https://images.unsplash.com/photo-1590166223826-12dee1677420"
+  - "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb"
   - "https://images.unsplash.com/photo-1561060511-dc6d28b71f8b"
   line1: Couture
   line2: manners.
