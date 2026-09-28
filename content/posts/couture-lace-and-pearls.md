@@ -74,7 +74,7 @@ pins:
   photos:
   - "https://images.unsplash.com/photo-1585409351049-f0d83b76c5dc"
   - "https://images.unsplash.com/photo-1551621955-fa07d4b1376b"
-  - "https://images.unsplash.com/photo-1578220154766-1c39bcecc1dc"
+  - "https://images.unsplash.com/photo-1601597565151-70c4020dc0e1"
   - "https://images.unsplash.com/photo-1561060511-dc6d28b71f8b"
   line1: Couture
   line2: manners.
@@ -93,8 +93,8 @@ pins:
 - style: edit
   photos:
   - "https://images.unsplash.com/photo-1548568974-a4f8811a4bd0"
-  - "https://images.unsplash.com/photo-1783530614914-06638a4937eb"
-  - "https://images.unsplash.com/photo-1689553079282-45df1b35741b"
+  - "https://images.unsplash.com/photo-1772260905203-6846340aaf98"
+  - "https://images.unsplash.com/photo-1590455209730-25a477555e17"
   - "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb"
   labels:
   - 01 · the corset
