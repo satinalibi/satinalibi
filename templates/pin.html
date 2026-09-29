@@ -8,6 +8,8 @@
 @font-face{font-family:"CP";src:url(/fonts/CourierPrime.woff) format("woff");font-style:normal}
 @font-face{font-family:"CP";src:url(/fonts/CourierPrime-Italic.woff) format("woff");font-style:italic}
 @font-face{font-family:"HA";src:url(/fonts/HomemadeApple.woff) format("woff")}
+@font-face{font-family:"PF";src:url(/fonts/PlayfairDisplay-ExtraBold.woff) format("woff");font-weight:800;font-style:normal}
+@font-face{font-family:"PF";src:url(/fonts/PlayfairDisplay-ExtraBoldItalic.woff) format("woff");font-weight:800;font-style:italic}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1000px;height:1500px;overflow:hidden}
 body{font-family:"ISans",sans-serif;-webkit-font-smoothing:antialiased}
@@ -122,6 +124,8 @@ body{font-family:"ISans",sans-serif;-webkit-font-smoothing:antialiased}
   <div class="foot row mono"><span>{{ (pin.lines or []) | join(' · ') }}</span><span>satinalibi.com</span></div>
   <div class="grain" style="opacity:.1"></div>
 </div>
+{% elif style in ['contact','sun','flash','darkroom','specimen','fourways','museum','lot'] %}
+{% include "pin_editorial.html" %}
 {% else %}
 <div class="pin edit"{{ sv|safe }}>
   <div class="head">

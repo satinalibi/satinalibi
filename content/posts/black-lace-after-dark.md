@@ -109,6 +109,23 @@ pins:
   caption: after dark
   pin_title: "Red Heels Outfit Ideas: Black Tights, Satin Skirt and Black Lace"
   pin_description: "Red heels outfit ideas for after dark: red satin ballet heels with sheer black tights, a black satin midi skirt and a black lace blouse under a sharp blazer. One red, lots of black, a little gold. Date night outfit inspiration for fall. Get the full look and how to wear it on Satin Alibi."
+- style: darkroom
+  photo: "https://images.unsplash.com/photo-1526798513516-d2c620778abe"
+  note: print it twice.
+  line1: Leave them
+  line2: wondering.
+  stack: true
+  size: 46
+  accent: "#FF3B3F"
+  strip:
+    label: The after-dark edit
+    items:
+    - ["Tully lace blouse, CAMI NYC", "$275"]
+    - ["Satin Touch tights, Wolford", "$55"]
+    - ["Larina red satin heels", "$119.95"]
+    cta: "Shop all 7 pieces →"
+  pin_title: "Date Night Outfit: Black Lace Blouse, Sheer Tights and Red Satin Heels"
+  pin_description: "Leave them wondering. The after-dark edit: a black lace blouse, sheer black tights, red satin heels, a satin midi skirt, a sharp blazer, a crystal mini bag and statement earrings. Night out outfit ideas in black lace. Shop all seven pieces on Satin Alibi."
 hero: "https://images.unsplash.com/photo-1772260905203-6846340aaf98"
 hero_alt: Hands in black lace gloves
 hero_credit: Wilhelm Gunkel on Unsplash

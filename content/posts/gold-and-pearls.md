@@ -109,6 +109,24 @@ pins:
   caption: golden hour
   pin_title: "Chunky Gold Hoops and Pearl Earrings: How Much Gold Is Too Much?"
   pin_description: Is that too much gold? There's no such thing. How to stack chunky gold hoops, pearl drops, a collar necklace and an upper-arm cuff without overthinking it, mostly under $100. See the gold and pearls edit on Satin Alibi.
+- style: museum
+  photo: "https://images.unsplash.com/photo-1677677159237-a36fcffe4516"
+  placard_title: Portrait of a Woman Who Took Up the Whole Room
+  placard: 2026. Candlelight, velvet, zero apologies. On permanent loan from herself.
+  line1: A masterpiece,
+  line2: obviously.
+  stack: true
+  size: 46
+  accent: "#E3BE6E"
+  strip:
+    label: Gild the look
+    items:
+    - ["Giulia gold hoops, Ana Luisa", "$70"]
+    - ["Maxine pearl drop earrings", "$75"]
+    - ["Dane collar, Jenny Bird", "$118"]
+    cta: "Shop the gold →"
+  pin_title: "Gold Jewelry Ideas: Gold Hoops, Pearl Drop Earrings and a Gold Collar Necklace"
+  pin_description: "A masterpiece, obviously. Gild the look with chunky gold hoops, pearl drop earrings and a high-polish gold collar, mostly under $120. Old money, candlelit, vintage glamour styling with gold and pearls. Shop the gold edit on Satin Alibi."
 hero: "https://images.unsplash.com/photo-1763628212781-7d52844cf358"
 hero_alt: Sculptural pearl and gold earring
 hero_credit: Giustina Barison on Unsplash

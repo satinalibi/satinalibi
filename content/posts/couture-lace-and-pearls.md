@@ -117,6 +117,47 @@ pins:
   caption: lace & pearls
   pin_title: "Couture Look for Less: Lace Gowns, Corset Dresses and Pearls"
   pin_description: "Who made your dress? Who's asking? Couture-looking lace and pearls for black tie, weddings and every dinner you plan to walk into late: a lace corset midi dress, an embroidered lace gown, satin opera gloves and a pearl collar. See the full edit on Satin Alibi."
+- style: specimen
+  photo: "https://images.unsplash.com/photo-1571243555135-fc4715d39071?crop=entropy"
+  number: "07"
+  rows:
+  - [Worn, "on skin, never under"]
+  - [Luster, excessive]
+  - [Condition, unapologetic]
+  line1: Handle with
+  line2: attitude.
+  stack: true
+  size: 46
+  accent: "#2F4B63"
+  strip:
+    label: The pearl edit
+    items:
+    - ["Layered pearl choker", "$98"]
+    - ["Aurora pearl barrette", "$55"]
+    - ["Satin opera gloves", "$208"]
+    cta: "Shop the pearls →"
+  pin_title: "Pearl Choker Outfit: Layered Pearls, Pearl Barrette and Satin Opera Gloves"
+  pin_description: "Handle with attitude. Pearls worn on skin, never under: a layered freshwater pearl choker, a pearl bow barrette and satin opera gloves, plus a lace corset dress and more couture-looking pieces from $55 to $438. Elegant evening outfit ideas. Shop the pearl edit on Satin Alibi."
+- style: fourways
+  photos:
+  - "https://images.unsplash.com/photo-1694199756130-b32c87b98dff"
+  - "https://images.unsplash.com/photo-1670201203116-26644750a726"
+  - "https://images.unsplash.com/photo-1550180390-11f5e76784c8"
+  - "https://images.unsplash.com/photo-1571243555255-9cc6b2cb945c?crop=entropy"
+  caps: [at the ear, in the hair, under a lace veil, anywhere you like]
+  line1: Pearls,
+  line2: plural.
+  sub: four ways to wear them loud, never just one strand
+  accent: "#8A4FC2"
+  strip:
+    label: Shop the four ways
+    items:
+    - ["Pearl bow barrette", "$55"]
+    - ["Layered pearl choker", "$98"]
+    - ["Pearl-collar cardigan, Sandro", "$365"]
+    cta: "Shop the pearl edit →"
+  pin_title: "How to Wear Pearls: 4 Ways, From Pearl Earrings to Pearls in Your Hair"
+  pin_description: "Pearls, plural. Four ways to wear pearls loud: at the ear, in the hair, under a lace veil and anywhere you like. A layered pearl choker, a pearl bow barrette and a pearl-collar cardigan, from $55. Pearl jewelry outfit ideas and vintage glam inspiration. Shop the pearl edit on Satin Alibi."
 ---
 Couture isn't a price tag. It's a posture.
 

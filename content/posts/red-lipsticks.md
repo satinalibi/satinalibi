@@ -108,6 +108,23 @@ pins:
   caption: after dark
   pin_title: How to Find Your Perfect Red Lipstick Shade for Your Undertone
   pin_description: Cool undertones, try a blue-red. Warm undertones, go orange-red or brick. Want something softer? A cherry stain builds as bold as you like. Our guide to choosing and wearing red lipstick, plus seven reds from the drugstore to Dior. Read the full post on Satin Alibi.
+- style: flash
+  photo: "https://images.unsplash.com/photo-1541257710737-06d667133a53"
+  stamp: "'26 10 31"
+  line1: You were
+  line2: never here.
+  stack: true
+  size: 48
+  accent: "#FF4F8B"
+  strip:
+    label: Find your red
+    items:
+    - ["Ruby Woo, MAC", "$24"]
+    - ["999 Satin, Dior", "$50"]
+    - ["Cherries in the Snow, Revlon", "$11.99"]
+    cta: "Shop all 7 reds →"
+  pin_title: "Best Red Lipstick: Ruby Woo, Dior 999 and 5 More Reds for a Night Out"
+  pin_description: "You were never here. The red lip edit for nights out: MAC Ruby Woo, Rouge Dior 999, Revlon Cherries in the Snow and four more classic reds from $11.99 to $50, blue-red to brick. Date night makeup and red lipstick ideas. Shop all seven on Satin Alibi."
 hero: "https://images.unsplash.com/photo-1645961359159-c57c39d461b2"
 hero_alt: Red lipstick on a dark table
 hero_credit: Mehmet Ali Turan on Unsplash

@@ -47,6 +47,23 @@ pins:
   caption: take up space
   pin_title: "Take up space quotes: empowering words for bold women"
   pin_description: You were never meant to fit in the margins. Empowering quotes for bold women who take up space and cheer each other on. Save this one and read the full essay on Satin Alibi.
+- style: contact
+  photos:
+  - "https://images.unsplash.com/photo-1575650980083-70dc2d0359fd"
+  - "https://images.unsplash.com/photo-1574091101646-af65f2e8ea64"
+  - "https://images.unsplash.com/photo-1559157306-406ce1382742"
+  - "https://images.unsplash.com/photo-1575650980099-fe098264560c"
+  circle: 1
+  note: "this one. →"
+  line1: Take up
+  line2: space.
+  accent: "#E0262E"
+  strip:
+    kind: read
+    line: "Too much is a compliment: what taking up space actually looks like, and why the review is in."
+    cta: "Read the essay →"
+  pin_title: "Take Up Space: Confidence Quotes for Women Who Are Too Much (in the Best Way)"
+  pin_description: "Take up space, then take a little more. A short essay on being called too much and hearing it as a compliment: loud women, big laughs, taking up room without apologizing. Vintage black and white dance photography, confidence quotes for women and self-respect inspiration. Read it on Satin Alibi."
 hero: "https://images.unsplash.com/photo-1548207775-a7676e36f20a"
 hero_alt: Black-and-white portrait of a woman
 hero_credit: Juan Manuel Merino on Unsplash
