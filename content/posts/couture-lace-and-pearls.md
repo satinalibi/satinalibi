@@ -135,7 +135,7 @@ pins:
   line2: pearl-clutching.
   accent: "#B1222C"
   tips:
-  - ["On skin", "Bare collarbones, a low neckline. Not over a twinset.", 48, 22]
+  - ["On skin", "Bare collarbones, a low neckline. Let them sit right on skin.", 48, 22]
   - ["With an edge", "A sharp blazer, black lace, a red lip. Give them something to argue with.", 84, 44]
   - ["In layers", "A short strand and a long one. Nobody's counting.", 52, 58]
   strip:
@@ -151,7 +151,7 @@ pins:
   photos:
   - "https://images.unsplash.com/photo-1694199756130-b32c87b98dff"
   - "https://images.unsplash.com/photo-1670201203116-26644750a726"
-  - "https://images.unsplash.com/photo-1689553079282-45df1b35741b"
+  - "https://images.unsplash.com/photo-1783530614891-addd50179051"
   - "https://images.unsplash.com/photo-1611652022419-a9419f74343d?crop=top"
   caps: [as earrings, in your hair, at your throat, in layers]
   line1: Pearls,
@@ -181,6 +181,6 @@ So we went looking for pieces that look made to order without the six fittings. 
 
 Pick one couture piece and keep everything around it plain. The corset top with black trousers. The gloves with a simple strapless dress. The pearl collar on bare collarbones. The cardigan buttoned to the top like a blouse.
 
-Pearls get the same treatment. Wear them on skin, not over a twinset. Give them something to argue with: a sharp blazer, black lace, a red lip. And don't stop at one strand. A short one and a long one is a look. Earrings, a choker and a pearl clip in your hair is a better one.
+Pearls get the same treatment. Wear them on skin: bare collarbones, a low neckline. Give them something to argue with: a sharp blazer, black lace, a red lip. And don't stop at one strand. A short one and a long one is a look. Earrings, a choker and a pearl clip in your hair is a better one.
 
 Then do the one thing couture really asks of you: arrive like you meant to. Take the long way across the room. They'll ask who made it. Tell them you did.

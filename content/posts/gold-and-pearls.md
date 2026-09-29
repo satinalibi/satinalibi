@@ -113,7 +113,7 @@ pins:
   wall: warm
   photo: "https://images.unsplash.com/photo-1631233859262-0d7b12ea7d4c"
   placard_title: Portrait of a Woman Who Took Up the Whole Room
-  placard: 2026. Gold at the ears, a bare back, no apologies. On permanent loan from herself.
+  placard: 2026. Gold at the ears, a bare back, no apologies.
   line1: A masterpiece,
   line2: obviously.
   stack: true
