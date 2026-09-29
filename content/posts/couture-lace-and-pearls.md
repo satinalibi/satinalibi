@@ -152,11 +152,11 @@ pins:
   - "https://images.unsplash.com/photo-1694199756130-b32c87b98dff"
   - "https://images.unsplash.com/photo-1670201203116-26644750a726"
   - "https://images.unsplash.com/photo-1689553079282-45df1b35741b"
-  - "https://images.unsplash.com/photo-1611652022419-a9419f74343d"
+  - "https://images.unsplash.com/photo-1611652022419-a9419f74343d?crop=top"
   caps: [as earrings, in your hair, at your throat, in layers]
   line1: Pearls,
   line2: plural.
-  sub: Four ways to wear them. You're allowed all four at once.
+  sub: Four ways to wear them. Or all four at once.
   accent: "#8A4FC2"
   strip:
     label: Shop the four ways
@@ -164,7 +164,7 @@ pins:
     - ["Pearl drop earrings", "$75"]
     - ["Pearl bow barrette", "$55"]
     - ["Layered pearl choker", "$98"]
-    - ["Pearl layered necklace", "$60"]
+    - ["Pearl chain necklace", "$60"]
     cta: "Shop the pearl edit →"
   pin_title: "How to Wear Pearls: 4 Ways, From Pearl Earrings to Pearls in Your Hair"
   pin_description: "Pearls, plural. Four ways to wear pearls: as drop earrings, clipped in your hair, as a choker at your throat and layered with gold chains. Pearl drop earrings, a pearl bow barrette, a layered freshwater pearl choker and a gold-and-pearl layered necklace, all under $100. Pearl jewelry outfit ideas and vintage glam inspiration. Shop the pearl edit on Satin Alibi."
