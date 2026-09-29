@@ -268,6 +268,9 @@ def fetch_og_image(url):
             img = _html.unescape(m.group(1)).strip()
             if img.startswith("//"):
                 img = "https:" + img
+            img = re.sub(r"^http://", "https://", img)
+            if re.search(r"og_general|logo|default|placeholder", img, re.I):  # a store-wide card, not the product
+                return None
             # Shopify shares a cropped social card; ask for the plain photo instead
             img = re.sub(r"_(\d+x\d*|\d*x\d+)(_crop_[a-z]+)?(?=\.(jpe?g|png|webp)\b)", "", img)
             return img

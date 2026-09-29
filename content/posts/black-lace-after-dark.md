@@ -13,6 +13,7 @@ products:
   price: $275 USD
   retailer: Cami NYC
   url: "https://www.caminyc.com/products/tully-lace-blouse-f26-t08-black"
+  short: Lace blouse, CAMI NYC
   note: Sheer black lace with a self-tie neckline, raglan sleeves finished in lace ruffles, and a lined body that ends at the high hip in a lace flounce. Tuck it in or let it swing. Either way it's the first thing they see, right before the lip.
 - brand: Contemporaine
   name: Crest buttons stretch crepe blazer
@@ -31,6 +32,7 @@ products:
   price: $119.95 USD
   retailer: Steve Madden
   url: "https://www.stevemadden.com/products/larina-red-satin"
+  short: Red satin heels, Steve Madden
   note: Red satin ballet heels with a square toe, a lace-up design and a 4-inch heel. This is the loud part of the look. Wear them like you've already been told they're too much.
 - brand: Wolford
   name: Satin Touch 20 Tights
@@ -126,6 +128,19 @@ pins:
     cta: "Shop all 7 pieces →"
   pin_title: "Date Night Outfit: Black Lace Blouse, Sheer Tights and Red Satin Heels"
   pin_description: "Leave them wondering. The after-dark edit: a black lace blouse, sheer black tights, red satin heels, a satin midi skirt, a sharp blazer, a crystal mini bag and statement earrings. Night out outfit ideas in black lace. Shop all seven pieces on Satin Alibi."
+- style: pieces
+  photo: "https://images.unsplash.com/photo-1770294759013-a5784266a817"
+  line1: What to wear to
+  line2: the holiday party.
+  kicker: After Dark
+  pieces: [0, 4, 3]
+  accent: "#C21F2E"
+  strip:
+    kind: cta
+    label: Shop the look
+    cta: "Shop the look →"
+  pin_title: "What to Wear to a Holiday Party: Black Lace Blouse, Sheer Tights and Red Satin Heels"
+  pin_description: "What to wear to the holiday party: a black lace blouse from CAMI NYC ($275), Wolford Satin Touch sheer black tights ($55) and red satin heels from Steve Madden ($119.95). Christmas party outfit ideas, NYE outfit inspiration and dark feminine date night looks. Shop the look on Satin Alibi."
 hero: "https://images.unsplash.com/photo-1772260905203-6846340aaf98"
 hero_alt: Hands in black lace gloves
 hero_credit: Wilhelm Gunkel on Unsplash

@@ -45,6 +45,7 @@ products:
   price: $118 USD
   retailer: Jenny Bird
   url: "https://jenny-bird.com/products/dane-collar"
+  short: Gold collar, Jenny Bird
   note: A high-polish collar in 14k gold-plated stainless steel with a tension closure, lightweight and water-resistant. Jenny Bird suggests wearing it alone or stacking it with chains. Put it over a crew-neck and add the pearls underneath.
 - brand: Jenny Bird
   name: Ola Arm Cuff
@@ -57,6 +58,8 @@ products:
   price: $75 USD
   retailer: Ana Luisa
   url: "https://www.analuisa.com/products/statement-ring-remi"
+  short: Statement ring, Ana Luisa
+  img_zoom: 1.6
   note: Ana Luisa calls it “the gold & bold accessory ready to shake things up.” Plated in 14k gold, tarnish-free, in sizes 5 to 10. Wear it on your pointer finger, the one you use to make a point.
 pins:
 - style: cover
@@ -135,6 +138,19 @@ pins:
     cta: "Shop the gold →"
   pin_title: "Gold Jewelry Ideas: Gold Hoops, Pearl Drop Earrings and a Gold Collar Necklace"
   pin_description: "A masterpiece, obviously. Gild the look with chunky gold hoops, pearl drop earrings and a high-polish gold collar, mostly under $120. Backless dress, gold statement earrings, candlelit vintage glamour styling with gold and pearls. Shop the gold edit on Satin Alibi."
+- style: pieces
+  photo: "https://images.unsplash.com/photo-1585960622850-ed33c41d6418"
+  line1: Holiday gold,
+  line2: all under $120.
+  kicker: Golden Hour
+  pieces: [0, 6, 4]
+  accent: "#A8741F"
+  strip:
+    kind: cta
+    label: Shop the gold
+    cta: "Shop the gold →"
+  pin_title: "Holiday Gold Jewelry Under $120: Chunky Gold Hoops, Statement Ring, Gold Collar Necklace"
+  pin_description: "Holiday gold, all under $120: chunky 14k gold-plated hoops from Ana Luisa ($70), a sculptural statement ring from Ana Luisa ($75) and the Dane gold collar necklace from Jenny Bird ($118). Gold jewelry for holiday parties, Christmas gift ideas for her and old money glam. Shop the gold on Satin Alibi."
 hero: "https://images.unsplash.com/photo-1763628212781-7d52844cf358"
 hero_alt: Sculptural pearl and gold earring
 hero_credit: Giustina Barison on Unsplash
