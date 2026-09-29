@@ -111,11 +111,9 @@ pins:
   pin_description: "Red heels outfit ideas for after dark: red satin ballet heels with sheer black tights, a black satin midi skirt and a black lace blouse under a sharp blazer. One red, lots of black, a little gold. Date night outfit inspiration for fall. Get the full look and how to wear it on Satin Alibi."
 - style: darkroom
   photo: "https://images.unsplash.com/photo-1526798513516-d2c620778abe"
-  note: print it twice.
   line1: Leave them
   line2: wondering.
   stack: true
-  size: 46
   accent: "#FF3B3F"
   strip:
     label: The after-dark edit

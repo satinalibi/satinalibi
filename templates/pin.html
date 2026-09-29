@@ -124,7 +124,7 @@ body{font-family:"ISans",sans-serif;-webkit-font-smoothing:antialiased}
   <div class="foot row mono"><span>{{ (pin.lines or []) | join(' · ') }}</span><span>satinalibi.com</span></div>
   <div class="grain" style="opacity:.1"></div>
 </div>
-{% elif style in ['contact','sun','flash','darkroom','specimen','fourways','museum','lot'] %}
+{% elif style in ['contact','sun','flash','darkroom','specimen','fourways','museum','lot','howto'] %}
 {% include "pin_editorial.html" %}
 {% else %}
 <div class="pin edit"{{ sv|safe }}>

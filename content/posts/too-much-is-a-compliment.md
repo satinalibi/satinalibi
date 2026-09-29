@@ -60,8 +60,9 @@ pins:
   accent: "#E0262E"
   strip:
     kind: read
-    line: "Too much is a compliment: what taking up space actually looks like, and why the review is in."
-    cta: "Read the essay →"
+    label: Worth a read
+    line: "Ever been told you're \"a lot\"? Same. We stopped hearing it as an insult, and here's why you should too."
+    cta: "Read it →"
   pin_title: "Take Up Space: Confidence Quotes for Women Who Are Too Much (in the Best Way)"
   pin_description: "Take up space, then take a little more. A short essay on being called too much and hearing it as a compliment: loud women, big laughs, taking up room without apologizing. Vintage black and white dance photography, confidence quotes for women and self-respect inspiration. Read it on Satin Alibi."
 hero: "https://images.unsplash.com/photo-1548207775-a7676e36f20a"

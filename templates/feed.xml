@@ -8,7 +8,7 @@
   <language>en</language>
   <lastBuildDate>{{ build_date }}</lastBuildDate>
 {% for p in posts %}  <item>
-    <title>{{ p.title | striptags }}</title>
+    <title>{{ p.title | md_inline | striptags }}</title>
     <link>{{ p.abs_url }}</link>
     <guid isPermaLink="true">{{ p.abs_url }}</guid>
     <pubDate>{{ p.rfc_date }}</pubDate>

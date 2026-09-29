@@ -21,6 +21,18 @@ products:
   retailer: Nordstrom
   url: "https://www.nordstrom.com/s/aurora-faux-pearl-barrette/8914173"
   note: Faux pearls gathered into a bow on a goldtone-plated barrette, about 2.5 inches across. Small, bright and completely sure of itself. Clip it at the back of a slick low bun and let them find it when you walk away.
+- brand: Ettika
+  name: All the Chains Pearl Layered Necklace
+  price: $60 USD
+  retailer: Ettika
+  url: "https://www.ettika.com/products/all-the-chains-pearl-layered-necklace"
+  note: "Freshwater and glass pearls strung between gold-plated chains, already layered for you, adjustable from 16 to 18 inches. It does the stacking so you don't have to. Wear it low on an open white shirt, with the collar pushed back."
+- brand: Ana Luisa
+  name: Maxine Pearl Drop Earrings
+  price: $75 USD
+  retailer: Ana Luisa
+  url: "https://www.analuisa.com/products/pearl-drop-earrings-maxine"
+  note: Glass pearls swinging from 14k gold plating, tarnish-free and hypoallergenic. The kind of earring that moves when you laugh. Pull your hair all the way back so nothing gets in their way.
 - brand: By Anthropologie
   name: Layered Freshwater Pearl Choker
   price: $98 USD
@@ -117,47 +129,45 @@ pins:
   caption: lace & pearls
   pin_title: "Couture Look for Less: Lace Gowns, Corset Dresses and Pearls"
   pin_description: "Who made your dress? Who's asking? Couture-looking lace and pearls for black tie, weddings and every dinner you plan to walk into late: a lace corset midi dress, an embroidered lace gown, satin opera gloves and a pearl collar. See the full edit on Satin Alibi."
-- style: specimen
-  photo: "https://images.unsplash.com/photo-1571243555135-fc4715d39071?crop=entropy"
-  number: "07"
-  rows:
-  - [Worn, "on skin, never under"]
-  - [Luster, excessive]
-  - [Condition, unapologetic]
-  line1: Handle with
-  line2: attitude.
-  stack: true
-  size: 46
-  accent: "#2F4B63"
+- style: howto
+  photo: "https://images.unsplash.com/photo-1590455209730-25a477555e17"
+  line1: Pearls without the
+  line2: pearl-clutching.
+  accent: "#B1222C"
+  tips:
+  - ["On skin", "Bare collarbones, a low neckline. Not over a twinset.", 48, 22]
+  - ["With an edge", "A sharp blazer, black lace, a red lip. Give them something to argue with.", 84, 44]
+  - ["In layers", "A short strand and a long one. Nobody's counting.", 52, 58]
   strip:
-    label: The pearl edit
+    label: Shop the pearls
     items:
     - ["Layered pearl choker", "$98"]
-    - ["Aurora pearl barrette", "$55"]
-    - ["Satin opera gloves", "$208"]
+    - ["Pearl layered necklace, Ettika", "$60"]
+    - ["Pearl drop earrings, Ana Luisa", "$75"]
     cta: "Shop the pearls →"
-  pin_title: "Pearl Choker Outfit: Layered Pearls, Pearl Barrette and Satin Opera Gloves"
-  pin_description: "Handle with attitude. Pearls worn on skin, never under: a layered freshwater pearl choker, a pearl bow barrette and satin opera gloves, plus a lace corset dress and more couture-looking pieces from $55 to $438. Elegant evening outfit ideas. Shop the pearl edit on Satin Alibi."
+  pin_title: "How to Wear Pearls Without Looking Prim: 3 Styling Tips"
+  pin_description: "Pearls without the pearl-clutching. Three ways to make pearls look modern: wear them on bare skin, pair them with something sharp like a blazer or black lace, and layer a short strand with a long one. A layered freshwater pearl choker, a gold-and-pearl layered necklace and pearl drop earrings, from $60. Pearl outfit ideas and styling tips. Shop the pearls on Satin Alibi."
 - style: fourways
   photos:
   - "https://images.unsplash.com/photo-1694199756130-b32c87b98dff"
   - "https://images.unsplash.com/photo-1670201203116-26644750a726"
-  - "https://images.unsplash.com/photo-1550180390-11f5e76784c8"
-  - "https://images.unsplash.com/photo-1571243555255-9cc6b2cb945c?crop=entropy"
-  caps: [at the ear, in the hair, under a lace veil, anywhere you like]
+  - "https://images.unsplash.com/photo-1689553079282-45df1b35741b"
+  - "https://images.unsplash.com/photo-1611652022419-a9419f74343d"
+  caps: [as earrings, in your hair, at your throat, in layers]
   line1: Pearls,
   line2: plural.
-  sub: four ways to wear them loud, never just one strand
+  sub: Four ways to wear them. You're allowed all four at once.
   accent: "#8A4FC2"
   strip:
     label: Shop the four ways
     items:
+    - ["Pearl drop earrings", "$75"]
     - ["Pearl bow barrette", "$55"]
     - ["Layered pearl choker", "$98"]
-    - ["Pearl-collar cardigan, Sandro", "$365"]
+    - ["Pearl layered necklace", "$60"]
     cta: "Shop the pearl edit →"
   pin_title: "How to Wear Pearls: 4 Ways, From Pearl Earrings to Pearls in Your Hair"
-  pin_description: "Pearls, plural. Four ways to wear pearls loud: at the ear, in the hair, under a lace veil and anywhere you like. A layered pearl choker, a pearl bow barrette and a pearl-collar cardigan, from $55. Pearl jewelry outfit ideas and vintage glam inspiration. Shop the pearl edit on Satin Alibi."
+  pin_description: "Pearls, plural. Four ways to wear pearls: as drop earrings, clipped in your hair, as a choker at your throat and layered with gold chains. Pearl drop earrings, a pearl bow barrette, a layered freshwater pearl choker and a gold-and-pearl layered necklace, all under $100. Pearl jewelry outfit ideas and vintage glam inspiration. Shop the pearl edit on Satin Alibi."
 ---
 Couture isn't a price tag. It's a posture.
 
@@ -170,5 +180,7 @@ So we went looking for pieces that look made to order without the six fittings. 
 ## How to wear it
 
 Pick one couture piece and keep everything around it plain. The corset top with black trousers. The gloves with a simple strapless dress. The pearl collar on bare collarbones. The cardigan buttoned to the top like a blouse.
+
+Pearls get the same treatment. Wear them on skin, not over a twinset. Give them something to argue with: a sharp blazer, black lace, a red lip. And don't stop at one strand. A short one and a long one is a look. Earrings, a choker and a pearl clip in your hair is a better one.
 
 Then do the one thing couture really asks of you: arrive like you meant to. Take the long way across the room. They'll ask who made it. Tell them you did.

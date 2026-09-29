@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% from "_card.html" import card, collage, img %}
-{% block title %}{{ post.seo_title or post.title | striptags }} | {{ site.name }}{% endblock %}
+{% block title %}{{ post.seo_title or post.title | md_inline | striptags }} | {{ site.name }}{% endblock %}
 {% block description %}{{ post.dek }}{% endblock %}
 {% block meta %}<meta property="og:type" content="article">
-<meta property="og:title" content="{{ post.seo_title or post.title | striptags }}">
+<meta property="og:title" content="{{ post.seo_title or post.title | md_inline | striptags }}">
 <meta property="og:description" content="{{ post.dek }}">
 <meta property="og:url" content="{{ post.abs_url }}">
 {% if post.pins %}<meta property="og:image" content="{{ post.pins[0].abs_image }}">{% elif post.hero %}<meta property="og:image" content="{{ post.hero | photo(1200) }}">{% endif %}
@@ -57,7 +57,7 @@
 
   {% if post.pins %}
   <aside class="save">
-    <img src="{{ post.pins[0].image }}" alt="{{ post.pins[0].pin_title or post.title | striptags }}" width="520" height="780" loading="lazy" data-pin-description="{{ post.pins[0].pin_description or post.dek }}">
+    <img src="{{ post.pins[0].image }}" alt="{{ post.pins[0].pin_title or post.title | md_inline | striptags }}" width="520" height="780" loading="lazy" data-pin-description="{{ post.pins[0].pin_description or post.dek }}">
     <div>
       <span class="mono">Pin it</span>
       <h2>Save it for <em>later.</em></h2>

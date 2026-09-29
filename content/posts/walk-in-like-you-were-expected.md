@@ -52,12 +52,12 @@ pins:
   photo: "https://images.unsplash.com/photo-1593078886626-aabc65c1d311"
   line1: The room is
   line2: yours.
-  size: 54
   accent: "#FF3B2E"
   strip:
     kind: read
-    line: "8 rules for walking into any room like you were expected. Rule 7: drop the apology."
-    cta: "Read the 8 rules →"
+    label: Worth a read
+    line: "Walking into a room like they were waiting for you is a skill, not a personality. Here's how to learn it."
+    cta: "Show me how →"
   pin_title: "How to Walk Into a Room With Confidence: 8 Rules for Women"
   pin_description: "The room is yours. 8 rules for walking into any room like you were expected: decide what you're there for, pause at the door, take a real seat, speak in the first ten minutes, drop the apology and back the other woman who spoke up. Confidence tips for women. Read the 8 rules on Satin Alibi."
 hero: "https://images.unsplash.com/photo-1783530614914-06638a4937eb"
