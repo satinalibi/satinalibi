@@ -12,7 +12,7 @@ Owner: Rabia. Claude writes the posts and pins; Rabia approves pins weekly befor
   Pinterest Predicts 2026 trends that fit: Vamp Romantic (After Dark), Glamoratti (Golden Hour).
 - **Sensual, never explicit.** Pinterest removes or limits sexually suggestive content. Ads can't show nudity, implied nudity, or overtly sexual imagery. Show fabric and detail, not bodies. No lingerie-only framing: lace is worn *out*.
 - **Honesty.** No invented first-person experiences ("I've used this for years"), no fake reviews or testimonials, no made-up product claims. Describe what a product is and why it fits the brand. Any factual claim must come from the product page or a reputable source. Prices say "at time of writing" on the site's disclosure page.
-- **Images:** only Unsplash or Pexels photos (free for business use), or brand product images supplied through affiliate programs. Never Tumblr reposts. Never AI-generated people.
+- **Images:** only Unsplash or Pexels photos (free for business use), or brand product images supplied through affiliate programs. Never Tumblr reposts. Never AI-generated people. No Canva Pro stock (decided 28 Sep 2026: its license ends when the subscription does, and pins live for years).
 
 ## Sections (also the Pinterest boards)
 - `golden-hour`: body oils, self-tan, bronzer, gold jewelry, body chains, resort wear.
