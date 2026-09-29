@@ -161,7 +161,7 @@ def build_pages(posts):
     urls = [SITE["url"] + "/"] + [f"{SITE['url']}/{s}/" for s in SECTIONS] + [p["abs_url"] for p in posts]
     urls += [f"{SITE['url']}/{f.stem}/" for f in (ROOT / "content/pages").glob("*.md")]
     write("sitemap.xml", render("sitemap.xml", urls=urls, today=TODAY.isoformat()))
-    write("robots.txt", f"User-agent: *\nDisallow: /pins/*.html\nSitemap: {SITE['url']}/sitemap.xml\n")
+    write("robots.txt", f"User-agent: *\nDisallow: /pins/*.html\nDisallow: /_products\nSitemap: {SITE['url']}/sitemap.xml\n")
     for_feed = [dict(p, rfc_date=format_datetime(dt.datetime.combine(p["date"], dt.time(9), TZ))) for p in posts[:30]]
     write("feed.xml", render("feed.xml", posts=for_feed, build_date=format_datetime(dt.datetime.now(TZ))))
 
@@ -206,6 +206,24 @@ def build_board_feeds(manifest):
                                                      build_date=format_datetime(dt.datetime.now(TZ))))
 
 
+def render_page(path, out, w, h):
+    """Screenshot one built page (a full-page contact sheet for checking, not published anywhere important)."""
+    from playwright.sync_api import sync_playwright
+    handler = partial(SimpleHTTPRequestHandler, directory=str(DIST))
+    server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            page = browser.new_page(viewport={"width": w, "height": h})
+            page.goto(f"http://127.0.0.1:{server.server_address[1]}/{path}", wait_until="networkidle", timeout=90000)
+            page.screenshot(path=str(DIST / out), type="jpeg", quality=80, full_page=True)
+            browser.close()
+    except Exception as e:
+        print("contact sheet failed:", e)
+    server.shutdown()
+
+
 def render_pins(manifest):
     from playwright.sync_api import sync_playwright
 
@@ -225,14 +243,73 @@ def render_pins(manifest):
     server.shutdown()
 
 
+IMG_CACHE = ROOT / "content" / "product-images.yml"
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+      "Chrome/128.0 Safari/537.36")
+
+
+def fetch_og_image(url):
+    """The product photo a store shares for its page (og:image), or None. Only runs on GitHub Actions."""
+    import html as _html
+    import urllib.request
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9",
+                                                   "Accept": "text/html,application/xhtml+xml"})
+        with urllib.request.urlopen(req, timeout=12) as r:
+            page = r.read(2_000_000).decode("utf-8", "replace")
+    except Exception as e:  # blocked, timed out, gone: leave the product without a photo
+        print("  no image:", url, type(e).__name__)
+        return None
+    for pat in (r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image',
+                r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)'):
+        m = re.search(pat, page, re.I)
+        if m:
+            img = _html.unescape(m.group(1)).strip()
+            if img.startswith("//"):
+                img = "https:" + img
+            # Shopify shares a cropped social card; ask for the plain photo instead
+            img = re.sub(r"_(\d+x\d*|\d*x\d+)(_crop_[a-z]+)?(?=\.(jpe?g|png|webp)\b)", "", img)
+            return img
+    print("  no og:image:", url)
+    return None
+
+
+def resolve_product_images(posts):
+    """Give every product a photo. Uses `image:` from the post if set, else the cache in
+    content/product-images.yml, else (on GitHub Actions only) looks it up on the store's page.
+    New lookups are written to dist/product-images.yml; copy them into the cache to keep them."""
+    import os
+    cache = (yaml.safe_load(IMG_CACHE.read_text()) or {}) if IMG_CACHE.exists() else {}
+    online = os.environ.get("GITHUB_ACTIONS") == "true"
+    for p in posts:
+        for pr in p.get("products") or []:
+            if pr.get("image") or not pr.get("url"):
+                continue
+            if pr["url"] not in cache and online:
+                cache[pr["url"]] = fetch_og_image(pr["url"]) or ""
+            if cache.get(pr["url"]):
+                pr["image"] = cache[pr["url"]]
+    write("product-images.yml", yaml.safe_dump(cache, sort_keys=True, allow_unicode=True, width=1000))
+    # a contact sheet of every product photo, so a person can check them at a glance
+    tiles = "".join(f'<figure><div><img src="{pr["image"]}"></div><figcaption>{p["slug"]} / {pr["brand"]} {pr["name"]}</figcaption></figure>'
+                    for p in posts for pr in p.get("products") or [] if pr.get("image"))
+    write("_products.html", "<!doctype html><meta charset=utf-8><style>body{margin:0;background:#F3EDE4;font:11px sans-serif}"
+          "main{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;padding:8px}figure{margin:0}"
+          "div{height:150px;background:#fff;display:flex;align-items:center;justify-content:center}"
+          "img{max-width:92%;max-height:92%;mix-blend-mode:multiply}</style><main>" + tiles + "</main>")
+
+
 def main():
     if DIST.exists():
         shutil.rmtree(DIST)
     shutil.copytree(ROOT / "static", DIST)
     posts = load_posts()
+    resolve_product_images(posts)
     manifest = build_pages(posts)
     if RENDER_PINS:
         render_pins(manifest)
+        render_page("_products.html", "_products.jpg", 1600, 1800)
     print(f"Built {len(posts)} posts, {len(manifest)} pins -> {DIST}")
 
 
