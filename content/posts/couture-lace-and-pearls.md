@@ -38,6 +38,7 @@ products:
   url: "https://www.analuisa.com/products/pearl-drop-earrings-maxine"
   image: "https://cdn.shopify.com/s/files/1/2579/7674/files/Ana-Luisa-Jewelry-Earrings-Drop-Earrings-Pearl-Drop-Earrings-Maxine-Gold_c4bc1d0f-2d94-4f13-b20b-0c367704e5b9.jpg?width=800"
   short: Pearl drop earrings, Ana Luisa
+  img_zoom: 1.8
   note: Glass pearls swinging from 14k gold plating, tarnish-free and hypoallergenic. The kind of earring that moves when you laugh. Pull your hair all the way back so nothing gets in their way.
 - brand: By Anthropologie
   name: Layered Freshwater Pearl Choker
@@ -178,9 +179,9 @@ pins:
   pin_description: "Pearls, plural. Four ways to wear pearls: as drop earrings, clipped in your hair, as a choker at your throat and layered with gold chains. Pearl drop earrings, a pearl bow barrette, a layered freshwater pearl choker and a gold-and-pearl layered necklace, all under $100. Pearl jewelry outfit ideas and vintage glam inspiration. Shop the pearl edit on Satin Alibi."
 - style: pieces
   photo: "https://images.unsplash.com/photo-1611652032931-10fc009c980a"
-  line1: Pearls for party season,
+  line1: Holiday pearls,
   line2: all under $80.
-  kicker: The mood + the pieces
+  kicker: Lace & Pearls
   pieces: [0, 1, 2]
   accent: "#B1222C"
   strip:

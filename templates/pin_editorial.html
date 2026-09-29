@@ -24,7 +24,7 @@
     pushes the title up instead of running into it. -#}
 {#- A product card: the brand's own product photo on a white card, short name, price (products[i] in this post) -#}
 {%- macro card(i, h=128, dark=false) -%}{%- set pr = post.products[i] -%}
-<div><div style="height:{{ h }}px;background:#fff;border:1px solid {{ '#3a2a2e' if dark else '#e2d7c8' }};display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="{{ pr.image }}" alt="" style="max-width:90%;max-height:90%;object-fit:contain;mix-blend-mode:multiply;filter:brightness(1.06) contrast(1.05)"></div>
+<div><div style="height:{{ h }}px;background:#fff;border:1px solid {{ '#3a2a2e' if dark else '#e2d7c8' }};display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="{{ pr.image }}" alt="" style="max-width:90%;max-height:90%;object-fit:contain;mix-blend-mode:multiply;filter:brightness(1.06) contrast(1.05);transform:scale({{ pr.img_zoom or 1 }})"></div>
 <p class="tw" style="font-size:13px;line-height:1.2;font-weight:700;color:{{ '#f2e6eb' if dark else '#2e2724' }};margin-top:7px">{{ pr.short or pr.name }}</p>
 <p class="pf" style="font-size:22px;color:{{ acc }};margin-top:3px">{{ price(pr.price) }}</p></div>
 {%- endmacro -%}
@@ -185,7 +185,7 @@
 {#- The mood + the pieces: a promise headline, one mood photo, then the real products with prices -#}
 {%- set I = pin.pieces or [] -%}{%- set pt, ph = pin.photo_top or 146, pin.photo_h or 250 -%}
 <div class="z" style="background:radial-gradient(90% 60% at 30% 15%,#fbf7f0,#efe7dc)">
-  <div class="top row mono" style="color:#6f6258;top:16px"><span>Satin Alibi · {{ post.section_info.name }}</span><span>{{ pin.kicker or 'The mood + the pieces' }}</span></div>
+  <div class="top row mono" style="color:#6f6258;top:16px"><span>Satin Alibi</span><span>{{ pin.kicker or post.section_info.name }}</span></div>
   <div style="position:absolute;left:28px;right:28px;top:40px;z-index:26;color:#1c1714"><p class="pf" style="font-size:{{ pin.size or 46 }}px">{{ pin.line1 }}<br><i style="color:{{ acc }}">{{ pin.line2 }}</i></p></div>
   <div class="ph" style="left:28px;right:28px;top:{{ pt }}px;height:{{ ph }}px;background-image:url('{{ pin.photo | photo(900, 520) }}');filter:contrast(1.04) saturate(1.05)"></div>
   <div style="position:absolute;left:28px;right:28px;top:{{ pt + ph + 14 }}px;display:grid;grid-template-columns:repeat({{ I|length }},1fr);gap:12px;z-index:12">
@@ -206,7 +206,7 @@
     <div>
       <p class="mono" style="color:{{ acc }}">{{ t[1] }}</p>
       <p class="pf" style="font-size:36px;color:#F7EDF1;margin:2px 0 8px">{{ price(pr.price) }}</p>
-      <div style="height:{{ pin.tile_h or 250 }}px;background:#F6F0E8;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 14px 30px rgba(0,0,0,.45)"><img src="{{ pr.image }}" alt="" style="width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply;filter:brightness(1.05) contrast(1.05)"></div>
+      <div style="height:{{ pin.tile_h or 285 }}px;background:#F6F0E8;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 14px 30px rgba(0,0,0,.45)"><img src="{{ pr.image }}" alt="" style="width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply;filter:brightness(1.05) contrast(1.05)"></div>
       <p class="tw" style="font-size:13.5px;line-height:1.2;font-weight:700;color:#f2e6eb;margin-top:9px">{{ pr.short or pr.name }}</p>
       <p class="tw" style="font-size:12.5px;line-height:1.3;color:#cdb8bf;margin-top:3px">{{ t[2] }}</p>
     </div>

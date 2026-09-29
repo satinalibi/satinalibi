@@ -70,6 +70,7 @@ products:
   url: "https://www.analuisa.com/products/gold-hoop-earrings-giulia-large"
   image: "https://cdn.shopify.com/s/files/1/2579/7674/files/Ana-Luisa-Jewelry-Earrings-Hoop-Earrings-Gold-Hoop-Earrings-Giulia-Large-Gold_5290c07e-0b07-452c-895c-2382a8b881bc.jpg?width=800"
   short: Chunky gold hoops, Ana Luisa
+  img_zoom: 1.25
   note: Chunky hoops plated in 14k gold, tarnish-free, water-resistant and hypoallergenic. For the friend who wears hoops every single day and is ready for a bigger pair.
 - brand: Ana Luisa
   name: Maxine Pearl Drop Earrings
@@ -78,6 +79,7 @@ products:
   url: "https://www.analuisa.com/products/pearl-drop-earrings-maxine"
   image: "https://cdn.shopify.com/s/files/1/2579/7674/files/Ana-Luisa-Jewelry-Earrings-Drop-Earrings-Pearl-Drop-Earrings-Maxine-Gold_c4bc1d0f-2d94-4f13-b20b-0c367704e5b9.jpg?width=800"
   short: Pearl drop earrings, Ana Luisa
+  img_zoom: 1.8
   note: Glass pearls swinging from 14k gold plating, tarnish-free and hypoallergenic. The earrings that move when she laughs, and she laughs a lot.
 - brand: By Anthropologie
   name: Layered Freshwater Pearl Choker
