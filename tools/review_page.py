@@ -4,7 +4,7 @@ sys.path.insert(0,'.')
 import build
 build.INCLUDE_ALL=True
 posts=build.load_posts()
-STYLE={'cover':'Magazine cover','moodboard':'Mood board','still':'Film still','edit':'Shop the edit','frames':'Film frames'}
+STYLE={'cover':'Magazine cover','moodboard':'Mood board','still':'Film still','edit':'Shop the edit','frames':'Film frames','contact':'Contact sheet','sun':'Red sun','flash':'Flash photo','darkroom':'Darkroom print','specimen':'Specimen card','fourways':'Four ways','museum':'Museum wall','lot':'Auction lot','howto':'How-to'}
 order=['golden-hour','lace-and-pearls','after-dark','take-up-space']
 # usage: python tools/review_page.py OUT.html [--pending] [--batch "Second batch"]
 # --pending: only pins with no decision yet in content/pin-schedule.yml

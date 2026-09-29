@@ -96,9 +96,11 @@ colour, and ends in a strip that makes the click obvious. Template: `templates/p
 - `sun` (Take Up Space): B&W `photo` in front of a screen-printed red sun.
 - `flash` (After Dark): full `photo`, orange disposable-camera `stamp`.
 - `darkroom` (After Dark): red-safelight duotone `photo`, film edge, crop marks, `note`.
-- `specimen` (Lace & Pearls): `photo` in a jeweler's loupe, `number`, typed `rows` [[label, value]].
-- `fourways` (Lace & Pearls): 4 B&W `photos` with `caps`, `sub` line.
-- `museum` (Golden Hour): `photo` in a gilded frame, `placard_title`, `placard`.
+- `specimen` (Lace & Pearls): `photo` in a jeweler's loupe, `number`, typed `rows`. Rabia found it weird and illogical; don't use it.
+- `howto` (Lace & Pearls): title on top, one `photo`, 3 `tips` [[heading, text, x%, y%]] with leader lines pointing at x%,y% of the photo.
+  The tips must be real, practical advice that the post also gives.
+- `fourways` (Lace & Pearls): 4 B&W `photos` with `caps`, `sub` line. Captions must be literal ("as earrings", "in your hair"), each photo showing exactly that.
+- `museum` (Golden Hour): `photo` in a gilded frame, `placard_title`, `placard`, `wall: warm` (cognac). Use the warm wall for Golden Hour; the green one read as "very green". Pick photos with skin (bare back, shoulders) while clothed.
 - `lot` (Golden Hour): auction catalogue. The lot is always an OBJECT, never a person (`lot_title`, `lot`, `number`).
 All take `line1`, `line2` (italic, in `accent`), `stack: true` to break the title, `size`, `accent` (hex, quoted), and `strip`:
 `strip: {label, items: [[short name, price], x3], cta}` for shopping pins (real products and prices from that post),
@@ -106,6 +108,10 @@ or `strip: {kind: read, line, cta}` for Take Up Space (no products; sell the ess
 Rules from Rabia's feedback: no AI-looking sparkle graphics or washi-tape collages ("Canva template"), sensual never explicit,
 no shirtless or topless photos, never put text over a face, and a model sets the mood without implying she endorses the product
 ("Gild the look", "Find your red", not "her exact lipstick").
+Text must be readable on a phone: Pinterest shows pins about 180-400px wide. Keep strip names/prices, captions and tips at the
+current sizes or bigger (set in the template), bold monospace. The title sits on top of the strip automatically (`foot` macro).
+Copy should sound like a friend talking, not a slogan generator: plain words, no clever-but-empty lines ("the review is in",
+"you were never here"). Every caption has to make literal sense next to its photo.
 
 ## Build
 `python build.py` builds `dist/`; `python build.py --pins` also renders every pin to `dist/pins/<slug>-<n>.jpg` (1000×1500);
