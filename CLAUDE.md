@@ -100,6 +100,14 @@ colour, and ends in a strip that makes the click obvious. Template: `templates/p
 - `howto` (Lace & Pearls): title on top, one `photo`, 3 `tips` [[heading, text, x%, y%]] with leader lines pointing at x%,y% of the photo.
   The tips must be real, practical advice that the post also gives.
 - `fourways` (Lace & Pearls): 4 B&W `photos` with `caps`, `sub` line. Captions must be literal ("as earrings", "in your hair"), each photo showing exactly that.
+- Ad-first styles (29 Sep 2026), built to earn the click from a stranger, and to show the REAL products:
+  - `pieces`: promise headline (season + price cap, e.g. "Holiday pearls, / all under $80."), one mood `photo`,
+    then `pieces: [product indexes]` as white product cards with the brand's own photo, short name and price.
+  - `tiers`: the same thing at three prices, cheapest first. `tiers: [[index, Save|Middle|Splurge, one honest line]]`.
+    Never call the cheap one a "dupe" unless it really is the same shade.
+  - `gifts`: gift-guide grid of 6 products (`gifts: [indexes]`), headline + `sub` promise line.
+  These take `strip: {kind: cta, label, cta}` (the products are already on the pin).
+  Products get `short:` (card name) and optional `img_zoom:` (for tiny items like earrings).
 - `museum` (Golden Hour): `photo` in a gilded frame, `placard_title`, `placard`, `wall: warm` (cognac). Use the warm wall for Golden Hour; the green one read as "very green". Pick photos with skin (bare back, shoulders) while clothed.
 - `lot` (Golden Hour): auction catalogue. The lot is always an OBJECT, never a person (`lot_title`, `lot`, `number`).
 All take `line1`, `line2` (italic, in `accent`), `stack: true` to break the title, `size`, `accent` (hex, quoted), and `strip`:
@@ -113,6 +121,14 @@ current sizes or bigger (set in the template), bold monospace. The title sits on
 Copy should sound like a friend talking, not a slogan generator: plain words, no clever-but-empty lines ("the review is in",
 "you were never here"). Every caption has to make literal sense next to its photo, and skip insider fashion words
 (Rabia didn't know "twinset", so readers won't either).
+
+## Product photos
+Every product gets the brand's own photo: `image:` in the post if set, else `content/product-images.yml`
+(url -> photo). On GitHub Actions the build looks up missing ones from the store page (og:image) and writes
+the result to `dist/product-images.yml` (on the `site` branch); copy good lookups into the cache and blank bad
+ones (store logos). Sephora, Nordstrom, Free People and Simons block the lookup, so set `image:` by hand for those.
+`dist/_products.jpg` is a contact sheet of every product photo for a quick check.
+Blog pick cards show the photo too (it's what readers click).
 
 ## Build
 `python build.py` builds `dist/`; `python build.py --pins` also renders every pin to `dist/pins/<slug>-<n>.jpg` (1000×1500);
