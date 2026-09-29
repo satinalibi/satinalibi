@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<title>couture-lace-and-pearls-6</title>
+<style>
+@font-face{font-family:"IS";src:url(/fonts/InstrumentSerif.woff) format("woff");font-style:normal}
+@font-face{font-family:"IS";src:url(/fonts/InstrumentSerif-Italic.woff) format("woff");font-style:italic}
+@font-face{font-family:"ISans";src:url(/fonts/InstrumentSans.woff) format("woff");font-weight:400 700}
+@font-face{font-family:"CP";src:url(/fonts/CourierPrime.woff) format("woff");font-style:normal}
+@font-face{font-family:"CP";src:url(/fonts/CourierPrime-Italic.woff) format("woff");font-style:italic}
+@font-face{font-family:"HA";src:url(/fonts/HomemadeApple.woff) format("woff")}
+@font-face{font-family:"PF";src:url(/fonts/PlayfairDisplay-ExtraBold.woff) format("woff");font-weight:800;font-style:normal}
+@font-face{font-family:"PF";src:url(/fonts/PlayfairDisplay-ExtraBoldItalic.woff) format("woff");font-weight:800;font-style:italic}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1000px;height:1500px;overflow:hidden}
+body{font-family:"ISans",sans-serif;-webkit-font-smoothing:antialiased}
+.pin{width:1000px;height:1500px;position:relative;overflow:hidden}
+.ph{background:#2a211d center/cover no-repeat;position:relative}
+.ph.bw{filter:grayscale(1) contrast(1.08) brightness(.96)}
+.ph.warm::after{content:"";position:absolute;inset:0;background:#e9c49a;mix-blend-mode:soft-light;opacity:.35}
+.grain{position:absolute;inset:0;pointer-events:none;opacity:.16;mix-blend-mode:overlay;z-index:20;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 1.2 -.1'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.mono{font-family:"CP",monospace;font-size:23px;letter-spacing:.2em;text-transform:uppercase;line-height:1.35}
+.hand{font-family:"HA",cursive;color:#9E1B25;font-size:44px;line-height:1.2}
+.disp{font-family:"IS",serif;font-weight:400;letter-spacing:-.02em;line-height:.9}
+.disp i{font-style:italic}
+.sub{font-family:"ISans",sans-serif;font-style:italic;font-weight:500;font-size:var(--sub-size,56px);line-height:1.28;text-align:center;
+  color:var(--sub-color,#fff);
+  text-shadow:0 0 2px #000,0 0 2px #000,0 2px 3px #000,0 0 18px rgba(0,0,0,.55)}
+.row{display:flex;justify-content:space-between;align-items:center}
+
+/* STILL: one film still with subtitles, letterboxed */
+.still{background:#0c0a09;display:flex;flex-direction:column;color:#EDE4D8}
+.still .bar{height:150px;padding:0 64px}
+.still .ph{flex:1}
+.still .ph .sub{position:absolute;left:56px;right:56px;bottom:64px}
+.still .foot{min-height:300px;padding:44px 64px 56px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.still .foot .disp{font-size:var(--size,104px);color:#F4EFE8}
+.still .foot .disp i{color:#E9CFC6}
+
+/* FRAMES: stacked stills, the subtitle carries across */
+.frames{background:#0c0a09;color:#EDE4D8;padding:64px 50px 56px;display:flex;flex-direction:column;justify-content:space-between}
+.frames .stack{display:flex;flex-direction:column;gap:26px}
+.frames .ph{height:var(--frame-h,600px)}
+.frames .ph .sub{position:absolute;left:40px;right:40px;bottom:30px}
+
+/* MOODBOARD: scrapbook collage on paper */
+.board{background:#F2ECE3;color:#16110F}
+.board .card{position:absolute;background-color:#2a211d;border:12px solid #FBF8F3;box-shadow:0 18px 40px rgba(40,25,15,.28)}
+.board .tape{position:absolute;width:150px;height:44px;background:rgba(232,214,178,.78);z-index:5}
+.board .title{position:absolute;left:64px;right:64px;bottom:68px;z-index:6}
+.board .title .disp{font-size:var(--size,168px)}
+.board .title .disp i{color:#9E1B25}
+.board .note{position:absolute;right:70px;bottom:410px;transform:rotate(-6deg);z-index:7}
+
+/* COVER: magazine cover. Title sits in its own band so it never covers a face */
+.cover{background:#F2ECE3;color:#16110F;display:flex;flex-direction:column}
+.cover .top{padding:52px 60px 0}
+.cover .top .row{font-size:20px;color:#6E5A4B;border-bottom:2px solid #D9CBB9;padding-bottom:16px}
+.cover .mast{font-size:calc(var(--size,250px) * .62);line-height:.86;text-align:center;margin:30px 0 30px}
+.cover .mast i{display:block;color:#9E1B25}
+.cover .ph{flex:1}
+.cover .foot{padding:24px 60px 34px;font-size:20px;color:#6E5A4B;gap:30px}
+.cover .foot span:first-child{font-size:17px;letter-spacing:.1em}
+/* EDIT: shoppable grid */
+.edit{background:#F2ECE3;color:#16110F;padding:64px 60px 58px;display:flex;flex-direction:column;justify-content:space-between}
+.edit .head .disp{font-size:var(--size,136px);margin-top:18px}
+.edit .head .disp i{color:#9E1B25}
+.edit .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 22px}
+.edit .grid .ph{height:380px}
+.edit .lab{margin-top:12px;font-size:25px;letter-spacing:.12em}
+</style></head>
+<body>
+
+
+
+
+
+<style>
+.z{position:relative;width:500px;height:750px;overflow:hidden;zoom:2;font-family:"ISans",sans-serif}
+.z .ph{position:absolute;background:center/cover no-repeat;overflow:hidden}
+.z .pf{font-family:"PF",serif;font-weight:800;letter-spacing:-.03em;line-height:.95}
+.z .pf i{font-style:italic}
+.z .mono{font-family:"CP",monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;line-height:1.35}
+.z .tw{font-family:"CP",monospace}
+.z .hand{font-family:"HA",cursive}
+.z .row{display:flex;justify-content:space-between}
+.z .top{position:absolute;left:28px;right:28px;top:20px;z-index:26}
+.z .ttl{position:absolute;right:28px;z-index:26}
+.z .strip{position:absolute;left:28px;right:28px;bottom:20px;z-index:26;padding-top:9px}
+.z .strip .items{display:grid;gap:12px;margin-top:8px}
+.z .strip .items p{font-size:10px;line-height:1.25}
+.z .strip .items b{display:block;font-size:12.5px;margin-top:3px}
+.z .strip .readline{font-size:13px;line-height:1.35;margin-top:8px}
+.z .strip .cta{margin-top:10px;display:inline-block;padding:6px 11px;letter-spacing:.18em;font-weight:700}
+.z .mgrain{position:absolute;inset:0;pointer-events:none;opacity:.2;mix-blend-mode:overlay;z-index:30;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 1.3 -.12'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+</style>
+
+<div class="z" style="background:radial-gradient(90% 60% at 30% 20%,#fbf7f0,#efe8dd)">
+  <div class="top row mono" style="color:#7d7065;top:16px"><span>Satin Alibi · Lace &amp; Pearls</span><span>How to wear it</span></div>
+  <div style="position:absolute;left:28px;right:28px;top:40px;z-index:26;color:#1c1714">
+    <p class="pf" style="font-size:40px">Pearls without the<br><i style="color:#B1222C">pearl-clutching.</i></p>
+  </div>
+  <div class="ph" style="left:28px;top:146px;width:280px;height:440px;z-index:10;background-image:url('https://images.unsplash.com/photo-1590455209730-25a477555e17?auto=format&amp;fit=crop&amp;crop=faces,entropy&amp;w=560&amp;q=80&amp;h=880');filter:contrast(1.05) saturate(1.05)"></div>
+  <svg viewBox="0 0 500 750" style="position:absolute;inset:0;width:500px;height:750px;z-index:14;overflow:visible"><path d="M162.4,242.8 L304,166 L320,166" fill="none" stroke="#fff" stroke-width="2.2" opacity=".55"/>
+    <path d="M162.4,242.8 L304,166 L320,166" fill="none" stroke="#B1222C" stroke-width="1"/>
+    <circle cx="162.4" cy="242.8" r="3.2" fill="#B1222C" stroke="#fff" stroke-width="1.2"/><path d="M263.2,339.6 L304,314 L320,314" fill="none" stroke="#fff" stroke-width="2.2" opacity=".55"/>
+    <path d="M263.2,339.6 L304,314 L320,314" fill="none" stroke="#B1222C" stroke-width="1"/>
+    <circle cx="263.2" cy="339.6" r="3.2" fill="#B1222C" stroke="#fff" stroke-width="1.2"/><path d="M173.6,401.2 L304,462 L320,462" fill="none" stroke="#fff" stroke-width="2.2" opacity=".55"/>
+    <path d="M173.6,401.2 L304,462 L320,462" fill="none" stroke="#B1222C" stroke-width="1"/>
+    <circle cx="173.6" cy="401.2" r="3.2" fill="#B1222C" stroke="#fff" stroke-width="1.2"/>
+  </svg>
+  <div style="position:absolute;left:326px;right:26px;top:146px;z-index:16">
+    <p class="pf" style="font-size:24px;color:#B1222C"><i>01</i></p>
+    <p class="mono" style="color:#1c1714;font-weight:700;margin-top:4px;font-size:10.5px">On skin</p>
+    <p class="tw" style="font-size:11px;line-height:1.4;color:#5d534b;margin-top:4px">Bare collarbones, a low neckline. Not over a twinset.</p>
+  </div>
+  <div style="position:absolute;left:326px;right:26px;top:294px;z-index:16">
+    <p class="pf" style="font-size:24px;color:#B1222C"><i>02</i></p>
+    <p class="mono" style="color:#1c1714;font-weight:700;margin-top:4px;font-size:10.5px">With an edge</p>
+    <p class="tw" style="font-size:11px;line-height:1.4;color:#5d534b;margin-top:4px">A sharp blazer, black lace, a red lip. Give them something to argue with.</p>
+  </div>
+  <div style="position:absolute;left:326px;right:26px;top:442px;z-index:16">
+    <p class="pf" style="font-size:24px;color:#B1222C"><i>03</i></p>
+    <p class="mono" style="color:#1c1714;font-weight:700;margin-top:4px;font-size:10.5px">In layers</p>
+    <p class="tw" style="font-size:11px;line-height:1.4;color:#5d534b;margin-top:4px">A short strand and a long one. Nobody&#39;s counting.</p>
+  </div>
+  <div class="strip" style="border-top:1px solid #d6ccc0">
+  <div class="mono row" style="color:#7d7065"><span>Shop the pearls</span><span>satinalibi.com</span></div>
+  <div class="tw items" style="grid-template-columns:repeat(3,1fr)"><div><p style="color:#4a4240">Layered pearl choker</p><b style="color:#B1222C">$98</b></div><div><p style="color:#4a4240">Pearl layered necklace, Ettika</p><b style="color:#B1222C">$60</b></div><div><p style="color:#4a4240">Pearl drop earrings, Ana Luisa</p><b style="color:#B1222C">$75</b></div>
+  </div>
+  <div class="mono cta" style="background:#B1222C;color:#fff">Shop the pearls →</div>
+</div>
+  <div class="mgrain" style="opacity:.12"></div>
+</div>
+
+
+
+</body></html>
