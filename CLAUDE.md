@@ -111,7 +111,8 @@ no shirtless or topless photos, never put text over a face, and a model sets the
 Text must be readable on a phone: Pinterest shows pins about 180-400px wide. Keep strip names/prices, captions and tips at the
 current sizes or bigger (set in the template), bold monospace. The title sits on top of the strip automatically (`foot` macro).
 Copy should sound like a friend talking, not a slogan generator: plain words, no clever-but-empty lines ("the review is in",
-"you were never here"). Every caption has to make literal sense next to its photo.
+"you were never here"). Every caption has to make literal sense next to its photo, and skip insider fashion words
+(Rabia didn't know "twinset", so readers won't either).
 
 ## Build
 `python build.py` builds `dist/`; `python build.py --pins` also renders every pin to `dist/pins/<slug>-<n>.jpg` (1000×1500);
