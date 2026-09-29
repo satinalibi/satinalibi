@@ -89,6 +89,24 @@ Outro in markdown: how to wear it, one strong closing line.
 - Lace & Pearls must feel couture: runway gowns, corsetry, opera gloves, pearls on skin, lace in dramatic light. No doilies or tablecloth lace.
 - Home header: `hero`, `hero_alt`, `hero_sub` in site.yml. A URL can carry its own crop (`?crop=top`); `hero_flip: true` mirrors it and `hero_pos` sets the object-position (check phone width).
 
+## Editorial pin styles (preferred, since 28 Sep 2026)
+Rabia loved these; use them for new pins. Each pin is built around ONE idea, uses real photos and one bold accent
+colour, and ends in a strip that makes the click obvious. Template: `templates/pin_editorial.html` (laid out at 500x750, zoomed 2x).
+- `contact` (Take Up Space): 4 B&W `photos`, `circle` index, grease-pencil `note`.
+- `sun` (Take Up Space): B&W `photo` in front of a screen-printed red sun.
+- `flash` (After Dark): full `photo`, orange disposable-camera `stamp`.
+- `darkroom` (After Dark): red-safelight duotone `photo`, film edge, crop marks, `note`.
+- `specimen` (Lace & Pearls): `photo` in a jeweler's loupe, `number`, typed `rows` [[label, value]].
+- `fourways` (Lace & Pearls): 4 B&W `photos` with `caps`, `sub` line.
+- `museum` (Golden Hour): `photo` in a gilded frame, `placard_title`, `placard`.
+- `lot` (Golden Hour): auction catalogue. The lot is always an OBJECT, never a person (`lot_title`, `lot`, `number`).
+All take `line1`, `line2` (italic, in `accent`), `stack: true` to break the title, `size`, `accent` (hex, quoted), and `strip`:
+`strip: {label, items: [[short name, price], x3], cta}` for shopping pins (real products and prices from that post),
+or `strip: {kind: read, line, cta}` for Take Up Space (no products; sell the essay, use a number if the essay has one).
+Rules from Rabia's feedback: no AI-looking sparkle graphics or washi-tape collages ("Canva template"), sensual never explicit,
+no shirtless or topless photos, never put text over a face, and a model sets the mood without implying she endorses the product
+("Gild the look", "Find your red", not "her exact lipstick").
+
 ## Build
 `python build.py` builds `dist/`; `python build.py --pins` also renders every pin to `dist/pins/<slug>-<n>.jpg` (1000×1500);
 `--all` includes drafts and future posts for previews. `dist/pins/manifest.json` lists every pin with its title, description, board and link.
