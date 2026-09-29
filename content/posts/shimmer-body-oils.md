@@ -13,6 +13,8 @@ products:
   price: $13.99 USD
   retailer: Ulta
   url: "https://www.ulta.com/p/glazed-glisten-body-gel-oil-pimprod2056661?sku=2650493"
+  image: "https://media.ulta.com/i/ulta/2650493?w=800&h=800"
+  short: Vaseline shimmer gel oil
   note: The drugstore pick that refuses to act like one. A silky gel oil with golden bronze shimmer, cocoa butter and a warm vanilla-cocoa scent that sinks in fast instead of sitting on top. Big bottle, small price, zero reason to ration it.
 - brand: Range Beauty
   name: Bali Face & Body Glow Oil

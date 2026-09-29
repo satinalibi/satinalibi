@@ -37,6 +37,8 @@ products:
   price: $55 USD
   retailer: Wolford
   url: "https://us.wolford.com/en-us/satin-touch-20-tights-14776.7005.html"
+  image: "https://us.wolford.com/dw/image/v2/BKQM_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf66275d4/2023/14776_7005_100_001_B_X_B2BL.jpg?sw=600&sh=800&q=90"
+  short: Sheer black tights, Wolford
   note: Sheer 20-denier black tights with a satin-soft shimmer, an extra-wide waistband and an almost invisible reinforced toe. They take a satin skirt straight into cold weather. Sheer black under a slip skirt is never the quiet option.
 - brand: JW PEI
   name: Abacus Artificial Crystal Mini Top Handle Bag

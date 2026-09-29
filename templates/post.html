@@ -38,6 +38,7 @@
         {% if item.note %}<p class="pick-note">{{ item.note | md_inline | safe }}</p>{% endif %}
       </div>
       <div class="pick-side">
+        {% if item.image %}<a class="pick-img" href="{{ item.url }}" target="_blank" rel="sponsored nofollow noopener"><img src="{{ item.image }}" alt="{{ item.brand }} {{ item.name }}" loading="lazy"></a>{% endif %}
         {% if item.price %}<span class="price">{{ item.price }}</span>{% endif %}
         <a class="btn" href="{{ item.url }}" target="_blank" rel="sponsored nofollow noopener">Shop{% if item.retailer %} {{ item.retailer }}{% endif %} &rarr;</a>
       </div>

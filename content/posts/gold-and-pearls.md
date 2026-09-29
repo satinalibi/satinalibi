@@ -13,18 +13,24 @@ products:
   price: $70 USD
   retailer: Ana Luisa
   url: "https://www.analuisa.com/products/gold-hoop-earrings-giulia-large"
+  image: "https://cdn.shopify.com/s/files/1/2579/7674/files/Ana-Luisa-Jewelry-Earrings-Hoop-Earrings-Gold-Hoop-Earrings-Giulia-Large-Gold_5290c07e-0b07-452c-895c-2382a8b881bc.jpg?width=800"
+  short: Chunky gold hoops, Ana Luisa
   note: Chunky hoops plated in 14k gold, made to be tarnish-free, water-resistant and hypoallergenic. The large size is the one for a slicked-back bun. Wear them every day and stop saving them for later.
 - brand: Ana Luisa
   name: Maxine Pearl Drop Earrings
   price: $75 USD
   retailer: Ana Luisa
   url: "https://www.analuisa.com/products/pearl-drop-earrings-maxine"
+  image: "https://cdn.shopify.com/s/files/1/2579/7674/files/Ana-Luisa-Jewelry-Earrings-Drop-Earrings-Pearl-Drop-Earrings-Maxine-Gold_c4bc1d0f-2d94-4f13-b20b-0c367704e5b9.jpg?width=800"
+  short: Pearl drop earrings, Ana Luisa
   note: Glass pearl pendants hanging from 14k gold plating, tarnish-free and hypoallergenic. Pearls with a little swing in them. Wear them with a black turtleneck and a red lip.
 - brand: Ettika
   name: All the Chains Pearl Layered Necklace
   price: $60 USD
   retailer: Ettika
   url: "https://www.ettika.com/products/all-the-chains-pearl-layered-necklace"
+  image: "https://cdn.shopify.com/s/files/1/0591/5689/files/N2415.PRL.G.jpg?v=1757686739&width=800"
+  short: Layered pearl necklace, Ettika
   note: "Gold-plated chains and strands of freshwater and glass pearls, layered for you, adjustable from 16 to 18 inches with a 5-inch extender. Pearls with chains running through them: the edge is built in. Wear it over a black knit and skip every other necklace."
 - brand: Ettika
   name: Blissful Crystal Body Chain

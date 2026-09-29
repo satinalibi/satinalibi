@@ -167,8 +167,10 @@ em,i{font-style:italic}
 .pick h3{font-size:clamp(28px,2.8vw,36px);line-height:1.02;margin:6px 0 10px}
 .pick-note{margin:0;color:var(--ink-2);font-size:16px;line-height:1.6;max-width:56ch}
 .pick-side{display:flex;flex-direction:column;align-items:flex-end;gap:14px;padding-top:4px}
+.pick-img{display:flex;align-items:center;justify-content:center;width:160px;height:160px;background:#fff;border:1px solid var(--line)}
+.pick-img img{max-width:88%;max-height:88%;object-fit:contain;mix-blend-mode:multiply}
 .price{font:15px var(--mono);letter-spacing:.06em}
-@media (max-width:640px){.pick{grid-template-columns:52px 1fr}.pick-num{font-size:46px}.pick-side{grid-column:2;align-items:flex-start;flex-direction:row;gap:16px;align-items:center}}
+@media (max-width:640px){.pick{grid-template-columns:52px 1fr}.pick-num{font-size:46px}.pick-side{grid-column:2;align-items:flex-start;flex-direction:row;gap:16px;align-items:center}.pick-img{width:96px;height:96px}}
 
 .interlude{margin:40px auto;max-width:1100px;padding:0 20px}
 .interlude .photo{aspect-ratio:21/9}

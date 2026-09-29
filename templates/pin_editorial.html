@@ -9,6 +9,7 @@
   <div class="mono row" style="color:{{ t.label }}"><span>{{ s.label or ('Worth a read' if s.kind == 'read' else 'Shop the edit') }}</span><span>satinalibi.com</span></div>
   {%- if s.kind == 'read' %}
   <p class="tw readline" style="color:{{ t.txt }}">{{ s.line }}</p>
+  {%- elif s.kind == 'cta' %}{# products are already on the pin: just the label and the button #}
   {%- else %}
   {%- set items = s['items'] or [] -%}
   {%- if not items and s.picks -%}{%- set items = [] -%}{%- for i in s.picks -%}{%- set pr = post.products[i] -%}{%- set _ = items.append([pr.short or pr.name, price(pr.price)]) -%}{%- endfor -%}{%- endif %}
@@ -21,6 +22,12 @@
 {%- endmacro -%}
 {#- The foot sits on the bottom edge: the title (optional) stacked right on top of the strip, so a taller strip
     pushes the title up instead of running into it. -#}
+{#- A product card: the brand's own product photo on a white card, short name, price (products[i] in this post) -#}
+{%- macro card(i, h=128, dark=false) -%}{%- set pr = post.products[i] -%}
+<div><div style="height:{{ h }}px;background:#fff;border:1px solid {{ '#3a2a2e' if dark else '#e2d7c8' }};display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="{{ pr.image }}" alt="" style="max-width:90%;max-height:90%;object-fit:contain;mix-blend-mode:multiply;filter:brightness(1.06) contrast(1.05)"></div>
+<p class="tw" style="font-size:13px;line-height:1.2;font-weight:700;color:{{ '#f2e6eb' if dark else '#2e2724' }};margin-top:7px">{{ pr.short or pr.name }}</p>
+<p class="pf" style="font-size:22px;color:{{ acc }};margin-top:3px">{{ price(pr.price) }}</p></div>
+{%- endmacro -%}
 {%- macro foot(t, color=none, size=46, left=28) -%}
 <div class="foot" style="left:{{ left }}px">
   {%- if color %}<p class="pf" style="font-size:{{ size }}px;color:{{ color }};margin-bottom:16px">{{ pin.line1 }}{% if pin.line2 %}{% if pin.stack %}<br>{% else %} {% endif %}<i style="color:{{ pin.accent }}">{{ pin.line2 }}</i>{% endif %}</p>{% endif %}
@@ -172,6 +179,57 @@
   {%- endfor %}
   {{ foot({'rule':'#d0c5b8','label':'#6f6258','txt':'#2e2724','btn':'#fff'}) }}
   <div class="mgrain" style="opacity:.12"></div>
+</div>
+
+{% elif style == 'pieces' %}
+{#- The mood + the pieces: a promise headline, one mood photo, then the real products with prices -#}
+{%- set I = pin.pieces or [] -%}{%- set pt, ph = pin.photo_top or 146, pin.photo_h or 250 -%}
+<div class="z" style="background:radial-gradient(90% 60% at 30% 15%,#fbf7f0,#efe7dc)">
+  <div class="top row mono" style="color:#6f6258;top:16px"><span>Satin Alibi · {{ post.section_info.name }}</span><span>{{ pin.kicker or 'The mood + the pieces' }}</span></div>
+  <div style="position:absolute;left:28px;right:28px;top:40px;z-index:26;color:#1c1714"><p class="pf" style="font-size:{{ pin.size or 46 }}px">{{ pin.line1 }}<br><i style="color:{{ acc }}">{{ pin.line2 }}</i></p></div>
+  <div class="ph" style="left:28px;right:28px;top:{{ pt }}px;height:{{ ph }}px;background-image:url('{{ pin.photo | photo(900, 520) }}');filter:contrast(1.04) saturate(1.05)"></div>
+  <div style="position:absolute;left:28px;right:28px;top:{{ pt + ph + 14 }}px;display:grid;grid-template-columns:repeat({{ I|length }},1fr);gap:12px;z-index:12">
+  {%- for i in I %}{{ card(i, pin.tile_h or 132) }}{% endfor %}
+  </div>
+  {{ foot({'rule':'#d0c5b8','label':'#6f6258','txt':'#2e2724','btn':'#fff'}) }}
+  <div class="mgrain" style="opacity:.1"></div>
+</div>
+
+{% elif style == 'tiers' %}
+{#- Save or splurge: the same idea at three prices, cheapest first. tiers: [[product index, tag, one-line description]] -#}
+{%- set I = pin.tiers or [] -%}
+<div class="z" style="background:radial-gradient(80% 55% at 50% 35%,#2e0b10,#0d0708 75%)">
+  <div class="top row mono" style="color:#cdb0ab"><span>Satin Alibi · {{ post.section_info.name }}</span><span>{{ pin.kicker or 'Save or splurge' }}</span></div>
+  <div style="position:absolute;left:28px;right:28px;top:40px;z-index:26"><p class="pf" style="font-size:{{ pin.size or 56 }}px;color:#F7EDF1">{{ pin.line1 }}<br><i style="color:{{ acc }}">{{ pin.line2 }}</i></p></div>
+  <div style="position:absolute;left:28px;right:28px;top:{{ pin.row_top or 176 }}px;display:grid;grid-template-columns:repeat({{ I|length }},1fr);gap:12px;z-index:12">
+  {%- for t in I %}{%- set pr = post.products[t[0]] %}
+    <div>
+      <p class="mono" style="color:{{ acc }}">{{ t[1] }}</p>
+      <p class="pf" style="font-size:36px;color:#F7EDF1;margin:2px 0 8px">{{ price(pr.price) }}</p>
+      <div style="height:{{ pin.tile_h or 250 }}px;background:#F6F0E8;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 14px 30px rgba(0,0,0,.45)"><img src="{{ pr.image }}" alt="" style="width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply;filter:brightness(1.05) contrast(1.05)"></div>
+      <p class="tw" style="font-size:13.5px;line-height:1.2;font-weight:700;color:#f2e6eb;margin-top:9px">{{ pr.short or pr.name }}</p>
+      <p class="tw" style="font-size:12.5px;line-height:1.3;color:#cdb8bf;margin-top:3px">{{ t[2] }}</p>
+    </div>
+  {%- endfor %}
+  </div>
+  {{ foot({'rule':'#4a3640','label':'#b9a3ad','txt':'#f2e6eb','btn':'#fff'}) }}
+  <div class="mgrain" style="opacity:.18"></div>
+</div>
+
+{% elif style == 'gifts' %}
+{#- Gift guide: headline, a promise line, a 3x2 grid of real products with prices -#}
+{%- set I = pin.gifts or [] -%}
+<div class="z" style="background:radial-gradient(80% 50% at 80% 5%,rgba(177,34,44,.10),transparent 70%),radial-gradient(90% 60% at 30% 20%,#fbf7f0,#efe7dc)">
+  <div class="top row mono" style="color:#6f6258;top:16px"><span>Satin Alibi · Gift guide</span><span>{{ pin.kicker or 'Under $100' }}</span></div>
+  <div style="position:absolute;left:28px;right:28px;top:40px;z-index:26;color:#1c1714">
+    <p class="pf" style="font-size:{{ pin.size or 44 }}px">{{ pin.line1 }}<br><i style="color:{{ acc }}">{{ pin.line2 }}</i></p>
+    {%- if pin.sub %}<p class="tw" style="font-size:14.5px;line-height:1.3;color:#2e2724;margin-top:10px;font-weight:700">{{ pin.sub }}</p>{% endif %}
+  </div>
+  <div style="position:absolute;left:28px;right:28px;top:{{ pin.grid_top or 186 }}px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px 12px;z-index:12">
+  {%- for i in I %}{{ card(i, pin.tile_h or 138) }}{% endfor %}
+  </div>
+  {{ foot({'rule':'#d0c5b8','label':'#6f6258','txt':'#2e2724','btn':'#fff'}) }}
+  <div class="mgrain" style="opacity:.1"></div>
 </div>
 
 {% elif style == 'museum' %}

@@ -20,24 +20,32 @@ products:
   price: $55 USD
   retailer: Nordstrom
   url: "https://www.nordstrom.com/s/aurora-faux-pearl-barrette/8914173"
+  image: "https://n.nordstrommedia.com/it/29b42941-bb84-4dd4-89d9-b20649b369c0.jpeg"
+  short: Pearl bow barrette, Ettika
   note: Faux pearls gathered into a bow on a goldtone-plated barrette, about 2.5 inches across. Small, bright and completely sure of itself. Clip it at the back of a slick low bun and let them find it when you walk away.
 - brand: Ettika
   name: All the Chains Pearl Layered Necklace
   price: $60 USD
   retailer: Ettika
   url: "https://www.ettika.com/products/all-the-chains-pearl-layered-necklace"
+  image: "https://cdn.shopify.com/s/files/1/0591/5689/files/N2415.PRL.G.jpg?v=1757686739&width=800"
+  short: Layered pearl necklace, Ettika
   note: "Freshwater and glass pearls strung between gold-plated chains, already layered for you, adjustable from 16 to 18 inches. It does the stacking so you don't have to. Wear it low on an open white shirt, with the collar pushed back."
 - brand: Ana Luisa
   name: Maxine Pearl Drop Earrings
   price: $75 USD
   retailer: Ana Luisa
   url: "https://www.analuisa.com/products/pearl-drop-earrings-maxine"
+  image: "https://cdn.shopify.com/s/files/1/2579/7674/files/Ana-Luisa-Jewelry-Earrings-Drop-Earrings-Pearl-Drop-Earrings-Maxine-Gold_c4bc1d0f-2d94-4f13-b20b-0c367704e5b9.jpg?width=800"
+  short: Pearl drop earrings, Ana Luisa
   note: Glass pearls swinging from 14k gold plating, tarnish-free and hypoallergenic. The kind of earring that moves when you laugh. Pull your hair all the way back so nothing gets in their way.
 - brand: By Anthropologie
   name: Layered Freshwater Pearl Choker
   price: $98 USD
   retailer: Anthropologie
   url: "https://www.anthropologie.com/shop/layered-freshwater-pearl-choker"
+  image: "https://images.urbndata.com/is/image/Anthropologie/108380809_010_b?wid=800"
+  short: Pearl choker, Anthropologie
   note: Layered strands of freshwater pearls, 3 inches deep and 12.5 inches long, closed with a satin ribbon tie. It sits high and tight like a collar, not a necklace. Wear it on bare collarbones with a strapless dress and leave the ribbon ends long.
 - brand: House of CB
   name: Cadie Black Satin Corset Top
@@ -168,6 +176,19 @@ pins:
     cta: "Shop the pearl edit →"
   pin_title: "How to Wear Pearls: 4 Ways, From Pearl Earrings to Pearls in Your Hair"
   pin_description: "Pearls, plural. Four ways to wear pearls: as drop earrings, clipped in your hair, as a choker at your throat and layered with gold chains. Pearl drop earrings, a pearl bow barrette, a layered freshwater pearl choker and a gold-and-pearl layered necklace, all under $100. Pearl jewelry outfit ideas and vintage glam inspiration. Shop the pearl edit on Satin Alibi."
+- style: pieces
+  photo: "https://images.unsplash.com/photo-1611652032931-10fc009c980a"
+  line1: Pearls for party season,
+  line2: all under $80.
+  kicker: The mood + the pieces
+  pieces: [0, 1, 2]
+  accent: "#B1222C"
+  strip:
+    kind: cta
+    label: Shop the pearls
+    cta: "Shop the pearls →"
+  pin_title: "Holiday Pearl Jewelry Under $80: Pearl Bow Barrette, Layered Pearl Necklace, Pearl Drop Earrings"
+  pin_description: "Pearls for party season, all under $80: a pearl bow barrette from Ettika ($55), a gold-and-pearl layered necklace from Ettika ($60) and pearl drop earrings from Ana Luisa ($75). Holiday party outfit jewelry, Christmas gift ideas for her and elegant pearl outfit inspiration. Shop the pearls on Satin Alibi."
 ---
 Couture isn't a price tag. It's a posture.
 

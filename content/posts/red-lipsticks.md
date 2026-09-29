@@ -13,6 +13,8 @@ products:
   price: $11.99 USD
   retailer: Ulta
   url: "https://www.ulta.com/p/super-lustrous-lipstick-xlsImpprod2940211?sku=1741444"
+  image: "https://media.ulta.com/i/ulta/1741444?w=800&h=800"
+  short: Revlon Cherries in the Snow
   note: "The cherry: a drugstore classic that has outlasted every trend, in a crème formula made with 80% conditioning ingredients so it glides on soft. Proof that a statement doesn't need a statement price."
 - brand: Maybelline
   name: SuperStay Matte Ink Liquid Lipstick, Pioneer
@@ -25,6 +27,8 @@ products:
   price: $24 USD
   retailer: MAC
   url: "https://www.maccosmetics.com/product/13854/52593/Products/Makeup/Lips/Lipstick/Retro-Matte-Lipstick"
+  image: "https://www.maccosmetics.com/cdn/shop/files/mac_sku_M0N904_1x1_0.png?width=800"
+  short: MAC Ruby Woo
   note: "The blue-red: MAC calls it a very matte vivid blue-red, and it wears a best-seller badge on the brand's own site. It's built for intense colour and up to eight hours of wear. Prep with balm, because this matte means business."
 - brand: Benefit Cosmetics
   name: Benetint Lip & Cheek Stain
@@ -49,6 +53,8 @@ products:
   price: $50 USD
   retailer: Ulta
   url: "https://www.ulta.com/p/rouge-dior-lipstick-pimprod2043044?sku=2619652"
+  image: "https://media.ulta.com/i/ulta/2619652?w=800&h=800"
+  short: Dior 999
   note: "The icon: Dior calls 999 the iconic red, and it's hard to argue. The satin version pairs rich colour with a hydrating floral lip-care formula, in a refillable case you'll want to take out at the table on purpose."
 pins:
 - style: cover
@@ -124,6 +130,21 @@ pins:
     cta: "Shop all 7 reds →"
   pin_title: "Best Red Lipstick: Ruby Woo, Dior 999 and 5 More Reds for a Night Out"
   pin_description: "Say less, wear red. The red lip edit for nights out: MAC Ruby Woo, Rouge Dior 999, Revlon Cherries in the Snow and four more classic reds from $11.99 to $50, blue-red to brick. Date night makeup and red lipstick ideas. Shop all seven on Satin Alibi."
+- style: tiers
+  line1: The red lip,
+  line2: at every price.
+  kicker: Save or splurge
+  tiers:
+  - [0, Save, "The cherry. Creamy, cool-toned."]
+  - [2, Middle, "The blue-red. Very matte."]
+  - [6, Splurge, "The icon. Satin finish."]
+  accent: "#FF4F8B"
+  strip:
+    kind: cta
+    label: Find your red
+    cta: "See all 7 reds →"
+  pin_title: "Best Red Lipstick at Every Price: Revlon Cherries in the Snow, MAC Ruby Woo, Dior 999"
+  pin_description: "The red lip at every price. Save: Revlon Cherries in the Snow ($11.99), a creamy drugstore classic. Middle: MAC Ruby Woo ($24), the very matte blue-red. Splurge: Rouge Dior 999 ($50), the iconic red in a satin finish. Drugstore vs high end red lipstick for holiday party makeup and date night. See all 7 reds on Satin Alibi."
 hero: "https://images.unsplash.com/photo-1645961359159-c57c39d461b2"
 hero_alt: Red lipstick on a dark table
 hero_credit: Mehmet Ali Turan on Unsplash
