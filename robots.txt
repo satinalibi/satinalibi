@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /pins/*.html
+Disallow: /_products
+Sitemap: https://satinalibi.com/sitemap.xml
